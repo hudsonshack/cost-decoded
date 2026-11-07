@@ -9,7 +9,7 @@ This file is the standing instruction set for the weekly scheduled run. Follow i
 - **Not allowed:** personalized financial or investment advice ("you should buy..."), stock picks, crypto pumping, politics, tragedies, health claims, anything about real private individuals, reused clips or footage from other creators.
 
 ## Output
-- 1-2 Shorts every day (35-50 s each): one at 12:30, a second at 18:30 on the strongest topics. Adjust volume and mix to whatever analytics and current trends show gets the most views.
+- 1-2 Shorts every day (22-30 s each, hard cap 32 s): one at 12:30, a second at 18:30 on the strongest topics. Adjust volume and mix to whatever analytics and current trends show gets the most views.
 - 1 long-form video (6-10 min) a week once Shorts are performing, scheduled Thursday.
 - Formats: single-topic breakdowns, countdown rankings (#5 to #1), and timely news angles. Pick the mix from what is trending in money/business Shorts that week and from our own analytics.
 - Post times: use Metricool `getBestTimeToPostByNetwork` for YouTube once the channel has data; until then 12:30 and 18:30 America/New_York.
@@ -21,7 +21,7 @@ This file is the standing instruction set for the weekly scheduled run. Follow i
 
 ## Step 2: Pick topics
 1. Research what is getting views in the niche right now: search the web for trending business and money news from the last 14 days, and check comparable channels' recent uploads.
-2. Pick topics that pass all four tests: (a) a surprising number at the center, (b) explainable in under a minute, (c) at least two reputable sources (company filings, major news outlets, government data), (d) not already covered in `TOPICS.md`.
+2. Pick topics that pass all four tests: (a) a surprising number at the center, (b) explainable in under 30 seconds, (c) at least two reputable sources (company filings, major news outlets, government data), (d) not already covered in `TOPICS.md`.
 3. Mix: 2 evergreen ("How Costco makes money on a $1.50 hot dog"), 1 timely (this week's news), 1 ranking ("5 most expensive...").
 4. Log chosen topics in `TOPICS.md` with date and sources.
 
@@ -37,7 +37,13 @@ Matched frame-by-frame to Hudson's reference Shorts. Keep every video in this st
 - **Captions:** 1-2 words, synced, clean white heavy caps with a soft shadow, numbers/money in green. Write numbers as `{$4.65|four sixty five}` so the caption shows digits.
 - **Look:** palette is black / white / red `#FF3030` / green `#39FF6A`; bloom glow, green corner flare and light-leak flashes are automatic.
 - **Sound:** click on every photo/cutout/node, pop on stickers, low hit on big words, quiet whoosh on cuts. No music.
-- **Ending:** no end card. The last line should flow back into the hook so the Short loops.
+- **Ending:** no end card. The last line is a half-sentence that runs straight into the hook's first words (e.g. "That's why" -> "Every gas station charges you..."), so the Short loops.
+- **Lock-in rules (Nov 7):**
+  - 7-9 scenes, about 55-75 spoken words. Cut any scene that doesn't add a new number or twist.
+  - The first sentence states the whole payoff (the number + who profits) in under 2 seconds. No warm-up words.
+  - One "wait, what?" twist in the middle (a reversal, a villain, a fail).
+  - Pick topics from vidIQ outliers (`vidiq_outliers`, contentType short, this month) and from brands people use every week: Costco, Starbucks, Amazon, McDonald's, airlines, streaming, MrBeast-style creator businesses.
+  - The first-comment question should be a two-option argument ("Would you rather X or Y?") to drive comments.
 - **Voice:** free smooth voice, speed 1.10-1.12.
 
 ## Metadata rules (every upload)
@@ -51,7 +57,7 @@ Matched frame-by-frame to Hudson's reference Shorts. Keep every video in this st
 
 ## Step 3: Script (JSON in `shorts/` or `long/`)
 - One idea per scene, 1-2 sentences of narration. 6-9 scenes for a Short.
-- Every number on screen gets a `source` field. Use the exact figure from the source; round only in narration.
+- Every number gets a `source` field in the script JSON for fact-checking only. Nothing source-related is drawn on screen (Hudson's call, Nov 7); sources live in the description.
 - Write numbers in narration the way they are spoken ("four sixty five", "two hundred forty five million").
 - Vary the visual types (`big_number`, `compare_bars`, `donut`, `statement`, `people_grid`, plus `photos` cards and `pops` stickers) so no two videos have the same sequence. This matters for YouTube's inauthentic-content rules. Use `dy` to push a visual down when a photo card sits above it.
 - End with a one-line takeaway, then the outro.
@@ -63,7 +69,7 @@ Re-open every source and confirm each on-screen figure, date and quote. If a fig
 ## Step 5: Render and QA
 1. `python3 engine.py <script.json> out/<slug>.mp4`
 2. Extract frames from every scene and look at them: no clipped text, no overlapping elements, captions readable.
-3. Check loudness is between -17 and -13 LUFS and the length is 30-58 s for Shorts.
+3. Check loudness is between -17 and -13 LUFS and the length is 22-32 s for Shorts.
 
 ## Step 6: Publish (free routing, no paid tools)
 Hudson can't create a Google API key, so the direct-API route (`youtube_api.py`) is shelved. Use these two routes:

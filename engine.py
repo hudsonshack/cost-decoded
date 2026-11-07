@@ -351,8 +351,7 @@ def render(script_path, out_path):
         if ticker:
             draw_ticker(d, W, H, t, ticker)
         d.rectangle([0, H - 10, W * t / total, H], fill=PALETTE["accent"])
-        if sc.get("source"):
-            d.text((W / 2, H * 0.94), "Source: " + sc["source"], font=src_f, fill=PALETTE["muted"], anchor="mm")
+        # no on-screen source line (Hudson's call); sources live in the description
         cur = next((b for b in reversed(s["bursts"]) if b[1] <= lt), None)
         if cur and lt < cur[2] + 0.35:
             draw_caption(d, W, H, cur[0], lt - cur[1], hl)

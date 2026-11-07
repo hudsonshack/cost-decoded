@@ -1,215 +1,215 @@
 {
- "format": "short",
- "speed": 1.11,
- "title": "Why Gas Prices End in 9/10 of a Cent",
- "description": "The extra nine tenths of a cent on every gas sign started with early gas taxes, and one station owner learned the hard way what happens when you drop it.\n#gasprices #gasstation #money #shorts\n\nSources: NACS (Jun 2022); Jalopnik (2024); CBS News Minnesota (Aug 2023); Marketplace; SlashGear\nPhotos: JeepersMedia, Tate Nations, aldenjewell, The Wandering Angel, Nickogibson, beltz6 (CC BY 2.0, Flickr); A.J. in Chicagoland (public domain)",
- "tags": [
-  "gas prices",
-  "why gas prices end in 9",
-  "9/10 of a cent",
-  "gas station",
-  "pricing psychology",
-  "business explained",
-  "money"
- ],
- "highlight_words": [
-  "fraction",
-  "banned",
-  "nobody",
-  "store"
- ],
- "scenes": [
-  {
-   "say": "Every gas station charges you a coin that doesn't exist.",
-   "visual": {
-    "type": "photo_hook",
-    "file": "assets/photos/gas-sign.jpg",
-    "focus": [
-     0.5,
-     0.75
-    ],
-    "lines": [
-     "9/10 OF A CENT"
-    ],
-    "highlight": [
-     "9/10"
-    ],
-    "scale": 0.12,
-    "y": 0.14
-   }
-  },
-  {
-   "say": "Nine tenths of a cent, on every single gallon.",
-   "visual": {
-    "type": "broll",
-    "file": "assets/photos/gas-sign-2011.jpg",
-    "focus": [
-     0.62,
-     0.3
-    ],
-    "pan": 0.0
-   },
-   "cues": [
+  "format": "short",
+  "speed": 1.11,
+  "title": "Why Gas Prices End in 9/10 of a Cent",
+  "description": "The extra nine tenths of a cent on every gas sign started with early gas taxes, and one station owner learned the hard way what happens when you drop it.\n#gasprices #gasstation #money #shorts\n\nSources: NACS (Jun 2022); Jalopnik (2024); CBS News Minnesota (Aug 2023); Marketplace; SlashGear\nPhotos: JeepersMedia, Tate Nations, aldenjewell, The Wandering Angel, Nickogibson, beltz6 (CC BY 2.0, Flickr); A.J. in Chicagoland (public domain)",
+  "tags": [
+    "gas prices",
+    "why gas prices end in 9",
+    "9/10 of a cent",
+    "gas station",
+    "pricing psychology",
+    "business explained",
+    "money"
+  ],
+  "highlight_words": [
+    "fraction",
+    "banned",
+    "nobody",
+    "store"
+  ],
+  "scenes": [
     {
-     "at": "every",
-     "type": "bigword",
-     "text": "0.9¢",
-     "color": "good"
-    }
-   ]
-  },
-  {
-   "say": "It started in the early nineteen hundreds, when governments taxed gas to build highways.",
-   "visual": {
-    "type": "broll",
-    "file": "assets/photos/early-station.jpg",
-    "focus": [
-     0.5,
-     0.4
-    ]
-   },
-   "cues": [
-    {
-     "at": "taxed",
-     "type": "bigword",
-     "text": "TAX",
-     "color": "bad"
-    }
-   ],
-   "source": "NACS; CBS News"
-  },
-  {
-   "say": "Gas cost about {10¢|ten cents}, so adding a full penny was a {10%|ten percent} price hike.",
-   "visual": {
-    "type": "compare_bars",
-    "title": "One extra cent back then",
-    "suffix": "¢",
-    "decimals": 0,
-    "items": [
-     {
-      "label": "Gallon of gas",
-      "value": 10,
-      "color": "good"
-     },
-     {
-      "label": "Gas + one cent",
-      "value": 11,
-      "color": "bad"
-     }
-    ]
-   },
-   "source": "NACS; CBS News; Jalopnik"
-  },
-  {
-   "say": "So stations added a fraction instead. By mid century it was nine tenths, on giant roadside signs.",
-   "visual": {
-    "type": "broll",
-    "file": "assets/photos/road-forever.jpg",
-    "focus": [
-     0.5,
-     0.5
-    ]
-   },
-   "cues": [
-    {
-     "at": "fraction",
-     "type": "cutout",
-     "file": "assets/cutouts/vintage-pump.png",
-     "x": 0.5,
-     "y": 0.7,
-     "w": 0.48,
-     "rot": -4
-    }
-   ],
-   "source": "CBS News; Jalopnik"
-  },
-  {
-   "say": "Iowa banned it in {1985|nineteen eighty five}. Four years later, the ban was gone.",
-   "visual": {
-    "type": "nodes",
-    "center": {
-     "emoji": "⚖️",
-     "label": "Iowa"
+      "say": "Every gas station charges you a coin that doesn't exist.",
+      "visual": {
+        "type": "photo_hook",
+        "file": "assets/photos/gas-sign.jpg",
+        "focus": [
+          0.5,
+          0.75
+        ],
+        "lines": [
+          "9/10 OF A CENT"
+        ],
+        "highlight": [
+          "9/10"
+        ],
+        "scale": 0.12,
+        "y": 0.14
+      }
     },
-    "nodes": [
-     {
-      "emoji": "🚫",
-      "label": "Banned 1985"
-     },
-     {
-      "emoji": "⏳",
-      "label": "4 years"
-     },
-     {
-      "emoji": "🔓",
-      "label": "Gone 1989",
-      "hot": true
-     }
-    ]
-   },
-   "source": "NACS; Jalopnik"
-  },
-  {
-   "say": "In {2006|two thousand six}, a California owner dropped it, and lost about {$23|twenty three dollars} a day.",
-   "visual": {
-    "type": "broll",
-    "file": "assets/photos/gas-pumping.jpg",
-    "focus": [
-     0.4,
-     0.5
-    ]
-   },
-   "cues": [
     {
-     "at": "$23",
-     "type": "bigword",
-     "text": "-$23",
-     "color": "bad"
-    }
-   ],
-   "source": "NACS; CNN via Jalopnik"
-  },
-  {
-   "say": "Nobody even noticed. But stations only make pennies a gallon on fuel.",
-   "visual": {
-    "type": "broll",
-    "file": "assets/photos/pennies.jpg",
-    "focus": [
-     0.5,
-     0.5
-    ]
-   },
-   "cues": [
+      "say": "Nine tenths of a cent, on every gallon.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/gas-sign-2011.jpg",
+        "focus": [
+          0.62,
+          0.3
+        ],
+        "pan": 0.0
+      },
+      "cues": [
+        {
+          "at": "every",
+          "type": "bigword",
+          "text": "0.9¢",
+          "color": "good"
+        }
+      ]
+    },
     {
-     "at": "pennies",
-     "type": "bigword",
-     "text": "¢¢¢",
-     "color": "bad"
+      "say": "It started when governments taxed gas to build roads.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/early-station.jpg",
+        "focus": [
+          0.5,
+          0.4
+        ]
+      },
+      "cues": [
+        {
+          "at": "taxed",
+          "type": "bigword",
+          "text": "TAX",
+          "color": "bad"
+        }
+      ],
+      "source": "NACS; CBS News"
+    },
+    {
+      "say": "Gas was {10¢|ten cents}, so a full penny was a {10%|ten percent} hike.",
+      "visual": {
+        "type": "compare_bars",
+        "title": "One extra cent back then",
+        "suffix": "¢",
+        "decimals": 0,
+        "items": [
+          {
+            "label": "Gallon of gas",
+            "value": 10,
+            "color": "good"
+          },
+          {
+            "label": "Gas + one cent",
+            "value": 11,
+            "color": "bad"
+          }
+        ]
+      },
+      "source": "NACS; CBS News; Jalopnik"
+    },
+    {
+      "say": "So stations added a fraction instead.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/road-forever.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "fraction",
+          "type": "cutout",
+          "file": "assets/cutouts/vintage-pump.png",
+          "x": 0.5,
+          "y": 0.7,
+          "w": 0.48,
+          "rot": -4
+        }
+      ],
+      "source": "CBS News; Jalopnik"
+    },
+    {
+      "say": "Iowa banned it in {1985|nineteen eighty five}. It lasted four years.",
+      "visual": {
+        "type": "nodes",
+        "center": {
+          "emoji": "⚖️",
+          "label": "Iowa"
+        },
+        "nodes": [
+          {
+            "emoji": "🚫",
+            "label": "Banned 1985"
+          },
+          {
+            "emoji": "⏳",
+            "label": "4 years"
+          },
+          {
+            "emoji": "🔓",
+            "label": "Gone 1989",
+            "hot": true
+          }
+        ]
+      },
+      "source": "NACS; Jalopnik"
+    },
+    {
+      "say": "One owner dropped it, and lost {$23|twenty three dollars} a day.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/gas-pumping.jpg",
+        "focus": [
+          0.4,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "$23",
+          "type": "bigword",
+          "text": "-$23",
+          "color": "bad"
+        }
+      ],
+      "source": "NACS; CNN via Jalopnik"
+    },
+    {
+      "say": "Because stations make pennies a gallon on fuel.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/pennies.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "pennies",
+          "type": "bigword",
+          "text": "¢¢¢",
+          "color": "bad"
+        }
+      ],
+      "source": "Marketplace; SlashGear; NACS"
+    },
+    {
+      "say": "The real money is inside the store. That's why",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/cstore.jpg",
+        "focus": [
+          0.4,
+          0.5
+        ],
+        "lines": [
+          "THE COIN THAT",
+          "DOESN'T EXIST"
+        ],
+        "highlight": [
+          "exist"
+        ],
+        "scale": 0.1,
+        "y": 0.14,
+        "lines_at": 0.6
+      }
     }
-   ],
-   "source": "Marketplace; SlashGear; NACS"
-  },
-  {
-   "say": "The real money is inside the store. And on the sign, that coin that doesn't exist.",
-   "visual": {
-    "type": "broll",
-    "file": "assets/photos/cstore.jpg",
-    "focus": [
-     0.4,
-     0.5
-    ],
-    "lines": [
-     "THE COIN THAT",
-     "DOESN'T EXIST"
-    ],
-    "highlight": [
-     "exist"
-    ],
-    "scale": 0.1,
-    "y": 0.14,
-    "lines_at": 1.8
-   }
-  }
- ],
- "first_comment": "Would you switch stations over 9/10 of a cent? ⛽"
+  ],
+  "first_comment": "Would you switch stations over 9/10 of a cent? ⛽"
 }

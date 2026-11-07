@@ -1,245 +1,230 @@
 {
- "format": "short",
- "speed": 1.11,
- "title": "Unused Gift Cards Are a $27 Billion Gift to Companies",
- "description": "Companies get paid the day a gift card is bought, and the balances nobody spends turn into revenue called breakage. Starbucks alone books over $200 million of it a year.\n#giftcards #starbucks #money #shorts\n\nSources: Bankrate gift card survey (Sep 2024); Starbucks FY2024 and FY2025 Form 10-K; MarketWatch / Dow Jones (Apr 2025)\nPhotos: Per Olof Forsberg, JeepersMedia, pviojo, m01229, Waywuwei, FutUndBeidl, ccPixs.com (CC BY 2.0, Flickr)",
- "tags": [
-  "gift cards",
-  "unused gift cards",
-  "gift card breakage",
-  "starbucks gift card",
-  "how companies make money",
-  "business explained",
-  "money"
- ],
- "highlight_words": [
-  "breakage",
-  "never",
-  "free",
-  "drawer"
- ],
- "scenes": [
-  {
-   "say": "Americans are sitting on {$27 BILLION|twenty seven billion dollars} in gift cards they never used.",
-   "visual": {
-    "type": "photo_hook",
-    "file": "assets/photos/gc-rack.jpg",
-    "focus": [
-     0.5,
-     0.3
-    ],
-    "lines": [
-     "$27 BILLION",
-     "UNSPENT"
-    ],
-    "highlight": [
-     "$27",
-     "billion"
-    ],
-    "scale": 0.13,
-    "y": 0.13
-   },
-   "cues": [
+  "format": "short",
+  "speed": 1.11,
+  "title": "Unused Gift Cards Are a $27 Billion Gift to Companies",
+  "description": "Companies get paid the day a gift card is bought, and the balances nobody spends turn into revenue called breakage. Starbucks alone books over $200 million of it a year.\n#giftcards #starbucks #money #shorts\n\nSources: Bankrate gift card survey (Sep 2024); Starbucks FY2024 and FY2025 Form 10-K; MarketWatch / Dow Jones (Apr 2025)\nPhotos: Per Olof Forsberg, JeepersMedia, pviojo, m01229, Waywuwei, FutUndBeidl, ccPixs.com (CC BY 2.0, Flickr)",
+  "tags": [
+    "gift cards",
+    "unused gift cards",
+    "gift card breakage",
+    "starbucks gift card",
+    "how companies make money",
+    "business explained",
+    "money"
+  ],
+  "highlight_words": [
+    "breakage",
+    "never",
+    "free",
+    "drawer"
+  ],
+  "scenes": [
     {
-     "at": "gift",
-     "type": "cutout",
-     "file": "assets/cutouts/gift-box.png",
-     "x": 0.5,
-     "y": 0.7,
-     "w": 0.6,
-     "rot": -5
-    }
-   ],
-   "source": "Bankrate survey, Sep 2024"
-  },
-  {
-   "say": "{43%|Forty three percent} of adults have at least one.",
-   "visual": {
-    "type": "people_grid",
-    "rows": 10,
-    "cols": 10,
-    "lit": 43,
-    "caption": "43% have an unused gift card",
-    "color": "good"
-   },
-   "source": "Bankrate survey, Sep 2024"
-  },
-  {
-   "say": "Worth about {$244|two hundred forty four dollars} each.",
-   "visual": {
-    "type": "broll",
-    "file": "assets/photos/junk-drawer2.jpg",
-    "focus": [
-     0.5,
-     0.5
-    ]
-   },
-   "cues": [
-    {
-     "at": "$244",
-     "type": "bigword",
-     "text": "$244",
-     "color": "good"
-    }
-   ],
-   "source": "Bankrate survey, Sep 2024"
-  },
-  {
-   "say": "And companies love it. They get your cash the day the card is bought.",
-   "visual": {
-    "type": "broll",
-    "file": "assets/photos/gc-itunes.jpg",
-    "focus": [
-     0.5,
-     0.4
-    ]
-   },
-   "cues": [
-    {
-     "at": "cash",
-     "type": "bigword",
-     "text": "PAID",
-     "color": "good"
+      "say": "There's {$27 BILLION|twenty seven billion dollars} in gift cards nobody ever used.",
+      "visual": {
+        "type": "photo_hook",
+        "file": "assets/photos/gc-rack.jpg",
+        "focus": [
+          0.5,
+          0.3
+        ],
+        "lines": [
+          "$27 BILLION",
+          "UNSPENT"
+        ],
+        "highlight": [
+          "$27",
+          "billion"
+        ],
+        "scale": 0.13,
+        "y": 0.13
+      },
+      "cues": [
+        {
+          "at": "gift",
+          "type": "cutout",
+          "file": "assets/cutouts/gift-box.png",
+          "x": 0.5,
+          "y": 0.7,
+          "w": 0.6,
+          "rot": -5
+        }
+      ],
+      "source": "Bankrate survey, Sep 2024"
     },
     {
-     "at": "card",
-     "type": "rain"
-    }
-   ]
-  },
-  {
-   "say": "Starbucks is holding about {$1.8 BILLION|one point eight billion dollars} on cards and in its app.",
-   "visual": {
-    "type": "broll",
-    "file": "assets/photos/sbux-macro.jpg",
-    "focus": [
-     0.45,
-     0.6
-    ]
-   },
-   "cues": [
-    {
-     "at": "holding",
-     "type": "cutout",
-     "file": "assets/cutouts/sbux-cup.png",
-     "x": 0.5,
-     "y": 0.7,
-     "w": 0.5,
-     "rot": -4
+      "say": "{43%|Forty three percent} of adults have one.",
+      "visual": {
+        "type": "people_grid",
+        "rows": 10,
+        "cols": 10,
+        "lit": 43,
+        "caption": "43% have an unused gift card",
+        "color": "good"
+      },
+      "source": "Bankrate survey, Sep 2024"
     },
     {
-     "at": "$1.8",
-     "type": "bigword",
-     "text": "$1.8B",
-     "color": "good"
-    }
-   ],
-   "source": "Starbucks 10-K; MarketWatch"
-  },
-  {
-   "say": "And it expects some of that will never be spent.",
-   "visual": {
-    "type": "statement",
-    "lines": [
-     "Some of it",
-     "will never",
-     "be spent."
-    ],
-    "highlight": [
-     "never"
-    ],
-    "scale": 0.11
-   }
-  },
-  {
-   "say": "That money is called breakage. Starbucks books over {$200 MILLION|two hundred million} of it every year.",
-   "visual": {
-    "type": "compare_bars",
-    "title": "Starbucks breakage revenue",
-    "prefix": "$",
-    "suffix": "M",
-    "decimals": 1,
-    "items": [
-     {
-      "label": "Fiscal 2024",
-      "value": 207.6,
-      "color": "good"
-     },
-     {
-      "label": "Fiscal 2025",
-      "value": 222.4,
-      "color": "good"
-     }
-    ]
-   },
-   "source": "Starbucks Form 10-K, FY2025"
-  },
-  {
-   "say": "Coffee nobody ever drinks.",
-   "cues": [
-    {
-     "at": "Coffee",
-     "type": "emoji",
-     "text": "☕",
-     "x": 0.5,
-     "y": 0.56,
-     "w": 0.26
+      "say": "Worth about {$244|two hundred forty four dollars} each.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/junk-drawer2.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "$244",
+          "type": "bigword",
+          "text": "$244",
+          "color": "good"
+        }
+      ],
+      "source": "Bankrate survey, Sep 2024"
     },
     {
-     "at": "nobody",
-     "type": "bigword",
-     "text": "NEVER",
-     "color": "bad"
-    }
-   ]
-  },
-  {
-   "say": "And {34%|thirty four percent} of adults have lost money on a gift card.",
-   "visual": {
-    "type": "nodes",
-    "center": {
-     "emoji": "💰",
-     "label": "34% lost money"
+      "say": "But the company got your cash the day the card was bought.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/gc-itunes.jpg",
+        "focus": [
+          0.5,
+          0.4
+        ]
+      },
+      "cues": [
+        {
+          "at": "cash",
+          "type": "bigword",
+          "text": "PAID",
+          "color": "good"
+        },
+        {
+          "at": "card",
+          "type": "rain"
+        }
+      ]
     },
-    "nodes": [
-     {
-      "emoji": "⏳",
-      "label": "20% expired",
-      "hot": true
-     },
-     {
-      "emoji": "🔍",
-      "label": "17% lost it"
-     },
-     {
-      "emoji": "🏚️",
-      "label": "12% closed"
-     }
-    ]
-   },
-   "source": "Bankrate survey, Sep 2024"
-  },
-  {
-   "say": "So check your junk drawer. You might be part of the twenty seven billion.",
-   "visual": {
-    "type": "broll",
-    "file": "assets/photos/wallet-cards.jpg",
-    "focus": [
-     0.5,
-     0.5
-    ],
-    "lines": [
-     "CHECK YOUR",
-     "DRAWER"
-    ],
-    "highlight": [
-     "drawer"
-    ],
-    "scale": 0.11,
-    "y": 0.14,
-    "lines_at": 0.3
-   }
-  }
- ],
- "first_comment": "How much do you have sitting on old gift cards right now? 🎁"
+    {
+      "say": "Starbucks is holding {$1.8 BILLION|one point eight billion dollars} of it.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/sbux-macro.jpg",
+        "focus": [
+          0.45,
+          0.6
+        ]
+      },
+      "cues": [
+        {
+          "at": "holding",
+          "type": "cutout",
+          "file": "assets/cutouts/sbux-cup.png",
+          "x": 0.5,
+          "y": 0.7,
+          "w": 0.5,
+          "rot": -4
+        },
+        {
+          "at": "$1.8",
+          "type": "bigword",
+          "text": "$1.8B",
+          "color": "good"
+        }
+      ],
+      "source": "Starbucks 10-K; MarketWatch"
+    },
+    {
+      "say": "It's called breakage. Over {$200 MILLION|two hundred million} a year.",
+      "visual": {
+        "type": "compare_bars",
+        "title": "Starbucks breakage revenue",
+        "prefix": "$",
+        "suffix": "M",
+        "decimals": 1,
+        "items": [
+          {
+            "label": "Fiscal 2024",
+            "value": 207.6,
+            "color": "good"
+          },
+          {
+            "label": "Fiscal 2025",
+            "value": 222.4,
+            "color": "good"
+          }
+        ]
+      },
+      "source": "Starbucks Form 10-K, FY2025"
+    },
+    {
+      "say": "Coffee nobody drinks.",
+      "cues": [
+        {
+          "at": "Coffee",
+          "type": "emoji",
+          "text": "☕",
+          "x": 0.5,
+          "y": 0.56,
+          "w": 0.26
+        },
+        {
+          "at": "nobody",
+          "type": "bigword",
+          "text": "NEVER",
+          "color": "bad"
+        }
+      ]
+    },
+    {
+      "say": "{34%|Thirty four percent} of people have lost money this way.",
+      "visual": {
+        "type": "nodes",
+        "center": {
+          "emoji": "💰",
+          "label": "34% lost money"
+        },
+        "nodes": [
+          {
+            "emoji": "⏳",
+            "label": "20% expired",
+            "hot": true
+          },
+          {
+            "emoji": "🔍",
+            "label": "17% lost it"
+          },
+          {
+            "emoji": "🏚️",
+            "label": "12% closed"
+          }
+        ]
+      },
+      "source": "Bankrate survey, Sep 2024"
+    },
+    {
+      "say": "So check your drawer. Because right now,",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/wallet-cards.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "lines": [
+          "CHECK YOUR",
+          "DRAWER"
+        ],
+        "highlight": [
+          "drawer"
+        ],
+        "scale": 0.11,
+        "y": 0.14,
+        "lines_at": 0.3
+      }
+    }
+  ],
+  "first_comment": "How much do you have sitting on old gift cards right now? 🎁"
 }

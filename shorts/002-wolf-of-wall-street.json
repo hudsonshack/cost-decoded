@@ -1,0 +1,241 @@
+{
+ "format": "short",
+ "theme": "wallstreet",
+ "speed": 1.1,
+ "title": "The Real Wolf of Wall Street's $110M Bill",
+ "description": "Jordan Belfort was ordered to pay back $110.4 million to the clients his firm defrauded. Here's how much they actually got.\n\nSources: Wikipedia (court record summary), Celebrity Net Worth, DayTradingz, Fox Business\nPhotos: David Blaikie, ccPixs.com, Sheep purple, garryknight, AMagill (CC BY 2.0, Flickr)\n\n#wolfofwallstreet #jordanbelfort #money #finance #shorts",
+ "tags": [
+  "wolf of wall street",
+  "jordan belfort",
+  "stratton oakmont",
+  "restitution",
+  "finance",
+  "money"
+ ],
+ "ticker": [
+  "OWED $110.4M ▼",
+  "CLIENTS 1,513 ▼",
+  "SENTENCE 48 MO",
+  "SERVED 22 MO ▼",
+  "REPAID ~12% ▼",
+  "MOVIE RIGHTS $1M ▲"
+ ],
+ "highlight_words": [
+  "wolf",
+  "fbi",
+  "famous",
+  "waiting"
+ ],
+ "scenes": [
+  {
+   "say": "The real Wolf of Wall Street was ordered to pay back {$110 MILLION|one hundred ten million dollars}.",
+   "visual": {
+    "type": "photo_hook",
+    "file": "assets/photos/nyse.jpg",
+    "focus": [
+     0.5,
+     0.3
+    ],
+    "lines": [
+     "$110.4M OWED"
+    ],
+    "highlight": [
+     "$1104m"
+    ],
+    "scale": 0.11
+   },
+   "source": "Court records via Wikipedia"
+  },
+  {
+   "say": "Here's how much his victims actually got.",
+   "cues": [
+    {
+     "at": "much",
+     "type": "bigword",
+     "text": "$???",
+     "color": "accent"
+    },
+    {
+     "at": "victims",
+     "type": "cutout",
+     "file": "assets/cutouts/money-stack.png",
+     "x": 0.5,
+     "y": 0.3,
+     "w": 0.6,
+     "rot": -6
+    }
+   ]
+  },
+  {
+   "say": "Prosecutors said his firm's stock scams cost investors up to {$200 MILLION|two hundred million}.",
+   "visual": {
+    "type": "compare_bars",
+    "title": "The bill vs. the damage",
+    "prefix": "$",
+    "suffix": "M",
+    "decimals": 1,
+    "items": [
+     {
+      "label": "Ordered to repay",
+      "value": 110.4,
+      "color": "good"
+     },
+     {
+      "label": "Investor losses (est.)",
+      "value": 200,
+      "color": "bad"
+     }
+    ]
+   },
+   "cues": [
+    {
+     "at": "$200",
+     "type": "sticker",
+     "text": "📉 PUMP & DUMP",
+     "color": "bad",
+     "x": 0.27,
+     "y": 0.325,
+     "rot": 5
+    }
+   ],
+   "source": "Prosecutors' estimate, widely reported"
+  },
+  {
+   "say": "{1,513|Fifteen hundred and thirteen} clients got hit.",
+   "visual": {
+    "type": "people_grid",
+    "rows": 9,
+    "cols": 9,
+    "caption": "1,513 clients defrauded",
+    "color": "bad"
+   },
+   "source": "Wikipedia"
+  },
+  {
+   "say": "His sentence? Four years.",
+   "cues": [
+    {
+     "at": "sentence",
+     "type": "cutout",
+     "file": "assets/cutouts/gavel.png",
+     "x": 0.35,
+     "y": 0.3,
+     "w": 0.5,
+     "rot": -6
+    },
+    {
+     "at": "Four",
+     "type": "bigword",
+     "text": "4 YEARS",
+     "color": "bad"
+    },
+    {
+     "at": "years",
+     "type": "cutout",
+     "file": "assets/cutouts/handcuffs.png",
+     "x": 0.68,
+     "y": 0.48,
+     "w": 0.5,
+     "rot": 10
+    }
+   ],
+   "source": "Wikipedia"
+  },
+  {
+   "say": "He served {22 MONTHS|twenty two months}, after cooperating with the FBI.",
+   "visual": {
+    "type": "compare_bars",
+    "title": "Prison time, in months",
+    "suffix": " mo",
+    "items": [
+     {
+      "label": "Sentenced",
+      "value": 48,
+      "color": "muted"
+     },
+     {
+      "label": "Served",
+      "value": 22,
+      "color": "accent"
+     }
+    ]
+   },
+   "cues": [
+    {
+     "at": "FBI",
+     "type": "sticker",
+     "text": "🚨 FBI DEAL",
+     "color": "blue",
+     "x": 0.7,
+     "y": 0.27,
+     "rot": -7
+    }
+   ],
+   "source": "Wikipedia"
+  },
+  {
+   "say": "By most reports, only about {$13 MILLION|thirteen million} has been repaid.",
+   "visual": {
+    "type": "donut",
+    "value": 12,
+    "caption": "of the $110M repaid, by most estimates",
+    "color": "bad"
+   },
+   "source": "Celebrity Net Worth; DayTradingz"
+  },
+  {
+   "say": "Meanwhile, Hollywood paid him about {$1 MILLION|a million dollars} for the movie rights.",
+   "visual": {
+    "type": "big_number",
+    "value": 1000000,
+    "prefix": "$",
+    "caption": "for the movie rights",
+    "color": "accent",
+    "size": 220,
+    "dy": 0.12
+   },
+   "cues": [
+    {
+     "at": "Hollywood",
+     "type": "cutout",
+     "file": "assets/cutouts/clapperboard.png",
+     "x": 0.3,
+     "y": 0.23,
+     "w": 0.42,
+     "rot": -8
+    },
+    {
+     "at": "$1",
+     "type": "cutout",
+     "file": "assets/cutouts/money-stack.png",
+     "x": 0.72,
+     "y": 0.25,
+     "w": 0.42,
+     "rot": 8
+    },
+    {
+     "at": "dollars",
+     "type": "rain"
+    }
+   ],
+   "source": "Fox Business"
+  },
+  {
+   "say": "The movie made him famous. The victims are still waiting.",
+   "visual": {
+    "type": "statement",
+    "lines": [
+     "The movie made",
+     "him famous.",
+     "The victims are",
+     "still waiting."
+    ],
+    "highlight": [
+     "famous",
+     "waiting"
+    ],
+    "scale": 0.09
+   }
+  }
+ ]
+}

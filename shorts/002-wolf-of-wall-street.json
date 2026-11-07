@@ -36,10 +36,21 @@
     "highlight": [
      "$1104m"
     ],
-    "scale": 0.15,
-    "y": 0.5
+    "scale": 0.13,
+    "y": 0.13
    },
-   "source": "Court records via Wikipedia"
+   "source": "Court records via Wikipedia",
+   "cues": [
+    {
+     "at": "Wolf",
+     "type": "cutout",
+     "file": "assets/cutouts/belfort-user.png",
+     "x": 0.5,
+     "y": 0.71,
+     "w": 0.76,
+     "rot": 0
+    }
+   ]
   },
   {
    "say": "Here's how much his victims actually got.",
@@ -200,9 +211,20 @@
      "waiting"
     ],
     "scale": 0.1,
-    "y": 0.5,
-    "lines_at": 1.5
-   }
+    "y": 0.14,
+    "lines_at": 1.3
+   },
+   "cues": [
+    {
+     "at": "him",
+     "type": "cutout",
+     "file": "assets/cutouts/belfort-user.png",
+     "x": 0.5,
+     "y": 0.72,
+     "w": 0.72,
+     "rot": 0
+    }
+   ]
   }
  ],
  "first_comment": "Should he have to pay it all back before profiting off the movie? 👇"

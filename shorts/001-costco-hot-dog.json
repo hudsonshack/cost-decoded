@@ -2,7 +2,7 @@
  "format": "short",
  "speed": 1.12,
  "title": "How Costco Makes Money on a $1.50 Hot Dog",
- "description": "Costco's hot dog combo hasn't changed price since 1985, even though inflation says it should cost $4.65. Here's the real reason it's still that cheap.\n#costco #money #business #shorts\n\nSources: Spokesman-Review (Mar 2026), Scripps News / NPR (2026)\nPhotos: elsie.hui, JeepersMedia, m01229 (CC BY 2.0, Flickr)",
+ "description": "Costco's hot dog combo hasn't changed price since 1985, even though inflation says it should cost $4.65. Here's the real reason it's still that cheap.\n#costco #money #business #shorts\n\nSources: Spokesman-Review (Mar 2026), Scripps News / NPR (2026)\nPhotos: jeffreyw, TheCulinaryGeek, JeepersMedia, m01229 (CC BY 2.0, Flickr)",
  "tags": [
   "costco",
   "how costco makes money",
@@ -23,9 +23,9 @@
    "say": "This hot dog should cost {$4.65|four sixty five}.",
    "visual": {
     "type": "photo_hook",
-    "file": "assets/photos/costco-hotdog2.jpg",
+    "file": "assets/photos/hd-chili.jpg",
     "focus": [
-     0.45,
+     0.5,
      0.5
     ],
     "lines": [
@@ -51,6 +51,15 @@
     ]
    },
    "cues": [
+    {
+     "at": "still",
+     "type": "cutout",
+     "file": "assets/cutouts/hd-classic.png",
+     "x": 0.5,
+     "y": 0.7,
+     "w": 0.62,
+     "rot": -6
+    },
     {
      "at": "$1.50",
      "type": "bigword",
@@ -102,20 +111,20 @@
     {
      "at": "245",
      "type": "cutout",
-     "file": "assets/cutouts/costco-hotdog2.png",
-     "x": 0.27,
-     "y": 0.68,
+     "file": "assets/cutouts/hd-classic.png",
+     "x": 0.26,
+     "y": 0.67,
      "w": 0.5,
      "rot": -10
     },
     {
      "at": "them",
      "type": "cutout",
-     "file": "assets/cutouts/costco-hotdog2.png",
+     "file": "assets/cutouts/hd-chili.png",
      "x": 0.74,
-     "y": 0.7,
-     "w": 0.5,
-     "rot": 9
+     "y": 0.69,
+     "w": 0.55,
+     "rot": 8
     },
     {
      "at": "them",
@@ -132,6 +141,15 @@
      "type": "bigword",
      "text": "WHY?",
      "color": "bad"
+    },
+    {
+     "at": "price",
+     "type": "cutout",
+     "file": "assets/cutouts/hd-chicago.png",
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.7,
+     "rot": 4
     }
    ]
   },
@@ -191,9 +209,9 @@
    "say": "That {$1.50|dollar fifty} hot dog? It's bait.",
    "visual": {
     "type": "broll",
-    "file": "assets/photos/costco-hotdog2.jpg",
+    "file": "assets/photos/hd-relish.jpg",
     "focus": [
-     0.6,
+     0.5,
      0.5
     ],
     "pan": -0.08

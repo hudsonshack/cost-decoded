@@ -2,23 +2,16 @@
  "format": "short",
  "theme": "wallstreet",
  "speed": 1.1,
- "title": "The Real Wolf of Wall Street's $110M Bill",
- "description": "Jordan Belfort was ordered to pay back $110.4 million to the clients his firm defrauded. Here's how much they actually got.\n\nSources: Wikipedia (court record summary), Celebrity Net Worth, DayTradingz, Fox Business\nPhotos: David Blaikie, ccPixs.com, Sheep purple, garryknight, AMagill (CC BY 2.0, Flickr)\n\n#wolfofwallstreet #jordanbelfort #money #finance #shorts",
+ "title": "The Real Wolf of Wall Street's $110 Million Bill",
+ "description": "Jordan Belfort was ordered to pay back $110 million to the people his firm scammed. Here's how much they've actually gotten back.\n#wolfofwallstreet #jordanbelfort #money #shorts\n\nSources: Wikipedia (court record summary), Celebrity Net Worth, DayTradingz, Fox Business\nPhotos: David Blaikie, AMagill, ccPixs.com, garryknight, digitalphotographyhobbyist, Sheep purple (CC BY 2.0, Flickr)",
  "tags": [
   "wolf of wall street",
+  "the real wolf of wall street",
   "jordan belfort",
   "stratton oakmont",
-  "restitution",
+  "jordan belfort restitution",
   "finance",
   "money"
- ],
- "ticker": [
-  "OWED $110.4M ▼",
-  "CLIENTS 1,513 ▼",
-  "SENTENCE 48 MO",
-  "SERVED 22 MO ▼",
-  "REPAID ~12% ▼",
-  "MOVIE RIGHTS $1M ▲"
  ],
  "highlight_words": [
   "wolf",
@@ -34,35 +27,36 @@
     "file": "assets/photos/nyse.jpg",
     "focus": [
      0.5,
-     0.3
+     0.25
     ],
     "lines": [
-     "$110.4M OWED"
+     "$110.4M",
+     "OWED"
     ],
     "highlight": [
      "$1104m"
     ],
-    "scale": 0.11
+    "scale": 0.15,
+    "y": 0.5
    },
    "source": "Court records via Wikipedia"
   },
   {
    "say": "Here's how much his victims actually got.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/money-stack.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
    "cues": [
     {
      "at": "much",
      "type": "bigword",
      "text": "$???",
-     "color": "accent"
-    },
-    {
-     "at": "victims",
-     "type": "cutout",
-     "file": "assets/cutouts/money-stack.png",
-     "x": 0.5,
-     "y": 0.3,
-     "w": 0.6,
-     "rot": -6
+     "color": "good"
     }
    ]
   },
@@ -87,17 +81,6 @@
      }
     ]
    },
-   "cues": [
-    {
-     "at": "$200",
-     "type": "sticker",
-     "text": "📉 PUMP & DUMP",
-     "color": "bad",
-     "x": 0.27,
-     "y": 0.325,
-     "rot": 5
-    }
-   ],
    "source": "Prosecutors' estimate, widely reported"
   },
   {
@@ -113,16 +96,15 @@
   },
   {
    "say": "His sentence? Four years.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/gavel.jpg",
+    "focus": [
+     0.45,
+     0.5
+    ]
+   },
    "cues": [
-    {
-     "at": "sentence",
-     "type": "cutout",
-     "file": "assets/cutouts/gavel.png",
-     "x": 0.35,
-     "y": 0.3,
-     "w": 0.5,
-     "rot": -6
-    },
     {
      "at": "Four",
      "type": "bigword",
@@ -133,10 +115,10 @@
      "at": "years",
      "type": "cutout",
      "file": "assets/cutouts/handcuffs.png",
-     "x": 0.68,
-     "y": 0.48,
-     "w": 0.5,
-     "rot": 10
+     "x": 0.5,
+     "y": 0.68,
+     "w": 0.75,
+     "rot": -6
     }
    ],
    "source": "Wikipedia"
@@ -144,33 +126,27 @@
   {
    "say": "He served {22 MONTHS|twenty two months}, after cooperating with the FBI.",
    "visual": {
-    "type": "compare_bars",
-    "title": "Prison time, in months",
-    "suffix": " mo",
-    "items": [
+    "type": "nodes",
+    "center": {
+     "emoji": "⚖️",
+     "label": "His sentence"
+    },
+    "nodes": [
      {
-      "label": "Sentenced",
-      "value": 48,
-      "color": "muted"
+      "emoji": "📅",
+      "label": "48 months given"
      },
      {
-      "label": "Served",
-      "value": 22,
-      "color": "accent"
+      "emoji": "⏱️",
+      "label": "22 months served",
+      "hot": true
+     },
+     {
+      "emoji": "🤝",
+      "label": "Helped the FBI"
      }
     ]
    },
-   "cues": [
-    {
-     "at": "FBI",
-     "type": "sticker",
-     "text": "🚨 FBI DEAL",
-     "color": "blue",
-     "x": 0.7,
-     "y": 0.27,
-     "rot": -7
-    }
-   ],
    "source": "Wikipedia"
   },
   {
@@ -186,35 +162,22 @@
   {
    "say": "Meanwhile, Hollywood paid him about {$1 MILLION|a million dollars} for the movie rights.",
    "visual": {
-    "type": "big_number",
-    "value": 1000000,
-    "prefix": "$",
-    "caption": "for the movie rights",
-    "color": "accent",
-    "size": 220,
-    "dy": 0.12
+    "type": "broll",
+    "file": "assets/photos/clapperboard.jpg",
+    "focus": [
+     0.5,
+     0.4
+    ]
    },
    "cues": [
     {
-     "at": "Hollywood",
-     "type": "cutout",
-     "file": "assets/cutouts/clapperboard.png",
-     "x": 0.3,
-     "y": 0.23,
-     "w": 0.42,
-     "rot": -8
+     "at": "$1",
+     "type": "bigword",
+     "text": "$1M",
+     "color": "good"
     },
     {
      "at": "$1",
-     "type": "cutout",
-     "file": "assets/cutouts/money-stack.png",
-     "x": 0.72,
-     "y": 0.25,
-     "w": 0.42,
-     "rot": 8
-    },
-    {
-     "at": "dollars",
      "type": "rain"
     }
    ],
@@ -223,19 +186,24 @@
   {
    "say": "The movie made him famous. The victims are still waiting.",
    "visual": {
-    "type": "statement",
+    "type": "broll",
+    "file": "assets/photos/dollars.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ],
     "lines": [
-     "The movie made",
-     "him famous.",
-     "The victims are",
-     "still waiting."
+     "THE VICTIMS ARE",
+     "STILL WAITING"
     ],
     "highlight": [
-     "famous",
      "waiting"
     ],
-    "scale": 0.09
+    "scale": 0.1,
+    "y": 0.5,
+    "lines_at": 1.5
    }
   }
- ]
+ ],
+ "first_comment": "Should he have to pay it all back before profiting off the movie? 👇"
 }

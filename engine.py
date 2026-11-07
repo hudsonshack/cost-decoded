@@ -19,7 +19,7 @@ Usage: python3 engine.py script.json out.mp4
 import json, math, os, random, re, subprocess, sys, tempfile
 import numpy as np
 import soundfile as sf
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image, ImageDraw, ImageFilter, ImageChops, ImageEnhance
 from scipy.signal import resample_poly
 
 from engine_v2 import (HERE, FONT_DIR, FPS, SR, PALETTE, font, ease_out, ease_back, col, fade, tts, SFX, SFX_GAIN,
@@ -28,6 +28,7 @@ from engine_v2 import (HERE, FONT_DIR, FPS, SR, PALETTE, font, ease_out, ease_ba
 
 LIME = (70, 255, 110)
 BLACK_W = "Black" if os.path.exists(f"{FONT_DIR}Inter-Black.otf") else "ExtraBold"
+from look import GridBG, bloom, light_leak, nodes_cue_times  # noqa: E402  (registers broll/photo_hook/nodes visuals)
 
 # ---------------------------------------------------------------- word timing (whisper)
 _whisper = None
@@ -127,13 +128,26 @@ def bursts(words):
 _cut_cache = {}
 
 
-def cutout_sticker(path, width):
+def cutout_sticker(path, width, outline=False):
     """Cutout PNG with a white outline and soft shadow, like the reference edits."""
-    key = (path, width)
+    key = (path, width, outline)
     if key in _cut_cache:
         return _cut_cache[key]
     full = path if os.path.isabs(path) else os.path.join(HERE, path)
     im = Image.open(full).convert("RGBA")
+    if not outline:
+        r = width / im.width
+        im = im.resize((int(width), max(1, int(im.height * r))), Image.LANCZOS)
+        pad = 30
+        out = Image.new("RGBA", (im.width + pad * 2, im.height + pad * 2), (0, 0, 0, 0))
+        a = Image.new("L", out.size, 0)
+        a.paste(im.split()[3], (pad, pad + 14))
+        sh = Image.new("RGBA", out.size, (0, 0, 0, 255))
+        sh.putalpha(a.filter(ImageFilter.GaussianBlur(16)).point(lambda v: int(v * 0.75)))
+        out.alpha_composite(sh)
+        out.alpha_composite(im, (pad, pad))
+        _cut_cache[key] = out
+        return out
     r = width / im.width
     im = im.resize((int(width), max(1, int(im.height * r))), Image.LANCZOS)
     pad = max(12, int(width * 0.05))
@@ -178,10 +192,12 @@ def draw_caption(d, W, H, text, t_in, hl):
     s = re.sub(r"[.,;:]+$", "", text.upper())
     key = norm(text)
     is_money = bool(re.search(r"[\d$%]", text)) or any(norm(h) and norm(h) in key for h in hl)
-    f = fit_font(d, s, W * 0.9, S * (0.085 if land else 0.105), BLACK_W)
-    f = font(f.size * spring(t_in / 0.16) if t_in < 0.16 else f.size, BLACK_W)
-    d.text((W / 2, H * (0.86 if land else 0.735)), s, font=f, fill=LIME if is_money else (255, 255, 255),
-           anchor="mm", stroke_width=max(4, int(f.size * 0.12)), stroke_fill=(0, 0, 0))
+    f = fit_font(d, s, W * 0.84, S * (0.07 if land else 0.082), BLACK_W)
+    f = font(f.size * spring(t_in / 0.14) if t_in < 0.14 else f.size, BLACK_W)
+    y = H * (0.86 if land else 0.74)
+    d.text((W / 2 + 4, y + 6), s, font=f, fill=(0, 0, 0), anchor="mm", stroke_width=max(3, int(f.size * 0.06)), stroke_fill=(0, 0, 0))
+    d.text((W / 2, y), s, font=f, fill=PALETTE["good"] if is_money else (255, 255, 255), anchor="mm",
+           stroke_width=max(2, int(f.size * 0.035)), stroke_fill=(0, 0, 0))
 
 
 # ---------------------------------------------------------------- render
@@ -235,8 +251,12 @@ def render(script_path, out_path):
     for k, s in enumerate(scenes):
         if k > 0:
             place(starts[k] - 0.08, "whoosh", 0.35)
-        if s["sc"].get("visual", {}).get("type") == "photo_hook":
+        vt = s["sc"].get("visual", {}).get("type")
+        if vt == "photo_hook":
             place(starts[k] + 0.02, "mouse")
+        if vt == "nodes":
+            for tt in nodes_cue_times(s["sc"]["visual"]):
+                place(starts[k] + tt, "mouse", 0.9)
         for c in s["cues"]:
             name, g = {"cutout": ("mouse", 1.0), "card": ("mouse", 1.0), "sticker": ("pop", 0.8),
                        "emoji": ("pop", 0.8), "bigword": ("impact", 0.5), "rain": ("whoosh", 0.4)}.get(c["type"], ("pop", 0.6))
@@ -252,9 +272,8 @@ def render(script_path, out_path):
          "-pix_fmt", "yuv420p", "-af", "loudnorm=I=-14:TP=-1.5:LRA=11", "-ar", "48000", "-c:a", "aac",
          "-b:a", "160k", "-shortest", "-movflags", "+faststart", out_path], stdin=subprocess.PIPE)
 
-    bg_big = make_background(W, H, theme)
+    stage = GridBG(W, H)
     rain = Particles(W, H, "wallstreet", n=18, seed=11)
-    drift_parts = Particles(W, H, theme)
     src_f = font(S * 0.026, "Medium")
     ticker = spec.get("ticker")
     rng = random.Random(9)
@@ -265,7 +284,7 @@ def render(script_path, out_path):
         if key not in asset_cache:
             w = int(W * c.get("w", 0.5))
             if c["type"] == "cutout":
-                asset_cache[key] = cutout_sticker(c["file"], w)
+                asset_cache[key] = cutout_sticker(c["file"], w, c.get("outline", False))
             elif c["type"] == "card":
                 asset_cache[key] = photo_card(c["file"], w)
             elif c["type"] == "sticker":
@@ -282,15 +301,15 @@ def render(script_path, out_path):
         vis = sc.get("visual", {"type": "none"})
         vtype = vis.get("type", "none")
 
-        off = int((t * 40) % 100)
-        img = bg_big.crop((off, off, off + W, off + H))
+        img = stage.frame(t)
         d = ImageDraw.Draw(img)
-        drift_parts.draw(d, img, t)
 
-        # big background words go behind everything else
-        for c in s["cues"]:
-            if c["type"] == "bigword" and lt >= c["t"]:
-                draw_bigword(img, W, H, c["text"], c.get("color", "bad"), (lt - c["t"]) / 0.35)
+        full_bleed = vtype in ("broll", "photo_hook")
+        # big words sit behind graphics, but on top of full-screen photos
+        if not full_bleed:
+            for c in s["cues"]:
+                if c["type"] == "bigword" and lt >= c["t"]:
+                    draw_bigword(img, W, H, c["text"], c.get("color", "bad"), (lt - c["t"]) / 0.35)
 
         if vtype != "none":
             dy = vis.get("dy", 0)
@@ -301,6 +320,10 @@ def render(script_path, out_path):
             else:
                 VISUALS[vtype][0](d, img, W, H, lt, dur, vis)
 
+        if full_bleed:
+            for c in s["cues"]:
+                if c["type"] == "bigword" and lt >= c["t"]:
+                    draw_bigword(img, W, H, c["text"], c.get("color", "bad"), (lt - c["t"]) / 0.35)
         if any(c["type"] == "rain" and lt >= c["t"] for c in s["cues"]):
             rain.draw(d, img, t)
 
@@ -320,6 +343,9 @@ def render(script_path, out_path):
         if shake:
             img = img.transform(img.size, Image.AFFINE, (1, 0, rng.randint(-10, 10), 0, 1, rng.randint(-10, 10)),
                                 fillcolor=PALETTE["bg"])
+        img = bloom(img, W, H)
+        if idx > 0 and idx % 3 == 1 and lt < 0.32:
+            img = light_leak(img, W, H, lt / 0.32)
         d = ImageDraw.Draw(img)
 
         if ticker:

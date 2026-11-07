@@ -1,15 +1,16 @@
 {
  "format": "short",
  "speed": 1.12,
- "title": "Why Costco Won't Raise the $1.50 Hot Dog",
- "description": "Costco's hot dog and soda has cost $1.50 since 1985. Adjusted for inflation it would be about $4.65. So why won't they raise it?\n\nSources: Spokesman-Review (Mar 2026), Scripps News / NPR (2026)\nPhotos: elsie.hui, JeepersMedia, digitalphotographyhobbyist (CC BY 2.0, Flickr)\n\n#costco #money #business #economics #shorts",
+ "title": "How Costco Makes Money on a $1.50 Hot Dog",
+ "description": "Costco's hot dog combo hasn't changed price since 1985, even though inflation says it should cost $4.65. Here's the real reason it's still that cheap.\n#costco #money #business #shorts\n\nSources: Spokesman-Review (Mar 2026), Scripps News / NPR (2026)\nPhotos: elsie.hui, JeepersMedia, m01229 (CC BY 2.0, Flickr)",
  "tags": [
   "costco",
-  "costco hot dog",
   "how costco makes money",
+  "costco hot dog",
+  "costco membership",
   "loss leader",
   "business explained",
-  "money"
+  "how companies make money"
  ],
  "highlight_words": [
   "costco",
@@ -28,41 +29,39 @@
      0.5
     ],
     "lines": [
-     "IT SHOULD COST $4.65"
+     "IT SHOULD COST",
+     "$4.65"
     ],
     "highlight": [
      "$4.65"
     ],
-    "scale": 0.1
+    "scale": 0.13,
+    "y": 0.5
    },
    "source": "Scripps News / NPR"
   },
   {
    "say": "But Costco still charges {$1.50|a dollar fifty}.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/costco-store.jpg",
+    "focus": [
+     0.5,
+     0.4
+    ]
+   },
    "cues": [
     {
-     "at": "Costco",
-     "type": "card",
-     "file": "assets/photos/costco-store.jpg",
-     "x": 0.5,
-     "y": 0.25,
-     "w": 0.74,
-     "rot": -3
-    },
-    {
      "at": "$1.50",
-     "type": "sticker",
-     "text": "🌭 $1.50 SINCE 1985",
-     "color": "accent",
-     "x": 0.5,
-     "y": 0.47,
-     "rot": 4
+     "type": "bigword",
+     "text": "$1.50",
+     "color": "good"
     }
    ],
    "source": "Scripps News / NPR"
   },
   {
-   "say": "That's about {68% OFF|sixty eight percent off}, adjusted for inflation.",
+   "say": "That's {68% OFF|sixty eight percent off}, adjusted for inflation.",
    "visual": {
     "type": "compare_bars",
     "title": "Costco vs. inflation",
@@ -72,7 +71,7 @@
      {
       "label": "Costco today",
       "value": 1.5,
-      "color": "accent"
+      "color": "good"
      },
      {
       "label": "With inflation",
@@ -81,50 +80,45 @@
      }
     ]
    },
-   "cues": [
-    {
-     "at": "68%",
-     "type": "sticker",
-     "text": "📉 68% OFF",
-     "color": "bad",
-     "x": 0.3,
-     "y": 0.3,
-     "rot": -6
-    }
-   ],
    "source": "Scripps News / NPR"
   },
   {
-   "say": "And in fiscal 2025, they sold over {245 MILLION|two hundred forty five million} of them.",
+   "say": "In fiscal 2025, they sold over {245 MILLION|two hundred forty five million} of them.",
    "visual": {
-    "type": "big_number",
-    "value": 245000000,
-    "caption": "combos sold in fiscal 2025",
-    "color": "text",
-    "size": 200,
-    "dy": 0.12
+    "type": "broll",
+    "file": "assets/photos/costco-foodcourt.jpg",
+    "focus": [
+     0.5,
+     0.3
+    ]
    },
    "cues": [
     {
-     "at": "sold",
-     "type": "cutout",
-     "file": "assets/cutouts/costco-hotdog2.png",
-     "x": 0.3,
-     "y": 0.22,
-     "w": 0.4,
-     "rot": -8
+     "at": "245",
+     "type": "bigword",
+     "text": "245M",
+     "color": "good"
     },
     {
      "at": "245",
      "type": "cutout",
      "file": "assets/cutouts/costco-hotdog2.png",
-     "x": 0.7,
-     "y": 0.24,
-     "w": 0.4,
+     "x": 0.27,
+     "y": 0.68,
+     "w": 0.5,
+     "rot": -10
+    },
+    {
+     "at": "them",
+     "type": "cutout",
+     "file": "assets/cutouts/costco-hotdog2.png",
+     "x": 0.74,
+     "y": 0.7,
+     "w": 0.5,
      "rot": 9
     },
     {
-     "at": "245",
+     "at": "them",
      "type": "rain"
     }
    ],
@@ -137,15 +131,7 @@
      "at": "why",
      "type": "bigword",
      "text": "WHY?",
-     "color": "accent"
-    },
-    {
-     "at": "price",
-     "type": "emoji",
-     "text": "🤔",
-     "x": 0.78,
-     "y": 0.56,
-     "w": 0.22
+     "color": "bad"
     }
    ]
   },
@@ -154,22 +140,16 @@
    "visual": {
     "type": "statement",
     "lines": [
-     "The hot dog isn't",
-     "the product."
+     "The hot dog",
+     "isn't the product.",
+     "You are."
+    ],
+    "highlight": [
+     "you",
+     "are"
     ],
     "scale": 0.1
-   },
-   "cues": [
-    {
-     "at": "You",
-     "type": "sticker",
-     "text": "🫵 YOU ARE",
-     "color": "accent",
-     "x": 0.5,
-     "y": 0.56,
-     "rot": -4
-    }
-   ]
+   }
   },
   {
    "say": "Membership fees were about {64%|sixty four percent} of Costco's profit in fiscal 2025.",
@@ -179,48 +159,46 @@
     "caption": "of Costco's profit came from membership fees",
     "color": "good"
    },
-   "cues": [
-    {
-     "at": "Membership",
-     "type": "sticker",
-     "text": "💳 MEMBERSHIPS",
-     "color": "good",
-     "x": 0.66,
-     "y": 0.15,
-     "rot": -6
-    }
-   ],
    "source": "Spokesman-Review, 2026"
   },
   {
    "say": "That's {82 MILLION|eighty two million} members, paying up to {$130|a hundred thirty dollars} a year.",
    "visual": {
-    "type": "people_grid",
-    "rows": 9,
-    "cols": 9,
-    "caption": "82.1M members  •  $65–$130 / year",
-    "color": "blue"
+    "type": "nodes",
+    "center": {
+     "emoji": "👤",
+     "label": "82.1M members"
+    },
+    "nodes": [
+     {
+      "emoji": "💳",
+      "label": "$65 Gold Star"
+     },
+     {
+      "emoji": "💎",
+      "label": "$130 Executive",
+      "hot": true
+     },
+     {
+      "emoji": "📅",
+      "label": "Every year"
+     }
+    ]
    },
-   "cues": [
-    {
-     "at": "$130",
-     "type": "rain"
-    }
-   ],
    "source": "Scripps News, Feb 2026 figures"
   },
   {
    "say": "That {$1.50|dollar fifty} hot dog? It's bait.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/costco-hotdog2.jpg",
+    "focus": [
+     0.6,
+     0.5
+    ],
+    "pan": -0.08
+   },
    "cues": [
-    {
-     "at": "hot",
-     "type": "cutout",
-     "file": "assets/cutouts/costco-hotdog2.png",
-     "x": 0.5,
-     "y": 0.26,
-     "w": 0.6,
-     "rot": -5
-    },
     {
      "at": "bait",
      "type": "bigword",
@@ -229,5 +207,6 @@
     }
    ]
   }
- ]
+ ],
+ "first_comment": "Would you still buy it at $4.65? 🌭"
 }

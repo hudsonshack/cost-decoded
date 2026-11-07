@@ -33,3 +33,4 @@ Takeaways now in the runbook:
 
 ## A/B tests
 - Approved Nov 7: female narrator (Kokoro af_heart, speed 1.0) on the next new video; quiet beat (Open Lo-Fi "Empty Street Static", CC0, -22 dB, ducked 4 dB under speech) on the one after. Previews: both transcribe word-for-word; the beat sits about 20 dB under the voice.
+- Nov 7 evening: Hudson liked both previews. Rule now: scheduled videos stay as-is; new videos alternate Setup A (female narrator) and Setup B (current voice + quiet beat), starting with A. After 3+ videos each, switch to the winner if its interaction per view is 30%+ higher.

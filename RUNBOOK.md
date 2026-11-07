@@ -55,14 +55,14 @@ Matched frame-by-frame to Hudson's reference Shorts. Keep every video in this st
   - Variety protects monetization: YouTube's inauthentic-content policy targets templated, mass-produced channels, so no two videos in a row share a format or visual order, and every script must contain real research and a point of view.
 - **Voice:** free smooth voice, speed 1.05 for Story/Paradox (about 160 words a minute, like the winners), 1.10 for Trick.
 
-## A/B tests (approved by Hudson, Nov 7)
-Run each test on one new video, change nothing else, and log it in LEARNINGS.md under "A/B tests" (file, date, what changed).
-Compare against the other videos in the Monday report (views, likes per view, comments, and average percentage viewed if Metricool shows it).
-Report the result to Hudson and let him decide whether it becomes the default.
-1. **Female narrator** (next new video, expected Nov 12): set `"voice": "af_heart", "speed": 1.0` in the script. No music. Use the Story format so it compares cleanly with 005 (popcorn).
-2. **Quiet beat** (the new video after that, expected Nov 13): current voice, plus `"music": {"file": "assets/music/empty-street-static.mp3", "db": -22, "duck_db": 4}`. For videos over 95 s use `high-rise-haze.mp3`. Story format.
+## A/B tests (approved by Hudson, Nov 7; split rule set the same evening)
+Hudson liked both previews. Already-scheduled videos stay as they are. Every NEW video alternates between the two setups:
+- **Setup A, female narrator:** `"voice": "af_heart", "speed": 1.0`, no music.
+- **Setup B, quiet beat:** current voice (default), plus `"music": {"file": "assets/music/empty-street-static.mp3", "db": -22, "duck_db": 4}` (use `high-rise-haze.mp3` for videos over 95 s).
+Start with A on the next new video (expected Nov 12), then B, then A, and so on. Check LEARNINGS.md "A/B tests" for which setup the last video used, and log each one (file, date, setup, format).
+**Decision rule (you decide, then tell Hudson):** once each setup has at least 3 videos with 3+ days of data, compare interaction per view: (likes + comments) / views, plus average percentage viewed if Metricool shows it. If one setup is at least 30% higher and its views aren't clearly lower, make it the default for every video, note it in LEARNINGS.md, and report it in the next Monday report. Otherwise keep alternating and re-check weekly.
+Spread formats across both setups (don't put every Story on A and every Trick on B), so the format doesn't skew the comparison.
 Preview any script's audio in seconds without rendering frames: `AUDIO_ONLY=1 python3 engine.py <script.json> out/<name>.mp4` writes `out/<name>.wav`.
-Until a test is adopted, every other video stays on the current voice with no music.
 
 ## Metadata rules (every upload)
 - **Title:** under 60 characters, written as the plain question people search ("Why Movie Theater Popcorn Is So Expensive", "How North Korea Actually Makes Money"), brand or subject first, no hashtags. Check demand with vidiq_keyword_research when credits allow.

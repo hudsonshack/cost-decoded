@@ -332,8 +332,9 @@ def v_compare_bars(d, img, W, H, t, dur, s):
         a = ease_back(t / 0.3)
         tf = fit_font(d, s["title"], W * 0.88, S * 0.066)
         text_center(d, (W / 2, H * (0.12 if land else 0.15)), s["title"], font(tf.size * (0.6 + 0.4 * a)), PALETTE["text"])
+    rts = s.get("_t") or []
     for k, it in enumerate(items):
-        st = 0.3 + 0.45 * k
+        st = rts[k] if k < len(rts) else 0.3 + 0.45 * k
         p = ease_back((t - st) / 0.7) if t > st else 0
         p = min(p, 1.08)
         h = (area_bot - area_top - H * 0.06) * (it["value"] / vmax) * p

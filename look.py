@@ -79,18 +79,46 @@ _broll_cache = {}
 OVERSCAN = 1.22
 
 
-def broll_base(path, W, H):
-    key = (path, W, H)
+def broll_base(path, W, H, archival=False):
+    key = (path, W, H, archival)
     if key not in _broll_cache:
         full = path if os.path.isabs(path) else os.path.join(HERE, path)
         im = Image.open(full).convert("RGB")
         r = max(W * OVERSCAN / im.width, H * OVERSCAN / im.height)
         im = im.resize((int(im.width * r), int(im.height * r)), Image.LANCZOS)
-        im = ImageEnhance.Contrast(im).enhance(1.18)
-        im = ImageEnhance.Color(im).enhance(1.12)
-        im = ImageEnhance.Brightness(im).enhance(0.8)
+        if archival:
+            # old-film look for history beats: warm sepia, lifted contrast
+            from PIL import ImageOps
+            g = ImageEnhance.Contrast(ImageOps.grayscale(im)).enhance(1.2)
+            im = ImageOps.colorize(g, black=(16, 11, 6), white=(250, 233, 198), mid=(132, 104, 72))
+            im = ImageEnhance.Brightness(im).enhance(0.86)
+        else:
+            im = ImageEnhance.Contrast(im).enhance(1.18)
+            im = ImageEnhance.Color(im).enhance(1.12)
+            im = ImageEnhance.Brightness(im).enhance(0.8)
         _broll_cache[key] = im
     return _broll_cache[key]
+
+
+_grain = []
+
+
+def film_grain(img, W, H, t):
+    """Grain, flicker and the odd scratch over an archival frame (in place)."""
+    import random
+    if not _grain:
+        rnd = random.Random(3)
+        for _ in range(6):
+            n = Image.effect_noise((W // 3, H // 3), 48).resize((W, H), Image.BILINEAR).convert("RGB")
+            _grain.append(n)
+    fi = int(t * 24)
+    out = Image.blend(img, _grain[fi % len(_grain)], 0.075)
+    flick = 1.0 + 0.035 * math.sin(t * 41) + 0.02 * math.sin(t * 13.7)
+    out = out.point([min(255, int(v * flick)) for v in range(256)] * 3)
+    if (fi // 7) % 3 == 0:
+        x = (fi * 7919) % W
+        ImageDraw.Draw(out).line([(x, 0), (x + 6, H)], fill=(235, 225, 200), width=2)
+    img.paste(out)
 
 
 def spaced_text(d, xy, text, f, fill, spacing):
@@ -104,7 +132,7 @@ def spaced_text(d, xy, text, f, fill, spacing):
 def v_broll(d, img, W, H, t, dur, s):
     """Full-bleed photo with slow push and pan, darkened grade, fades top/bottom, optional glowing headline."""
     S = min(W, H)
-    base = broll_base(s["file"], W, H)
+    base = broll_base(s["file"], W, H, s.get("archival", False))
     k = t / max(dur, 0.1)
     z = 1.0 + 0.10 * k
     # window = the frame size scaled into base pixels, shrinking as we zoom in
@@ -116,6 +144,8 @@ def v_broll(d, img, W, H, t, dur, s):
     cy = (base.height - ch) * fy
     frame = base.crop((int(cx), int(cy), int(cx) + cw, int(cy) + ch)).resize((W, H), Image.BILINEAR)
     img.paste(frame, (0, 0))
+    if s.get("archival"):
+        film_grain(img, W, H, t)
     grad = Image.linear_gradient("L").resize((W, int(H * 0.5)))
     img.paste(Image.new("RGB", grad.size, PALETTE["bg"]), (0, H - grad.height), grad.point(lambda v: int(v * 0.92)))
     top = Image.linear_gradient("L").rotate(180).resize((W, int(H * 0.18)))

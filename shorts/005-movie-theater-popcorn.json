@@ -1,0 +1,327 @@
+{
+  "format": "short",
+  "speed": 1.05,
+  "playbook": "story",
+  "title": "Why Movie Theater Popcorn Is So Expensive",
+  "description": "Movie theaters hand studios more than half of a blockbuster ticket but keep about 82 cents of every snack dollar, and the trick goes back to the Great Depression.\n#movietheater #popcorn #business #shorts\n\nSources: AMC Entertainment 2025 annual report and Q2 2025 10-Q; Smithsonian Magazine; Reader's Digest; NBC News/CNBC; Los Angeles Times (Apr 2026); The New York Times via Moneywise (2026); Hypebeast and Comic Basics (Oct 2026)\nPhotos: y entonces, Mike J Maguire, Shook Photos, Kjmagnuson, State Library Victoria, Rennett Stowe, superiphi, blondinrikard (CC BY 2.0, Flickr); Russell Lee, Library of Congress (public domain)",
+  "tags": [
+    "movie theater popcorn",
+    "why is movie theater popcorn so expensive",
+    "popcorn bucket",
+    "collectible popcorn bucket",
+    "amc theatres",
+    "how movie theaters make money",
+    "business explained"
+  ],
+  "highlight_words": [
+    "popcorn",
+    "snacks",
+    "survived"
+  ],
+  "first_comment": "Be honest: do you sneak snacks into the movies, or pay for the popcorn? 🍿",
+  "scenes": [
+    {
+      "say": "Theaters are selling a {$90|ninety dollar} Godzilla popcorn bucket. And they need you to buy it.",
+      "visual": {
+        "type": "photo_hook",
+        "file": "assets/photos/pc-goodpop.jpg",
+        "focus": [
+          0.74,
+          0.5
+        ],
+        "pan": 0.0,
+        "lines": [
+          "$90 POPCORN",
+          "BUCKET"
+        ],
+        "highlight": [
+          "$90"
+        ],
+        "scale": 0.13,
+        "y": 0.13
+      },
+      "source": "Hypebeast Oct 2026; Comic Basics Oct 2026; Alamo Drafthouse pre-order listing",
+      "cues": [
+        {
+          "at": "Godzilla",
+          "type": "emoji",
+          "text": "🦖",
+          "x": 0.74,
+          "y": 0.43,
+          "w": 0.26,
+          "rot": 8
+        }
+      ]
+    },
+    {
+      "say": "Because when a blockbuster hits, the studio takes more than half of every ticket.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/pc-marquee.jpg",
+        "focus": [
+          0.45,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "blockbuster",
+          "type": "cutout",
+          "file": "assets/cutouts/pc-ticket.png",
+          "x": 0.5,
+          "y": 0.62,
+          "w": 0.5,
+          "rot": -7
+        },
+        {
+          "at": "half",
+          "type": "bigword",
+          "text": "HALF",
+          "color": "bad"
+        }
+      ],
+      "source": "AMC 10-Q Q2 2025 (US film exhibition costs 54.4% of admissions); NBC News/CNBC 2015 (Disney 60%+ on Force Awakens)"
+    },
+    {
+      "say": "But on snacks, AMC keeps about {82¢|eighty two cents} of every dollar after paying for the food.",
+      "visual": {
+        "type": "split_bars",
+        "title": "Who gets each $1 at AMC",
+        "unit": "¢",
+        "reveal_at": [
+          "But",
+          "snacks"
+        ],
+        "bars": [
+          {
+            "label": "Blockbuster ticket",
+            "parts": [
+              {
+                "label": "studio",
+                "value": 54,
+                "color": "bad"
+              },
+              {
+                "label": "theater",
+                "value": 46,
+                "color": "good"
+              }
+            ]
+          },
+          {
+            "label": "Snacks",
+            "parts": [
+              {
+                "label": "food",
+                "value": 18,
+                "color": "bad"
+              },
+              {
+                "label": "theater",
+                "value": 82,
+                "color": "good",
+                "hot": true
+              }
+            ]
+          }
+        ]
+      },
+      "source": "AMC 2025 annual report (US food and beverage costs 18.1% of F&B revenues); AMC 10-Q Q2 2025"
+    },
+    {
+      "say": "Funny thing is, theaters used to ban popcorn.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/pc-orpheum.jpg",
+        "focus": [
+          0.5,
+          0.35
+        ],
+        "archival": true
+      },
+      "cues": [
+        {
+          "at": "ban",
+          "type": "emoji",
+          "text": "🚫",
+          "x": 0.5,
+          "y": 0.42,
+          "w": 0.32
+        }
+      ],
+      "source": "Smithsonian Magazine (Andrew F. Smith, Popped Culture); Reader's Digest"
+    },
+    {
+      "say": "In the {1920s|nineteen twenties}, fancy movie palaces didn't want it crunching into their carpets.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/pc-hoyts.jpg",
+        "focus": [
+          0.55,
+          0.5
+        ],
+        "archival": true
+      },
+      "cues": [
+        {
+          "at": "1920s",
+          "type": "bigword",
+          "text": "1920s",
+          "color": "text"
+        }
+      ],
+      "source": "Smithsonian Magazine; Snopes/Yahoo fact check 2024"
+    },
+    {
+      "say": "Then the Great Depression hit. And a bag of popcorn cost just {5–10¢|five to ten cents}.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/pc-stand1940.jpg",
+        "focus": [
+          0.38,
+          0.5
+        ],
+        "archival": true,
+        "pan": 0.03
+      },
+      "cues": [
+        {
+          "at": "5–10¢",
+          "type": "bigword",
+          "text": "10¢",
+          "color": "good"
+        }
+      ],
+      "source": "Smithsonian Magazine; Reader's Digest"
+    },
+    {
+      "say": "Theaters that started selling snacks survived. A lot of the ones that refused didn't.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/pc-machine.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "survived",
+          "type": "bigword",
+          "text": "SAVED",
+          "color": "good"
+        }
+      ],
+      "source": "Smithsonian Magazine (Andrew F. Smith); Snopes/Yahoo fact check 2024"
+    },
+    {
+      "say": "By {1945|nineteen forty five}, over half the popcorn eaten in America was eaten at the movies.",
+      "visual": {
+        "type": "ticker",
+        "from": 1929,
+        "to": 1945,
+        "count_at": 0.0,
+        "count_dur": 0.8,
+        "label_top": "by",
+        "lines": [
+          "Over half of U.S. popcorn",
+          "was eaten at the movies"
+        ],
+        "highlight": [
+          "half",
+          "movies"
+        ]
+      },
+      "source": "Smithsonian Magazine; Reader's Digest"
+    },
+    {
+      "say": "Now they're doing it again.",
+      "visual": {
+        "type": "statement",
+        "lines": [
+          "NOW THEY'RE",
+          "DOING IT",
+          "AGAIN"
+        ],
+        "highlight": [
+          "again"
+        ],
+        "scale": 0.105
+      }
+    },
+    {
+      "say": "In {2023|twenty twenty three}, AMC sold collectible buckets for {9|nine} movies. This year, more than {40|forty}.",
+      "visual": {
+        "type": "compare_bars",
+        "title": "Movies with AMC buckets",
+        "reveal_at": [
+          "2023",
+          "40"
+        ],
+        "items": [
+          {
+            "label": "2023",
+            "value": 9,
+            "color": "text"
+          },
+          {
+            "label": "2026",
+            "value": 40,
+            "color": "good"
+          }
+        ]
+      },
+      "source": "Los Angeles Times, Apr 6 2026 (Iris Kwok); LA Times summary via Pulse"
+    },
+    {
+      "say": "AMC made {$54 MILLION|fifty four million dollars} on movie merch in {2023|twenty twenty three}. This year, it expects about {$100 MILLION|a hundred million}.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/pc-bucket.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "$54",
+          "type": "bigword",
+          "text": "$54M",
+          "color": "good"
+        },
+        {
+          "at": "$100",
+          "type": "bigword",
+          "text": "$100M",
+          "color": "good"
+        },
+        {
+          "at": "$100",
+          "type": "rain"
+        }
+      ],
+      "source": "The Wrap 2024 and LA Times Apr 2026 ($54M); The New York Times via Moneywise 2026 (~$100M)"
+    },
+    {
+      "say": "Popcorn kept the lights on during the Depression. And it's still keeping them on. Which is exactly why",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/pc-audience.jpg",
+        "focus": [
+          0.5,
+          0.45
+        ]
+      },
+      "cues": [
+        {
+          "at": "keeping",
+          "type": "follow",
+          "x": 0.5,
+          "y": 0.58
+        }
+      ],
+      "source": "LA Times Apr 2026 (popcorn as a lifeline for movie palaces); AMC 2025 annual report"
+    }
+  ]
+}

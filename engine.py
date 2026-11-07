@@ -29,6 +29,7 @@ from engine_v2 import (HERE, FONT_DIR, FPS, SR, PALETTE, font, ease_out, ease_ba
 LIME = (70, 255, 110)
 BLACK_W = "Black" if os.path.exists(f"{FONT_DIR}Inter-Black.otf") else "ExtraBold"
 from look import GridBG, bloom, light_leak, nodes_cue_times  # noqa: E402  (registers broll/photo_hook/nodes visuals)
+from look2 import draw_follow  # noqa: E402  (registers split_bars/ticker visuals)
 
 # ---------------------------------------------------------------- word timing (whisper)
 _whisper = None
@@ -231,7 +232,22 @@ def render(script_path, out_path):
                 si = pos + 1
                 c["t"] = toks[pos][1]
             cues.append(c)
-        scenes.append({"sc": sc, "dur": dur, "words": words, "bursts": bursts([(t[0], t[1], t[2]) for t in toks]), "cues": cues})
+        # visuals can reveal pieces on spoken words too ("reveal_at": ["ticket", "snacks"])
+        vis = dict(sc.get("visual", {"type": "none"}))
+        if vis.get("reveal_at"):
+            ts, sj = [], 0
+            for wd in vis["reveal_at"]:
+                target = norm(wd)
+                pos = next((j for j in range(sj, len(toks)) if target and target in norm(toks[j][0])), None)
+                if pos is None:
+                    pos = next((j for j in range(len(toks)) if target in norm(toks[j][0])), 0)
+                sj = pos + 1
+                ts.append(toks[pos][1])
+            vis["_t"] = ts
+            if vis.get("type") == "ticker":
+                vis["count_at"] = ts[0]
+        scenes.append({"sc": sc, "vis": vis, "dur": dur, "words": words,
+                       "bursts": bursts([(t[0], t[1], t[2]) for t in toks]), "cues": cues})
 
     voice_track = np.concatenate(audio + [np.zeros(int(0.12 * SR), np.float32)])
     total = len(voice_track) / SR
@@ -251,16 +267,25 @@ def render(script_path, out_path):
     for k, s in enumerate(scenes):
         if k > 0:
             place(starts[k] - 0.08, "whoosh", 0.35)
-        vt = s["sc"].get("visual", {}).get("type")
+        vt = s["vis"].get("type")
         if vt == "photo_hook":
             place(starts[k] + 0.02, "mouse")
         if vt == "nodes":
-            for tt in nodes_cue_times(s["sc"]["visual"]):
+            for tt in nodes_cue_times(s["vis"]):
                 place(starts[k] + tt, "mouse", 0.9)
+        if vt in ("split_bars", "ticker"):
+            for tt, nm in VISUALS[vt][1](s["vis"]):
+                place(starts[k] + tt, nm, {"tick": 0.7, "impact": 0.45}.get(nm, 0.9))
+        if vt == "compare_bars":
+            rts = s["vis"].get("_t") or []
+            for kk in range(len(s["vis"]["items"])):
+                place(starts[k] + (rts[kk] if kk < len(rts) else 0.3 + 0.45 * kk), "mouse", 0.85)
         for c in s["cues"]:
             name, g = {"cutout": ("mouse", 1.0), "card": ("mouse", 1.0), "sticker": ("pop", 0.8),
                        "emoji": ("pop", 0.8), "bigword": ("impact", 0.5), "rain": ("whoosh", 0.4)}.get(c["type"], ("pop", 0.6))
             place(starts[k] + c["t"], name, g)
+            if c["type"] == "follow":
+                place(starts[k] + c["t"] + c.get("click", 0.55), "mouse", 1.0)
     mix = np.clip(voice_track * 0.95 + fx, -1, 1)
     tmp = tempfile.mkdtemp()
     wav = os.path.join(tmp, "mix.wav")
@@ -298,7 +323,7 @@ def render(script_path, out_path):
         idx = min(int(np.searchsorted(starts, t, side="right") - 1), len(scenes) - 1)
         s = scenes[idx]
         sc, lt, dur = s["sc"], t - starts[idx], s["dur"]
-        vis = sc.get("visual", {"type": "none"})
+        vis = s["vis"]
         vtype = vis.get("type", "none")
 
         img = stage.frame(t)
@@ -306,10 +331,12 @@ def render(script_path, out_path):
 
         full_bleed = vtype in ("broll", "photo_hook")
         # big words sit behind graphics, but on top of full-screen photos
+        # only the latest big word shows, so two in one scene replace each other instead of overlapping
+        bw = [c for c in s["cues"] if c["type"] == "bigword" and lt >= c["t"]]
+        bw = bw[-1:] if bw else []
         if not full_bleed:
-            for c in s["cues"]:
-                if c["type"] == "bigword" and lt >= c["t"]:
-                    draw_bigword(img, W, H, c["text"], c.get("color", "bad"), (lt - c["t"]) / 0.35)
+            for c in bw:
+                draw_bigword(img, W, H, c["text"], c.get("color", "bad"), (lt - c["t"]) / 0.35)
 
         if vtype != "none":
             dy = vis.get("dy", 0)
@@ -321,15 +348,17 @@ def render(script_path, out_path):
                 VISUALS[vtype][0](d, img, W, H, lt, dur, vis)
 
         if full_bleed:
-            for c in s["cues"]:
-                if c["type"] == "bigword" and lt >= c["t"]:
-                    draw_bigword(img, W, H, c["text"], c.get("color", "bad"), (lt - c["t"]) / 0.35)
+            for c in bw:
+                draw_bigword(img, W, H, c["text"], c.get("color", "bad"), (lt - c["t"]) / 0.35)
         if any(c["type"] == "rain" and lt >= c["t"] for c in s["cues"]):
             rain.draw(d, img, t)
 
         # stacked pop-ins
         for c in s["cues"]:
             if c["type"] in ("bigword", "rain") or lt < c["t"]:
+                continue
+            if c["type"] == "follow":
+                draw_follow(img, W, H, lt, c)
                 continue
             k = (lt - c["t"]) / 0.24
             wob = math.sin((lt - c["t"]) * 5) * 1.5

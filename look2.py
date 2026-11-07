@@ -212,3 +212,67 @@ def draw_follow(img, W, H, lt, c):
         hand = emoji_img("👆", int(S * 0.11))
         hy = y + S * 0.16 - S * 0.10 * ease_out(min(1, k / click))
         paste_scaled(img, hand, x + W * 0.16, hy, 1.0 if k < click else 0.92)
+
+
+# ---------------------------------------------------------------- proof card
+def v_proof(d, img, W, H, t, dur, s):
+    """A 'receipt' moment: a paper card with a verbatim line from a filing or article and a highlighter sweep.
+    s = {"kicker": "AMC 2025 annual report", "quote": "...exact words...", "highlight": "exact sub-phrase", "hl_at": 0.6}
+    Generic paper styling on purpose: it must never imitate a real outlet's page design."""
+    S = min(W, H)
+    a = ease_out(t / 0.35)
+    cw, pad = W * 0.84, S * 0.055
+    qf = font(S * 0.058, "Bold")
+    lines = []
+    for para in [s["quote"]]:
+        words, cur = para.split(), ""
+        for w in words:
+            test = (cur + " " + w).strip()
+            if d.textlength(test, font=qf) > cw - pad * 2:
+                lines.append(cur); cur = w
+            else:
+                cur = test
+        lines.append(cur)
+    lh = qf.size * 1.32
+    kf = font(S * 0.032, "Bold")
+    ch = pad * 2 + kf.size * 2.0 + lh * len(lines)
+    x0, y0 = (W - cw) / 2, H * s.get("y", 0.40) - ch / 2 + (1 - a) * 60
+    card = Image.new("RGBA", (int(cw) + 60, int(ch) + 60), (0, 0, 0, 0))
+    sh = Image.new("RGBA", card.size, (0, 0, 0, 0))
+    ImageDraw.Draw(sh).rounded_rectangle([30, 42, 30 + cw, 42 + ch], radius=18, fill=(0, 0, 0, 190))
+    card.alpha_composite(sh.filter(ImageFilter.GaussianBlur(16)))
+    cd = ImageDraw.Draw(card)
+    cd.rounded_rectangle([30, 30, 30 + cw, 30 + ch], radius=18, fill=(246, 243, 236, 255))
+    cd.text((30 + pad, 30 + pad), s.get("kicker", "").upper(), font=kf, fill=(120, 116, 108))
+    cd.line([(30 + pad, 30 + pad + kf.size * 1.45), (30 + cw - pad, 30 + pad + kf.size * 1.45)], fill=(205, 200, 190), width=3)
+    ty = 30 + pad + kf.size * 2.0
+    hl = s.get("highlight", "")
+    k = ease_out((t - s.get("hl_at", 0.6)) / 0.6) if t > s.get("hl_at", 0.6) else 0
+    # find highlight span across lines (by character offsets)
+    full = " ".join(lines)
+    hs = full.find(hl) if hl else -1
+    he = hs + len(hl) if hs >= 0 else -1
+    pos = 0
+    total_hl_chars = max(1, he - hs)
+    for ln in lines:
+        ls, le = pos, pos + len(ln)
+        if hs >= 0 and k > 0 and hs < le and he > ls:
+            a0, a1 = max(hs, ls), min(he, le)
+            done = min(a1, hs + int(total_hl_chars * k))
+            if done > a0:
+                xa = 30 + pad + cd.textlength(ln[: a0 - ls], font=qf)
+                xb = 30 + pad + cd.textlength(ln[: done - ls], font=qf)
+                cd.rectangle([xa - 4, ty + qf.size * 0.12, xb + 4, ty + qf.size * 1.12], fill=(255, 226, 60, 255))
+        cd.text((30 + pad, ty), ln, font=qf, fill=(24, 24, 28))
+        ty += lh
+        pos = le + 1
+    if a < 1:
+        card.putalpha(card.split()[3].point(lambda v: int(v * a)))
+    img.paste(card, (int(x0 - 30), int(y0 - 30)), card)
+
+
+def c_proof(s):
+    return [(0.0, "mouse"), (s.get("hl_at", 0.6), "tick")]
+
+
+VISUALS["proof"] = (v_proof, c_proof)

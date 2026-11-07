@@ -64,6 +64,17 @@ Start with A on the next new video (expected Nov 12), then B, then A, and so on.
 Spread formats across both setups (don't put every Story on A and every Trick on B), so the format doesn't skew the comparison.
 Preview any script's audio in seconds without rendering frames: `AUDIO_ONLY=1 python3 engine.py <script.json> out/<name>.mp4` writes `out/<name>.wav`.
 
+## Proof moments (approved by Hudson, Nov 7)
+- In about half the videos, add one `proof` scene (3-4 s): a paper card with a VERBATIM line from a company filing, court record or major outlet, with a highlighter sweep over the key phrase. Modeled on the highlighted article screenshots in Business Explains The World's breakouts.
+- Spec: `{"type": "proof", "kicker": "AMC Entertainment, 2025 annual report", "quote": "<exact words, 12-30 words>", "highlight": "<exact sub-phrase>", "hl_at": 0.5}`.
+- Rules: copy the words exactly from the source (re-open it to check); quotes from news outlets stay under 15 words; the card is plain paper, never a recreation of an outlet's or company's page design or logo. This is the only on-screen sourcing allowed (no footer source lines).
+- Narrate it naturally ("In its own annual report, AMC says...") so it reads as a story beat, not a citation.
+
+## Cross-posting to TikTok and Instagram Reels (approved by Hudson, Nov 7)
+- Once `getBrandSettings` shows TikTok and/or Instagram connected on brand 7176689, every new Short goes to all connected networks in ONE Metricool post: providers youtube + tiktok + instagram, `instagramData: {"type": "REEL", "showReelOnFeed": true}`, `tiktokData: {"privacyOption": "PUBLIC_TO_EVERYONE", "title": "<title>"}`, same text and first comment.
+- Until they're connected, keep posting YouTube only. Don't retro-post already-scheduled videos unless Hudson asks.
+- Free-plan cap: Metricool counts published posts (20 a month). After the first cross-posted video publishes, check whether it counted once or once per network and note it in LEARNINGS.md. If it counts per network and the month would run out early, keep YouTube on Metricool, drop the extra networks for the rest of the month, and flag it in the Monday report.
+
 ## Metadata rules (every upload)
 - **Title:** under 60 characters, written as the plain question people search ("Why Movie Theater Popcorn Is So Expensive", "How North Korea Actually Makes Money"), brand or subject first, no hashtags. Check demand with vidiq_keyword_research when credits allow.
 - **Description line 1:** one keyword-rich sentence that adds something the title doesn't (not a restatement).
@@ -77,7 +88,7 @@ Preview any script's audio in seconds without rendering frames: `AUDIO_ONLY=1 py
 - One idea per scene, 1-2 sentences of narration. Story/Paradox: 10-14 scenes. Trick: 7-9 scenes. Set `"playbook"` in the JSON to story, paradox or trick.
 - Every number gets a `source` field in the script JSON for fact-checking only. Nothing source-related is drawn on screen (Hudson's call, Nov 7); sources live in the description.
 - Write numbers in narration the way they are spoken ("four sixty five", "two hundred forty five million").
-- Vary the visual types (`split_bars`, `ticker`, `compare_bars`, `nodes`, `big_number`, `donut`, `statement`, `people_grid`, b-roll with `archival: true` for history, cutouts, emoji, `follow`) so no two videos have the same sequence. Visuals can reveal on spoken words with `"reveal_at": ["word1", "word2"]` (split_bars, compare_bars, ticker). This matters for YouTube's inauthentic-content rules. Use `dy` to push a visual down when a photo card sits above it.
+- Vary the visual types (`split_bars`, `ticker`, `proof`, `compare_bars`, `nodes`, `big_number`, `donut`, `statement`, `people_grid`, b-roll with `archival: true` for history, cutouts, emoji, `follow`) so no two videos have the same sequence. Visuals can reveal on spoken words with `"reveal_at": ["word1", "word2"]` (split_bars, compare_bars, ticker). This matters for YouTube's inauthentic-content rules. Use `dy` to push a visual down when a photo card sits above it.
 - End with a one-line takeaway, then the outro.
 - Fill `title` (under 60 characters, curiosity + number), `description` (2-3 sentence summary, a Sources list, 3-4 hashtags) and `tags`.
 

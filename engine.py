@@ -299,7 +299,7 @@ def render(script_path, out_path):
         if vt == "nodes":
             for tt in nodes_cue_times(s["vis"]):
                 place(starts[k] + tt, "mouse", 0.9)
-        if vt in ("split_bars", "ticker"):
+        if vt in ("split_bars", "ticker", "proof"):
             for tt, nm in VISUALS[vt][1](s["vis"]):
                 place(starts[k] + tt, nm, {"tick": 0.7, "impact": 0.45}.get(nm, 0.9))
         if vt == "compare_bars":

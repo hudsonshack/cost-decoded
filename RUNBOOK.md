@@ -32,6 +32,7 @@ Matched frame-by-frame to Hudson's reference Shorts. Keep every video in this st
 - **Hook:** scene 1 is a `photo_hook` (full-screen photo + huge headline, red highlight on the key number). Custom per topic: a number or claim plus an open loop. Never reuse a hook word-for-word.
 - **Big words:** `bigword` cues for the key number or word (green for money, red for emphasis). On broll scenes they sit on top of the photo.
 - **Graphics:** `compare_bars`, `donut`, `people_grid`, `statement` on the grid stage; `nodes` for breakdowns (white icon circles joined by lines with letter-spaced labels; `hot: true` turns a label green).
+- **No repeats:** every photo and cutout appears only once per video. Gather 6-8 different images per Short (more angles, more varieties) before writing cues.
 - **Cutouts:** objects cut out with `photos.py cutout <slug>` rise in from the bottom edge (y ~0.68-0.72) with a shadow and no outline. Avoid branded items from the wrong company.
 - **Captions:** 1-2 words, synced, clean white heavy caps with a soft shadow, numbers/money in green. Write numbers as `{$4.65|four sixty five}` so the caption shows digits.
 - **Look:** palette is black / white / red `#FF3030` / green `#39FF6A`; bloom glow, green corner flare and light-leak flashes are automatic.

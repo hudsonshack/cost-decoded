@@ -198,10 +198,10 @@
    "say": "The movie made him famous. The victims are still waiting.",
    "visual": {
     "type": "broll",
-    "file": "assets/photos/dollars.jpg",
+    "file": "assets/photos/yacht.jpg",
     "focus": [
      0.5,
-     0.5
+     0.45
     ],
     "lines": [
      "THE VICTIMS ARE",
@@ -216,13 +216,13 @@
    },
    "cues": [
     {
-     "at": "him",
+     "at": "famous",
      "type": "cutout",
-     "file": "assets/cutouts/belfort-user.png",
+     "file": "assets/cutouts/sports-car.png",
      "x": 0.5,
-     "y": 0.72,
-     "w": 0.72,
-     "rot": 0
+     "y": 0.7,
+     "w": 0.85,
+     "rot": -4
     }
    ]
   }

@@ -111,20 +111,11 @@
     {
      "at": "245",
      "type": "cutout",
-     "file": "assets/cutouts/hd-classic.png",
-     "x": 0.26,
-     "y": 0.67,
-     "w": 0.5,
-     "rot": -10
-    },
-    {
-     "at": "them",
-     "type": "cutout",
-     "file": "assets/cutouts/hd-chili.png",
-     "x": 0.74,
-     "y": 0.69,
-     "w": 0.55,
-     "rot": 8
+     "file": "assets/cutouts/hd-chicago.png",
+     "x": 0.5,
+     "y": 0.68,
+     "w": 0.78,
+     "rot": -5
     },
     {
      "at": "them",
@@ -141,15 +132,6 @@
      "type": "bigword",
      "text": "WHY?",
      "color": "bad"
-    },
-    {
-     "at": "price",
-     "type": "cutout",
-     "file": "assets/cutouts/hd-chicago.png",
-     "x": 0.5,
-     "y": 0.66,
-     "w": 0.7,
-     "rot": 4
     }
    ]
   },

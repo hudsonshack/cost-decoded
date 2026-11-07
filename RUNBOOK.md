@@ -25,15 +25,28 @@ This file is the standing instruction set for the weekly scheduled run. Follow i
 3. Mix: 2 evergreen ("How Costco makes money on a $1.50 hot dog"), 1 timely (this week's news), 1 ranking ("5 most expensive...").
 4. Log chosen topics in `TOPICS.md` with date and sources.
 
-## Style rules (locked formula, engine v3)
-- **Pacing:** a new visual every ~1 second. Scenes are one short sentence (2-3 s). Each scene gets a base visual or 1-3 `cues` that pop in on specific words.
-- **Hook:** scene 1 is a `photo_hook` with a custom hook for that topic (a number or claim plus an open loop). Model hooks on what's performing in the niche that week; never reuse one word-for-word.
-- **Captions:** 1-2 words at a time, synced to the voice, heavy white caps with black stroke, numbers/money in lime. Write numbers as `{$4.65|four sixty five}` so the caption shows digits and the voice says words.
-- **Images:** real photos (CC0 / public domain / CC BY via `photos.py search/get`), shown as white-bordered `card`s, or cut out with `photos.py cutout <slug>` and popped in as outlined `cutout`s that stack. Look at every photo and cutout before use. Never use photos of real people. No branded items from the wrong company.
-- **Extras:** `bigword` (huge word behind everything, with a hit), `sticker` badges, `emoji`, `rain` (falling cash) for money moments.
-- **Sound:** click on every photo/cutout, pop on stickers, low hit on big words, quiet whoosh on cuts. No music.
-- **Ending:** no end card. The last line ends abruptly and should flow back into the hook for replays.
+## Style rules (locked formula, engine v4 "premium dark")
+Matched frame-by-frame to Hudson's reference Shorts. Keep every video in this style.
+- **Full-bleed first:** most scenes fill the whole frame. Use `broll` (full-screen graded photo with slow push/pan) for anything that has a photo; use the black grid-floor stage only for data graphics. Never leave big empty space.
+- **Pacing:** a new visual about every second; scenes are one short sentence (2-3 s) with 1-3 `cues` on specific words.
+- **Hook:** scene 1 is a `photo_hook` (full-screen photo + huge headline, red highlight on the key number). Custom per topic: a number or claim plus an open loop. Never reuse a hook word-for-word.
+- **Big words:** `bigword` cues for the key number or word (green for money, red for emphasis). On broll scenes they sit on top of the photo.
+- **Graphics:** `compare_bars`, `donut`, `people_grid`, `statement` on the grid stage; `nodes` for breakdowns (white icon circles joined by lines with letter-spaced labels; `hot: true` turns a label green).
+- **Cutouts:** objects cut out with `photos.py cutout <slug>` rise in from the bottom edge (y ~0.68-0.72) with a shadow and no outline. Avoid branded items from the wrong company.
+- **Captions:** 1-2 words, synced, clean white heavy caps with a soft shadow, numbers/money in green. Write numbers as `{$4.65|four sixty five}` so the caption shows digits.
+- **Look:** palette is black / white / red `#FF3030` / green `#39FF6A`; bloom glow, green corner flare and light-leak flashes are automatic.
+- **Sound:** click on every photo/cutout/node, pop on stickers, low hit on big words, quiet whoosh on cuts. No music.
+- **Ending:** no end card. The last line should flow back into the hook so the Short loops.
 - **Voice:** free smooth voice, speed 1.10-1.12.
+
+## Metadata rules (every upload)
+- **Title:** under 60 characters, the searched keyword first ("How Costco Makes Money on a $1.50 Hot Dog"), curiosity plus a number, no hashtags. Check demand with vidiq_keyword_research when credits allow.
+- **Description line 1:** one keyword-rich sentence that adds something the title doesn't (not a restatement).
+- **Description line 2:** 3-4 hashtags: 1-2 niche (#costco, #wolfofwallstreet), 1 broad (#money or #business), plus #shorts. The first three show above the title.
+- **Then:** a blank line, the Sources line and the Photos credit line.
+- **Tags:** 5-8 (main keyword, variants, broad topic).
+- **First comment:** a short question that invites an opinion, stored as `first_comment` in the script and sent as Metricool `firstCommentText`.
+- **Media URL:** use the commit-pinned raw URL (`https://raw.githubusercontent.com/hudsonshack/cost-decoded/<commit sha>/media/<file>.mp4`); the `main` URL can serve a cached 404 for a few minutes after a push.
 
 ## Step 3: Script (JSON in `shorts/` or `long/`)
 - One idea per scene, 1-2 sentences of narration. 6-9 scenes for a Short.

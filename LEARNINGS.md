@@ -30,3 +30,6 @@ Takeaways now in the runbook:
 5. Packaging is plain: titles are the question people ask ("Why Costco's Hotdog is Only $1.50"); descriptions are one line; tags barely matter.
 6. Policy: YouTube's inauthentic-content policy (renamed July 2025, clarified July 2026, enforced in waves since Jan 2026) targets templated,
    mass-produced channels. Rotating formats and real research per video is also monetization insurance.
+
+## A/B tests
+- Approved Nov 7: female narrator (Kokoro af_heart, speed 1.0) on the next new video; quiet beat (Open Lo-Fi "Empty Street Static", CC0, -22 dB, ducked 4 dB under speech) on the one after. Previews: both transcribe word-for-word; the beat sits about 20 dB under the voice.

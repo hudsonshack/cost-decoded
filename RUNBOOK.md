@@ -36,7 +36,7 @@ Matched frame-by-frame to Hudson's reference Shorts. Keep every video in this st
 - **Cutouts:** objects cut out with `photos.py cutout <slug>` rise in from the bottom edge (y ~0.68-0.72) with a shadow and no outline. Avoid branded items from the wrong company.
 - **Captions:** 1-2 words, synced, clean white heavy caps with a soft shadow, numbers/money in green. Write numbers as `{$4.65|four sixty five}` so the caption shows digits.
 - **Look:** palette is black / white / red `#FF3030` / green `#39FF6A`; bloom glow, green corner flare and light-leak flashes are automatic.
-- **Sound:** click on every photo/cutout/node/bar, pop on stickers, low hit on big words, soft ticks on counters, quiet whoosh on cuts. No music (all three studied winners use a very quiet beat; only add one if Hudson approves).
+- **Sound:** click on every photo/cutout/node/bar, pop on stickers, low hit on big words, soft ticks on counters, quiet whoosh on cuts. No music, except the approved A/B test below (all three studied winners use a very quiet beat).
 - **Ending:** no end card. The last line is a half-sentence that runs straight into the hook's first words (e.g. "Which is exactly why" -> "Theaters are selling a $90 popcorn bucket"), so the Short loops. A `follow` cue (SUBSCRIBE pill that gets tapped) may pop in during the last 2 s.
 - **Replication playbook (Nov 7, from a vidIQ study of the niche's top Shorts; details in LEARNINGS.md):**
   Every winner tells a story about a brand everyone knows; none of them is a list of stats. Pick one format per video:
@@ -54,6 +54,15 @@ Matched frame-by-frame to Hudson's reference Shorts. Keep every video in this st
   - First comment: a two-option question people want to answer ("Be honest: sneak snacks in, or pay for the popcorn?").
   - Variety protects monetization: YouTube's inauthentic-content policy targets templated, mass-produced channels, so no two videos in a row share a format or visual order, and every script must contain real research and a point of view.
 - **Voice:** free smooth voice, speed 1.05 for Story/Paradox (about 160 words a minute, like the winners), 1.10 for Trick.
+
+## A/B tests (approved by Hudson, Nov 7)
+Run each test on one new video, change nothing else, and log it in LEARNINGS.md under "A/B tests" (file, date, what changed).
+Compare against the other videos in the Monday report (views, likes per view, comments, and average percentage viewed if Metricool shows it).
+Report the result to Hudson and let him decide whether it becomes the default.
+1. **Female narrator** (next new video, expected Nov 12): set `"voice": "af_heart", "speed": 1.0` in the script. No music. Use the Story format so it compares cleanly with 005 (popcorn).
+2. **Quiet beat** (the new video after that, expected Nov 13): current voice, plus `"music": {"file": "assets/music/empty-street-static.mp3", "db": -22, "duck_db": 4}`. For videos over 95 s use `high-rise-haze.mp3`. Story format.
+Preview any script's audio in seconds without rendering frames: `AUDIO_ONLY=1 python3 engine.py <script.json> out/<name>.mp4` writes `out/<name>.wav`.
+Until a test is adopted, every other video stays on the current voice with no music.
 
 ## Metadata rules (every upload)
 - **Title:** under 60 characters, written as the plain question people search ("Why Movie Theater Popcorn Is So Expensive", "How North Korea Actually Makes Money"), brand or subject first, no hashtags. Check demand with vidiq_keyword_research when credits allow.

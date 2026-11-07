@@ -201,6 +201,32 @@ def draw_caption(d, W, H, text, t_in, hl):
            stroke_width=max(2, int(f.size * 0.035)), stroke_fill=(0, 0, 0))
 
 
+# ---------------------------------------------------------------- music bed (only when a script sets "music")
+def music_bed(m, voice, total):
+    """Quiet background track: sits `db` below the voice level and ducks a few dB more while words are spoken.
+    m = {"file": "assets/music/x.mp3", "db": -22, "start": 0, "duck_db": 4}"""
+    path = m["file"] if os.path.isabs(m["file"]) else os.path.join(HERE, m["file"])
+    raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-ss", str(m.get("start", 0)), "-i", path, "-t", str(total + 1),
+                          "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
+    mus = np.frombuffer(raw, np.float32).copy()
+    n = len(voice)
+    if len(mus) < n:  # loop if the track is shorter than the video
+        mus = np.tile(mus, int(np.ceil(n / max(len(mus), 1))))
+    mus = mus[:n]
+    rms = lambda x: float(np.sqrt(np.mean(x ** 2)) + 1e-9)
+    v_rms = rms(voice[np.abs(voice) > 0.01]) if np.any(np.abs(voice) > 0.01) else 0.1
+    mus *= (v_rms / rms(mus)) * 10 ** (m.get("db", -22) / 20)
+    # duck under speech: smoothed voice envelope -> extra attenuation
+    win = int(0.25 * SR)
+    env = np.convolve(np.abs(voice), np.ones(win) / win, mode="same")
+    talk = np.clip(env / (env.max() + 1e-9) * 4, 0, 1)
+    mus *= 10 ** (-m.get("duck_db", 4) * talk / 20)
+    fi, fo = int(0.5 * SR), int(0.8 * SR)
+    mus[:fi] *= np.linspace(0, 1, fi)
+    mus[-fo:] *= np.linspace(1, 0, fo)
+    return mus
+
+
 # ---------------------------------------------------------------- render
 def render(script_path, out_path):
     spec = json.load(open(script_path))
@@ -286,10 +312,17 @@ def render(script_path, out_path):
             place(starts[k] + c["t"], name, g)
             if c["type"] == "follow":
                 place(starts[k] + c["t"] + c.get("click", 0.55), "mouse", 1.0)
-    mix = np.clip(voice_track * 0.95 + fx, -1, 1)
+    mix = voice_track * 0.95 + fx
+    if spec.get("music"):
+        mix = mix + music_bed(spec["music"], voice_track, total)
+    mix = np.clip(mix, -1, 1)
     tmp = tempfile.mkdtemp()
     wav = os.path.join(tmp, "mix.wav")
     sf.write(wav, mix, SR)
+    if os.environ.get("AUDIO_ONLY"):
+        out_wav = os.path.splitext(out_path)[0] + ".wav"
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", wav, "-af", "loudnorm=I=-14:TP=-1.5:LRA=11", out_wav], check=True)
+        return total
 
     ff = subprocess.Popen(
         ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",

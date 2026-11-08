@@ -5,6 +5,8 @@ Append weekly findings from analytics here.
 ## Metricool post count
 - 2026-11: Metricool counter shows 2 of 20 published (001 YouTube Nov 7, 001 TikTok Nov 7). Scheduled: 002 Nov 8 (YouTube + TikTok in one post), 005 Nov 9, 004 Nov 10, 003 Nov 11.
 - Cross-post test: a TikTok-only post counted as 1. Nov 8's Wolf post goes to YouTube + TikTok as ONE post: if the counter goes 2 -> 3 it counts once per post; 2 -> 4 means once per network. Check the planner banner after 12:30 Nov 8 and record the answer here.
+- Nov 8 run (14:44 ET): the Wolf post published on both networks (YouTube PM87c0MpATA, TikTok 7705854513109880078). The planner counter isn't exposed through the Metricool API, so the once-per-post vs once-per-network answer is still open. Month count is 3 or 4 of 20 either way; until confirmed, count cross-posts per network (worst case). Nov 9-11 already scheduled, so no new Short this run.
+- Note for the next run: the Nov 13 planned calendar event "Why Movie Theater Popcorn Costs So Much" repeats 005 (scheduled Nov 9). Swap that day for a fresh topic.
 
 ## Production notes
 - 2026-11-07: bigword text wider than ~5 characters spills off the frame during the punch-in; keep bigwords to 4-5 characters. Node labels over ~13 characters get cut at the side edges. Emoji with square silhouettes (📅 ↩️) render as blank squares in node icons; use shaped ones (⏳ 🔓 💰 🔍).

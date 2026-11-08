@@ -3,7 +3,8 @@
 Append weekly findings from analytics here.
 
 ## Metricool post count
-- 2026-11: 5 of 20 used (001 Nov 7, 002 Nov 8, 005 Nov 9, 004 Nov 10, 003 moved to Nov 11)
+- 2026-11: Metricool counter shows 2 of 20 published (001 YouTube Nov 7, 001 TikTok Nov 7). Scheduled: 002 Nov 8 (YouTube + TikTok in one post), 005 Nov 9, 004 Nov 10, 003 Nov 11.
+- Cross-post test: a TikTok-only post counted as 1. Nov 8's Wolf post goes to YouTube + TikTok as ONE post: if the counter goes 2 -> 3 it counts once per post; 2 -> 4 means once per network. Check the planner banner after 12:30 Nov 8 and record the answer here.
 
 ## Production notes
 - 2026-11-07: bigword text wider than ~5 characters spills off the frame during the punch-in; keep bigwords to 4-5 characters. Node labels over ~13 characters get cut at the side edges. Emoji with square silhouettes (📅 ↩️) render as blank squares in node icons; use shaped ones (⏳ 🔓 💰 🔍).

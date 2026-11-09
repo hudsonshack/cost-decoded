@@ -40,9 +40,9 @@ Matched frame-by-frame to Hudson's reference Shorts. Keep every video in this st
 - **Ending:** no end card. The last line is a half-sentence that runs straight into the hook's first words (e.g. "Which is exactly why" -> "Theaters are selling a $90 popcorn bucket"), so the Short loops. A `follow` cue (SUBSCRIBE pill that gets tapped) may pop in during the last 2 s.
 - **Replication playbook (Nov 7, from a vidIQ study of the niche's top Shorts; details in LEARNINGS.md):**
   Every winner tells a story about a brand everyone knows; none of them is a list of stats. Pick one format per video:
-  1. **Story** (50-90 s, 150-170 words, 10-14 scenes). Model: Silas Business "Why Costco's Hotdog is Only $1.50" (469K views on a 4K-sub channel, same topic as our 452-view Costco Short).
+  1. **Story** (45-55 s for now, see Traction fixes; 120-140 words, 9-12 scenes). Model: Silas Business "Why Costco's Hotdog is Only $1.50" (469K views on a 4K-sub channel, same topic as our 452-view Costco Short).
      Beats: the familiar thing and its "impossible" number -> the problem (costs rise, a law, a rival) -> a person or turning point, ideally with a quote ("he said he'd kill him") -> how they solved it -> "But here's the interesting part:" the real business engine -> back to the opening number (loop).
-  2. **Paradox** (60-100 s). Model: Business Explains The World "How North Korea actually makes money" (389K, 4.3% likes, 575 comments).
+  2. **Paradox** (45-55 s for now, see Traction fixes). Model: Business Explains The World "How North Korea actually makes money" (389K, 4.3% likes, 575 comments).
      Hook = two facts that can't both be true ("most sanctioned country on Earth... yet it has money for a water park"). Then "So how does X actually make money?", split the answer into 2-3 buckets (legal / weird / hidden), end with a three-item summary that loops ("crypto, arms and fake ponytails: that's what the wallet is made of").
   3. **Trick** (25-40 s, 70-100 words). Model: Sisenco Digital "Why does Apple let you play with their phones for hours?" (162K views, 1,823x its channel average, 4.5% likes) and TruthBro shrinkflation (828K, 2.2K comments).
      Hook = a question about something everyone has noticed. Name the trick (Endowment Effect), prove it with one big number ("Apple made billions"), give the viewer one takeaway.
@@ -74,11 +74,11 @@ Preview any script's audio in seconds without rendering frames: `AUDIO_ONLY=1 py
 - Post to YouTube only, even though TikTok is connected in Metricool. Hudson will reinvest YouTube earnings into a paid Metricool plan once the channel shows real traction; then every Short goes to YouTube, Instagram, TikTok and Snapchat at 2-3 videos a day. Don't cross-post or raise volume until he says so.
 - Old rule, kept for when he switches it on: one Metricool post with providers youtube + tiktok + instagram, `instagramData: {"type": "REEL", "showReelOnFeed": true}`, `tiktokData: {"privacyOption": "PUBLIC_TO_EVERYONE", "title": "<title>"}`, same text and first comment.
 
-## Traction fixes (Nov 9, after week 1)
-- Cover frame: YouTube auto-picked meaningless mid-video frames ("SAVED / REFUSED"). Every post sets Metricool `videoCoverMilliseconds` to a frame where the hook headline is fully drawn (about 1500 ms; check the frame). Store it as `cover_ms` in the script.
-- Hook lands in the first second: the voice opens with the impossible number or claim itself, no warm-up line. The headline is on screen from frame 1.
-- Length: until a long video proves it holds viewers, Story and Paradox Shorts target 45-60 s (Trick stays 25-40 s).
-- Judge a video by "Viewed vs. swiped away" in YouTube Studio (ask Hudson for a screenshot), not by early view counts; vidIQ view counts can be hours stale.
+## Traction fixes (approved by Hudson, Nov 9; apply to EVERY video)
+1. **Thumbnail / cover frame:** every Metricool post sets `videoCoverMilliseconds` to the hook frame with the big headline fully drawn (about 1500 ms; extract that frame and check it). Store it as `cover_ms` in the script. YouTube may only show custom Shorts covers once the channel is verified; set it anyway. (YouTube had auto-picked meaningless mid-video frames like "SAVED / REFUSED".)
+2. **Hook lands in the first second:** the first spoken words ARE the surprising number or claim. No setup line first. The headline with that number is on screen from the first frames.
+3. **Length:** Story and Paradox Shorts run 45-55 s until a longer one proves it holds viewers (Trick stays 25-40 s). This overrides the older 50-90 s range in the playbook above.
+- Judge videos by "Viewed vs. swiped away" in YouTube Studio (Hudson can send screenshots), not early view counts; vidIQ view counts can be hours stale.
 
 ## Metadata rules (every upload)
 - **Title:** under 60 characters, written as the plain question people search ("Why Movie Theater Popcorn Is So Expensive", "How North Korea Actually Makes Money"), brand or subject first, no hashtags. Check demand with vidiq_keyword_research when credits allow.

@@ -70,10 +70,15 @@ Preview any script's audio in seconds without rendering frames: `AUDIO_ONLY=1 py
 - Rules: copy the words exactly from the source (re-open it to check); quotes from news outlets stay under 15 words; the card is plain paper, never a recreation of an outlet's or company's page design or logo. This is the only on-screen sourcing allowed (no footer source lines).
 - Narrate it naturally ("In its own annual report, AMC says...") so it reads as a story beat, not a citation.
 
-## Cross-posting to TikTok and Instagram Reels (approved by Hudson, Nov 7)
-- Once `getBrandSettings` shows TikTok and/or Instagram connected on brand 7176689, every new Short goes to all connected networks in ONE Metricool post: providers youtube + tiktok + instagram, `instagramData: {"type": "REEL", "showReelOnFeed": true}`, `tiktokData: {"privacyOption": "PUBLIC_TO_EVERYONE", "title": "<title>"}`, same text and first comment.
-- Until they're connected, keep posting YouTube only. Don't retro-post already-scheduled videos unless Hudson asks.
-- Free-plan cap: Metricool counts published posts (20 a month). After the first cross-posted video publishes, check whether it counted once or once per network and note it in LEARNINGS.md. If it counts per network and the month would run out early, keep YouTube on Metricool, drop the extra networks for the rest of the month, and flag it in the Monday report.
+## Cross-posting (Hudson, Nov 9: YouTube ONLY for now)
+- Post to YouTube only, even though TikTok is connected in Metricool. Hudson will reinvest YouTube earnings into a paid Metricool plan once the channel shows real traction; then every Short goes to YouTube, Instagram, TikTok and Snapchat at 2-3 videos a day. Don't cross-post or raise volume until he says so.
+- Old rule, kept for when he switches it on: one Metricool post with providers youtube + tiktok + instagram, `instagramData: {"type": "REEL", "showReelOnFeed": true}`, `tiktokData: {"privacyOption": "PUBLIC_TO_EVERYONE", "title": "<title>"}`, same text and first comment.
+
+## Traction fixes (Nov 9, after week 1)
+- Cover frame: YouTube auto-picked meaningless mid-video frames ("SAVED / REFUSED"). Every post sets Metricool `videoCoverMilliseconds` to a frame where the hook headline is fully drawn (about 1500 ms; check the frame). Store it as `cover_ms` in the script.
+- Hook lands in the first second: the voice opens with the impossible number or claim itself, no warm-up line. The headline is on screen from frame 1.
+- Length: until a long video proves it holds viewers, Story and Paradox Shorts target 45-60 s (Trick stays 25-40 s).
+- Judge a video by "Viewed vs. swiped away" in YouTube Studio (ask Hudson for a screenshot), not by early view counts; vidIQ view counts can be hours stale.
 
 ## Metadata rules (every upload)
 - **Title:** under 60 characters, written as the plain question people search ("Why Movie Theater Popcorn Is So Expensive", "How North Korea Actually Makes Money"), brand or subject first, no hashtags. Check demand with vidiq_keyword_research when credits allow.

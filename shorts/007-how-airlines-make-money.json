@@ -1,0 +1,238 @@
+{
+  "format": "short",
+  "speed": 1.05,
+  "music": {
+    "file": "assets/music/empty-street-static.mp3",
+    "db": -22,
+    "duck_db": 4
+  },
+  "playbook": "paradox",
+  "ab": "B",
+  "cover_ms": 1500,
+  "title": "How Do Airlines Actually Make Money?",
+  "description": "Delta's credit card deal with American Express paid it $8.2 billion in 2025, more than the airline's entire profit. Here are the three places the money really comes from.\n#delta #airlines #money #shorts\n\nSources: Delta Air Lines full-year 2025 results (Jan 13, 2026); Fortune (Jan 2026); AltexSoft (Jan 2026); AP via WABE (2024); CBS News and TravelMole, citing Bureau of Transportation Statistics data for 2024\nPhotos: ST33VO, frankieleon, DeltaNewsHub, KrzysztofTe Foto Blog (CC BY 2.0, Flickr); D Coetzee (CC0, Flickr)",
+  "tags": [
+    "how do airlines make money",
+    "delta air lines",
+    "delta amex",
+    "airline credit cards",
+    "baggage fees",
+    "airline business model",
+    "business explained"
+  ],
+  "highlight_words": [
+    "delta",
+    "amex",
+    "bags",
+    "seats"
+  ],
+  "first_comment": "Be honest: do you pay for checked bags, or cram everything into a carry-on? 🧳",
+  "scenes": [
+    {
+      "say": "A credit card company paid Delta {$8.2 billion|eight point two billion dollars} last year. That's more than Delta's whole profit.",
+      "visual": {
+        "type": "photo_hook",
+        "file": "assets/photos/dl-hook.jpg",
+        "focus": [
+          0.42,
+          0.5
+        ],
+        "pan": 0.0,
+        "lines": [
+          "$8.2 BILLION",
+          "FROM A CREDIT CARD"
+        ],
+        "highlight": [
+          "$8.2",
+          "BILLION"
+        ],
+        "scale": 0.105,
+        "y": 0.13
+      },
+      "cues": [
+        {
+          "at": "profit",
+          "type": "emoji",
+          "text": "🤯",
+          "x": 0.74,
+          "y": 0.44,
+          "w": 0.24,
+          "rot": 8
+        }
+      ],
+      "source": "Delta FY2025 results, Jan 13 2026 (Amex remuneration $8.2B; GAAP net income $5,005M); AltexSoft Jan 2026; Fortune Jan 2026"
+    },
+    {
+      "say": "Delta's profit was about {$5 billion|five billion}. The card money was way bigger.",
+      "visual": {
+        "type": "compare_bars",
+        "title": "Delta, 2025",
+        "reveal_at": [
+          "Delta's",
+          "card"
+        ],
+        "prefix": "$",
+        "suffix": "B",
+        "decimals": 1,
+        "items": [
+          {
+            "label": "Total profit",
+            "value": 5.0,
+            "color": "text"
+          },
+          {
+            "label": "Paid by Amex",
+            "value": 8.2,
+            "color": "good"
+          }
+        ]
+      },
+      "source": "Delta FY2025 income statement (net income $5,005M; pre-tax $6.2B); Amex remuneration $8.2B (Delta release; Fortune; AltexSoft)"
+    },
+    {
+      "say": "So how does an airline actually make money?",
+      "visual": {
+        "type": "statement",
+        "lines": [
+          "HOW DO AIRLINES",
+          "ACTUALLY",
+          "MAKE MONEY?"
+        ],
+        "highlight": [
+          "money"
+        ],
+        "scale": 0.1
+      }
+    },
+    {
+      "say": "Number one: credit cards. Every time someone swipes a Delta Amex, Delta gets a cut.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/dl-cards.jpg",
+        "focus": [
+          0.55,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "credit",
+          "type": "emoji",
+          "text": "💳",
+          "x": 0.5,
+          "y": 0.64,
+          "w": 0.26,
+          "rot": -8
+        },
+        {
+          "at": "cut",
+          "type": "bigword",
+          "text": "CUT",
+          "color": "good"
+        }
+      ],
+      "source": "AP via WABE 2024 ('The money comes from the fees AmEx collects from the billions of dollars spend on the cards'); Delta FY2025 release (growth driven by co-brand spend)"
+    },
+    {
+      "say": "Delta's own earnings report says that money grew eleven percent last year.",
+      "visual": {
+        "type": "proof",
+        "kicker": "Delta Air Lines, full-year 2025 results",
+        "quote": "American Express remuneration in 2025 grew 11 percent to $8.2 billion, driven by double-digit growth in co-brand spend in each quarter of the year.",
+        "highlight": "grew 11 percent to $8.2 billion",
+        "hl_at": 1.6
+      },
+      "source": "Delta Air Lines press release, Jan 13 2026 (ir.delta.com), verbatim; same text in the 8-K exhibit"
+    },
+    {
+      "say": "Number two: your bags. U.S. airlines made over {$7 billion|seven billion dollars} on checked bags in {2024|twenty twenty four}.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/dl-carousel.jpg",
+        "focus": [
+          0.5,
+          0.55
+        ]
+      },
+      "cues": [
+        {
+          "at": "bags",
+          "type": "emoji",
+          "text": "🧳",
+          "x": 0.5,
+          "y": 0.66,
+          "w": 0.26,
+          "rot": 6
+        },
+        {
+          "at": "$7",
+          "type": "bigword",
+          "text": "$7B",
+          "color": "good"
+        }
+      ],
+      "source": "CBS News citing BTS (about $7.27B in 2024); TravelMole ('more than $7 billion on bag fees in 2024')"
+    },
+    {
+      "say": "Number three: the big seats. Delta's premium sales grew {7%|seven percent} last year.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/dl-suites.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "7%",
+          "type": "bigword",
+          "text": "+7%",
+          "color": "good"
+        }
+      ],
+      "source": "Delta FY2025 release ('Premium revenue grew 7 percent year-over-year'); Fortune Jan 2026"
+    },
+    {
+      "say": "Regular economy? Its CEO says it hasn't really moved.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/dl-suite.jpg",
+        "focus": [
+          0.45,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "moved",
+          "type": "emoji",
+          "text": "😐",
+          "x": 0.5,
+          "y": 0.42,
+          "w": 0.26
+        }
+      ],
+      "source": "Fortune Jan 13 2026 (Ed Bastian: 'we have not really seen Main Cabin move yet'); Reuters via AOL Jan 2026 (main-cabin ticket revenue fell 7% in Q4 2025 while premium rose 9%)"
+    },
+    {
+      "say": "Cards, bags and big seats. That's how an airline really makes money. And it's why",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/dl-fleet.jpg",
+        "focus": [
+          0.55,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "really",
+          "type": "follow",
+          "x": 0.5,
+          "y": 0.58
+        }
+      ]
+    }
+  ]
+}

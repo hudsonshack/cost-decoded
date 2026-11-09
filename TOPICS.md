@@ -7,3 +7,4 @@
 | 2026-11-07 | Unused gift cards: $27B unspent, Starbucks breakage (sched. Nov 11) | Short | Bankrate survey Sep 2024; Starbucks FY2025 10-K; MarketWatch Apr 2025 |
 | 2026-11-07 | Why gas prices end in 9/10 of a cent (sched. Nov 10) | Short | NACS Jun 2022; Jalopnik 2024; CBS News MN Aug 2023; Marketplace; SlashGear |
 | 2026-11-07 | Why movie theater popcorn is so expensive (Story format, sched. Nov 9) | Short | AMC 2025 annual report + Q2 2025 10-Q; Smithsonian; Reader's Digest; NBC News/CNBC; LA Times Apr 2026; NYT via Moneywise 2026; Hypebeast + Comic Basics Oct 2026 |
+| 2026-11-09 | Why the shopping cart was invented: Sylvan Goldman, hired models, bigger carts (Story, Setup A, sched. Nov 12) | Short | Smithsonian Magazine Dec 2025; History.com; Invention & Technology; The Jewish Press 2019; Wikipedia; Tasting Table + Foodie citing Martin Lindstrom on TODAY |

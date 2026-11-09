@@ -1,0 +1,361 @@
+{
+  "format": "short",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "playbook": "story",
+  "ab": "A",
+  "title": "Why Was the Shopping Cart Invented?",
+  "description": "In 1937 an Oklahoma grocer built the first shopping cart so people would buy more, then had to hire models to push it because no one would touch it.\n#shoppingcart #grocery #business #shorts\n\nSources: Smithsonian Magazine (Dec 2025); History.com; Invention & Technology (American Heritage); The Jewish Press (2019); Wikipedia (Sylvan Goldman); Tasting Table and Foodie, citing Martin Lindstrom on TODAY\nPhotos: coolmikeol, rich701, qmnonic, Seattle Municipal Archives, Stephan Rosger, martinhoward, bfishadow, Images_of_Money, Polycart, Håkan Dahlström, r.nial.bradshaw (CC BY 2.0, Flickr)",
+  "tags": [
+    "shopping cart",
+    "who invented the shopping cart",
+    "sylvan goldman",
+    "shopping cart history",
+    "grocery store tricks",
+    "how stores make you spend more",
+    "business explained"
+  ],
+  "highlight_words": [
+    "cart",
+    "carts",
+    "nobody"
+  ],
+  "first_comment": "Be honest: do you grab a cart or a basket for a \"quick\" grocery run? 🛒",
+  "scenes": [
+    {
+      "say": "Your grocery cart was invented to make you spend more. And at first, nobody would touch it.",
+      "visual": {
+        "type": "photo_hook",
+        "file": "assets/photos/sc-hook.jpg",
+        "focus": [
+          0.5,
+          0.62
+        ],
+        "pan": 0.0,
+        "lines": [
+          "BUILT TO MAKE",
+          "YOU SPEND MORE"
+        ],
+        "highlight": [
+          "SPEND",
+          "MORE"
+        ],
+        "scale": 0.11,
+        "y": 0.13
+      },
+      "cues": [
+        {
+          "at": "nobody",
+          "type": "emoji",
+          "text": "🚫",
+          "x": 0.76,
+          "y": 0.42,
+          "w": 0.24,
+          "rot": 8
+        }
+      ],
+      "source": "Smithsonian Magazine Dec 2025 (grocer wanted to make it easier for customers to buy more); History.com; Wikipedia"
+    },
+    {
+      "say": "In {1936|nineteen thirty six}, an Oklahoma grocer named Sylvan Goldman noticed a problem.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/sc-oldstore.jpg",
+        "focus": [
+          0.55,
+          0.5
+        ],
+        "archival": true
+      },
+      "cues": [
+        {
+          "at": "1936",
+          "type": "bigword",
+          "text": "1936",
+          "color": "text"
+        }
+      ],
+      "source": "Wikipedia (Sylvan Goldman, 1936); Smithsonian Magazine (1936 prototype)"
+    },
+    {
+      "say": "Shoppers quit buying the moment their baskets got too full or too heavy.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/sc-basket.jpg",
+        "focus": [
+          0.45,
+          0.55
+        ]
+      },
+      "cues": [
+        {
+          "at": "heavy",
+          "type": "bigword",
+          "text": "HEAVY",
+          "color": "bad"
+        }
+      ],
+      "source": "History.com ('Women had a tendency to stop shopping when the baskets became too full or too heavy'); Invention & Technology"
+    },
+    {
+      "say": "So he took a folding chair, put a basket on the seat, and wheels on the legs.",
+      "visual": {
+        "type": "nodes",
+        "center": {
+          "emoji": "🪑",
+          "label": "folding chair"
+        },
+        "nodes": [
+          {
+            "emoji": "👜",
+            "label": "basket"
+          },
+          {
+            "emoji": "🛞",
+            "label": "wheels"
+          },
+          {
+            "emoji": "🛒",
+            "label": "the cart",
+            "hot": true
+          }
+        ]
+      },
+      "source": "Wikipedia ('found a wooden folding chair and put a basket on the seat and wheels on the legs'); Smithsonian Magazine; History.com"
+    },
+    {
+      "say": "On June {4th|fourth}, {1937|nineteen thirty seven}, he rolled them out at his Humpty Dumpty supermarkets.",
+      "visual": {
+        "type": "ticker",
+        "from": 1900,
+        "to": 1937,
+        "count_at": 0.1,
+        "count_dur": 1.0,
+        "label_top": "June 4",
+        "lines": [
+          "Humpty Dumpty stores",
+          "Oklahoma City"
+        ],
+        "highlight": [
+          "humpty",
+          "dumpty"
+        ]
+      },
+      "source": "Smithsonian Magazine; Wikipedia (June 4, 1937, Humpty Dumpty, Oklahoma City)"
+    },
+    {
+      "say": "And nobody used them.",
+      "visual": {
+        "type": "statement",
+        "lines": [
+          "AND NOBODY",
+          "USED THEM"
+        ],
+        "highlight": [
+          "nobody"
+        ],
+        "scale": 0.12
+      },
+      "source": "Smithsonian Magazine (first cart sat unused); Invention & Technology ('Customers didn't want anything to do with the carts')"
+    },
+    {
+      "say": "Men said pushing a cart was women's work. Women said they'd pushed enough baby strollers.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/sc-1955.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "archival": true
+      },
+      "cues": [
+        {
+          "at": "Men",
+          "type": "emoji",
+          "text": "🙅‍♂️",
+          "x": 0.5,
+          "y": 0.36,
+          "w": 0.26,
+          "rot": -6
+        },
+        {
+          "at": "strollers",
+          "type": "cutout",
+          "file": "assets/cutouts/sc-buggy.png",
+          "x": 0.5,
+          "y": 0.7,
+          "w": 0.62,
+          "rot": -4
+        }
+      ],
+      "source": "Smithsonian Magazine ('women's work'; 'grown weary of baby strollers'); Wikipedia; History.com"
+    },
+    {
+      "say": "So Goldman hired models to push carts around the store, pretending to shop.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/sc-aisle.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "models",
+          "type": "emoji",
+          "text": "🎭",
+          "x": 0.5,
+          "y": 0.64,
+          "w": 0.26,
+          "rot": 6
+        },
+        {
+          "at": "pretending",
+          "type": "bigword",
+          "text": "FAKE",
+          "color": "bad"
+        }
+      ],
+      "source": "Smithsonian Magazine ('hired attractive models to shop in the store while confidently pushing the carts'); Wikipedia; History.com (actors); Invention & Technology (people posing as customers)"
+    },
+    {
+      "say": "Real shoppers copied them.",
+      "visual": {
+        "type": "people_grid",
+        "rows": 6,
+        "cols": 6,
+        "color": "good",
+        "caption": "SHOPPERS COPIED THEM"
+      },
+      "source": "Smithsonian Magazine (other shoppers copied them)"
+    },
+    {
+      "say": "Smithsonian magazine says that by {1940|nineteen forty}, store owners faced a seven year wait list for carts.",
+      "visual": {
+        "type": "proof",
+        "kicker": "Smithsonian Magazine, December 2025",
+        "quote": "store owners looking to buy new shopping carts reportedly faced a seven-year wait list",
+        "highlight": "a seven-year wait list",
+        "hl_at": 2.4
+      },
+      "source": "Smithsonian Magazine Dec 2025 (verbatim, 14 words); The Jewish Press 2019 ('by 1940 had placed prospective purchasers on a seven-year waiting list')"
+    },
+    {
+      "say": "Goldman collected royalties and became a multimillionaire.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/sc-cash.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "royalties",
+          "type": "cutout",
+          "file": "assets/cutouts/sc-dollars.png",
+          "x": 0.5,
+          "y": 0.7,
+          "w": 0.36,
+          "rot": 8
+        },
+        {
+          "at": "multimillionaire",
+          "type": "bigword",
+          "text": "RICH",
+          "color": "good"
+        }
+      ],
+      "source": "Wikipedia ('became a multimillionaire' via royalties); History.com; The Jewish Press"
+    },
+    {
+      "say": "But here's the interesting part. The carts never stopped growing.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/sc-redcarts.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "growing",
+          "type": "emoji",
+          "text": "📈",
+          "x": 0.5,
+          "y": 0.42,
+          "w": 0.28
+        }
+      ],
+      "source": "Tasting Table (carts 'considerably larger than they used to be'); Foodie 2023"
+    },
+    {
+      "say": "One marketing expert says when stores doubled the size of their carts, people bought {40%|forty percent} more, without even noticing.",
+      "visual": {
+        "type": "compare_bars",
+        "title": "What shoppers bought",
+        "reveal_at": [
+          "expert",
+          "40%"
+        ],
+        "suffix": "%",
+        "items": [
+          {
+            "label": "Regular cart",
+            "value": 100,
+            "color": "text"
+          },
+          {
+            "label": "Double-size cart",
+            "value": 140,
+            "color": "good"
+          }
+        ]
+      },
+      "source": "Martin Lindstrom on TODAY, as reported by Tasting Table and Foodie (Oct 2023): cart doubled in size, people bought/spent 40% more; Foodie ('whether they realize it or not')"
+    },
+    {
+      "say": "Today, over {20 million|twenty million} carts roll through American stores.",
+      "visual": {
+        "type": "ticker",
+        "from": 0,
+        "to": 20,
+        "suffix": "M+",
+        "count_at": 0.1,
+        "count_dur": 1.2,
+        "color": "good",
+        "lines": [
+          "Carts in U.S. stores",
+          "right now"
+        ],
+        "highlight": [
+          "carts"
+        ]
+      },
+      "source": "Smithsonian Magazine ('20 million to 25 million shopping carts'); Tasting Table (more than 25 million by 2016)"
+    },
+    {
+      "say": "So if your cart ever looks a little empty, that's the point. Because",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/sc-empty.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "point",
+          "type": "follow",
+          "x": 0.5,
+          "y": 0.58
+        }
+      ]
+    }
+  ]
+}

@@ -7,9 +7,25 @@ Append weekly findings from analytics here.
 - Cross-post test: a TikTok-only post counted as 1. Nov 8's Wolf post goes to YouTube + TikTok as ONE post: if the counter goes 2 -> 3 it counts once per post; 2 -> 4 means once per network. Check the planner banner after 12:30 Nov 8 and record the answer here.
 - Nov 8 run (14:44 ET): the Wolf post published on both networks (YouTube PM87c0MpATA, TikTok 7705854513109880078). The planner counter isn't exposed through the Metricool API, so the once-per-post vs once-per-network answer is still open. Month count is 3 or 4 of 20 either way; until confirmed, count cross-posts per network (worst case). Nov 9-11 already scheduled, so no new Short this run.
 - Note for the next run: the Nov 13 planned calendar event "Why Movie Theater Popcorn Costs So Much" repeats 005 (scheduled Nov 9). Swap that day for a fresh topic.
+- Nov 9 run: 005 published Nov 9 (YouTube only). Scheduled 006 shopping cart for Nov 12 as ONE post to YouTube + TikTok. Running count, worst case (cross-posts per network): published 5 (001 YT, 001 TT, 002 YT, 002 TT, 005 YT); scheduled 004 Nov 10 (YT), 003 Nov 11 (YT), 006 Nov 12 (YT+TT) -> 9 of 20 by Nov 12.
 
 ## Production notes
 - 2026-11-07: bigword text wider than ~5 characters spills off the frame during the punch-in; keep bigwords to 4-5 characters. Node labels over ~13 characters get cut at the side edges. Emoji with square silhouettes (📅 ↩️) render as blank squares in node icons; use shaped ones (⏳ 🔓 💰 🔍).
+
+- 2026-11-09: Flickr (live.staticflickr.com) and Wikimedia return 429 "CIDR range blocked" from the cloud session. Download Openverse results through Openverse's own proxy instead: `curl -sL https://api.openverse.org/v1/images/<id>/thumb/?full_size=true&compressed=false` (full 1024 px). Openverse search often 504s; retry it in a loop, queries in parallel. `photos.py get` (direct Flickr URL) fails while this lasts.
+- 2026-11-09: faster-whisper 1.2.1 with av 19 can't decode files (`metadata_errors` TypeError); pass numpy arrays (the engine already does). The first `pip install -q` in setup.sh sat idle for 10+ min; a rerun without -q finished in under a minute.
+- 2026-11-09: compare_bars reveal words near the END of a sentence leave the second bar on screen for under half a second; reveal the first bar on an early word and add a short tail phrase after the reveal word. Basket emoji 🧺 reads as a face in node icons; 👜 works.
+
+## 2026-11-09: week 1 analytics (Monday report)
+Data: vidIQ get_videos_by_ids (5 credits) at 14:45 ET Nov 9; Metricool YouTube per-video stats still null (2-3 day lag) and Metricool returned no TikTok post rows.
+- 001 Costco hot dog (trick-style, 30 s, published Nov 7): 1,227 views, 12 likes, 1 comment, (likes+comments)/views 1.06%, ~25 views/hour.
+- 002 Wolf of Wall Street (32 s, Nov 8): 816 views, 8 likes, 1 comment, 1.10%, ~31 views/hour (pacing ahead of Costco at the same age).
+- 005 Popcorn (first Story Short, 62 s, Nov 9 12:30): 2 views and 1 comment 2 h after publishing, versus Costco's 452 at 5 h. Either a slow first test batch or the longer Story isn't being pushed; re-check at 24 h before judging the Story format.
+Learnings applied this week:
+1. Both 30 s stat Shorts landed at ~1.1% interaction, about a third of the niche winners (3-4%). Nothing yet beats the playbook; keep Story/Paradox on the next videos rather than reverting.
+2. A person-and-twist story with a concrete date and an "everyone hated it" turn tests best in the study, so the Nov 12 Short (shopping cart) leads with the claim "built to make you spend more" plus the open loop "nobody would touch it".
+3. Titles stay as the plain search question ("Why Was the Shopping Cart Invented?"); judge 005's packaging only after 24-72 h.
+4. Metricool analytics lag means the Monday report should lean on vidIQ for videos under 3 days old; budget 5 credits a week (35 left until Dec 6).
 
 ## 2026-11-07: vidIQ study of the niche's highest-interaction Shorts
 Our first Short (Costco, 30 s, stat-heavy) had 452 views, 1.8% likes and 1 comment after ~5 h. The same week, a 4K-subscriber
@@ -37,3 +53,4 @@ Takeaways now in the runbook:
 ## A/B tests
 - Approved Nov 7: female narrator (Kokoro af_heart, speed 1.0) on the next new video; quiet beat (Open Lo-Fi "Empty Street Static", CC0, -22 dB, ducked 4 dB under speech) on the one after. Previews: both transcribe word-for-word; the beat sits about 20 dB under the voice.
 - Nov 7 evening: Hudson liked both previews. Rule now: scheduled videos stay as-is; new videos alternate Setup A (female narrator) and Setup B (current voice + quiet beat), starting with A. After 3+ videos each, switch to the winner if its interaction per view is 30%+ higher.
+- Log: 006-shopping-cart (sched. Nov 12) = Setup A (af_heart, speed 1.0, no music), Story format. Next new video uses Setup B; make it a Trick or Paradox so formats spread across setups.

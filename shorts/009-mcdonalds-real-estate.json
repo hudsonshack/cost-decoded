@@ -1,0 +1,288 @@
+{
+  "format": "short",
+  "speed": 1.05,
+  "music": {
+    "file": "assets/music/empty-street-static.mp3",
+    "db": -22,
+    "duck_db": 4
+  },
+  "playbook": "story",
+  "ab": "B",
+  "cover_ms": 1500,
+  "title": "Is McDonald's Actually a Real Estate Company?",
+  "description": "McDonald's collected $10.4 billion in rent from its franchisees in 2025, more than all the food sold in its own restaurants, and the plan goes back to a 1950s finance chief.\n#mcdonalds #realestate #business #shorts\n\nSources: McDonald's Corporation 2025 Form 10-K; McDonald's Q3 2026 results (Nov 2026); AP via KPTV (Nov 4, 2026); SABR biography of Ray Kroc; Entrepreneur; Footnote Brief, citing John F. Love's McDonald's: Behind the Arches; Wall Street Survivor\nPhotos: nayukim, milst1, Tony Fischer Photography, bradleygee, dave_mcmt, pasa47, Clotee Pridgen Allochuku, zigazou76 (CC BY 2.0, Flickr); Jens Mahnke (CC0, StockSnap)",
+  "tags": [
+    "mcdonalds",
+    "how does mcdonalds make money",
+    "mcdonalds real estate",
+    "is mcdonalds a real estate company",
+    "ray kroc",
+    "harry sonneborn",
+    "franchise business model",
+    "business explained"
+  ],
+  "highlight_words": [
+    "rent",
+    "land",
+    "real",
+    "estate"
+  ],
+  "first_comment": "Be honest: would you rather own a McDonald's, or the land under it? 🍔🏠",
+  "scenes": [
+    {
+      "say": "McDonald's made {$10.4 BILLION|ten point four billion dollars} last year from rent.",
+      "visual": {
+        "type": "photo_hook",
+        "file": "assets/photos/mc-hook.jpg",
+        "focus": [
+          0.55,
+          0.5
+        ],
+        "pan": 0.0,
+        "lines": [
+          "$10.4 BILLION",
+          "FROM RENT"
+        ],
+        "highlight": [
+          "$10.4",
+          "BILLION"
+        ],
+        "scale": 0.11,
+        "y": 0.13
+      },
+      "cues": [
+        {
+          "at": "rent",
+          "type": "emoji",
+          "text": "🏠",
+          "x": 0.76,
+          "y": 0.47,
+          "w": 0.24,
+          "rot": 8
+        }
+      ],
+      "source": "McDonald's 2025 Form 10-K, Franchise Arrangements note: Rents $10,442M (2025); Footnote Brief (2024 rents $10.02B, same pattern)"
+    },
+    {
+      "say": "Rent beat all the food sold in its own restaurants, which came to {$9.7 BILLION|nine point seven billion dollars}.",
+      "visual": {
+        "type": "compare_bars",
+        "title": "McDonald's, 2025",
+        "reveal_at": [
+          "Rent",
+          "restaurants"
+        ],
+        "prefix": "$",
+        "suffix": "B",
+        "decimals": 1,
+        "items": [
+          {
+            "label": "Rent",
+            "value": 10.4,
+            "color": "good"
+          },
+          {
+            "label": "Food, own stores",
+            "value": 9.7,
+            "color": "text"
+          }
+        ]
+      },
+      "source": "McDonald's 2025 10-K: sales by Company-owned and operated restaurants $9,690M; rents $10,442M (largest revenue line; total revenues $26,885M). Footnote Brief: 2024 rents $10.02B vs company-operated sales $9.78B"
+    },
+    {
+      "say": "It started in the {1950s|fifties}. Ray Kroc franchised McDonald's for {1.9%|one point nine percent} of each restaurant's sales.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/mc-downey.jpg",
+        "focus": [
+          0.55,
+          0.45
+        ],
+        "archival": true
+      },
+      "cues": [
+        {
+          "at": "1.9%",
+          "type": "bigword",
+          "text": "1.9%",
+          "color": "text"
+        }
+      ],
+      "source": "SABR biography of Ray Kroc ('1.9 percent of the gross sales'); Entrepreneur, Ray Kroc: Burger Baron ('1.9 percent of the gross sales')"
+    },
+    {
+      "say": "After paying the McDonald brothers, he kept just {1.4%|one point four percent}.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/mc-retro.jpg",
+        "focus": [
+          0.45,
+          0.5
+        ],
+        "archival": true,
+        "pan": 0.03
+      },
+      "cues": [
+        {
+          "at": "1.4%",
+          "type": "bigword",
+          "text": "1.4%",
+          "color": "bad"
+        }
+      ],
+      "source": "SABR (brothers kept 0.5 percent); Entrepreneur (paid the brothers one-half percent); Footnote Brief (1.4% royalty)"
+    },
+    {
+      "say": "Then a finance guy named Harry Sonneborn said: buy the land first.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/mc-lot.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "land",
+          "type": "bigword",
+          "text": "LAND",
+          "color": "good"
+        }
+      ],
+      "source": "Wikipedia, Harry J. Sonneborn and History of McDonald's (Franchise Realty Corp); Entrepreneur ('suggested he earn money by selling real estate'); Footnote Brief (Franchise Realty, 1957)"
+    },
+    {
+      "say": "Rent it to the {franchisee|franchise owner}. And charge more as their sales grow.",
+      "visual": {
+        "type": "nodes",
+        "center": {
+          "emoji": "🔑",
+          "label": "owns the land"
+        },
+        "nodes": [
+          {
+            "emoji": "👤",
+            "label": "franchisee"
+          },
+          {
+            "emoji": "🏠",
+            "label": "pays rent"
+          },
+          {
+            "emoji": "💰",
+            "label": "% of sales",
+            "hot": true
+          }
+        ]
+      },
+      "source": "Entrepreneur ('a set monthly rental for the land or a percentage of their sales, whichever was greater'); McDonald's 2025 10-K ('rent and royalties based on a percent of sales with minimum rent payments')"
+    },
+    {
+      "say": "As he reportedly put it: we are not technically in the food business. We are in the real estate business.",
+      "visual": {
+        "type": "statement",
+        "lines": [
+          "NOT FOOD",
+          "REAL ESTATE"
+        ],
+        "highlight": [
+          "real",
+          "estate"
+        ],
+        "scale": 0.13
+      },
+      "source": "Footnote Brief, citing John F. Love, McDonald's: Behind the Arches; Wall Street Survivor; Sam Sawyer (Substack)"
+    },
+    {
+      "say": "But here's the interesting part: it still owns the land under {56%|fifty six percent} of its restaurants in its main markets.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/mc-store.jpg",
+        "focus": [
+          0.45,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "56%",
+          "type": "bigword",
+          "text": "56%",
+          "color": "good"
+        }
+      ],
+      "source": "McDonald's 2025 10-K ('owned approximately 56% of the land and approximately 80% of the buildings for restaurants in its consolidated markets'); Footnote Brief (land under about 45% of all restaurants)"
+    },
+    {
+      "say": "Its own annual report calls the model stable and predictable.",
+      "visual": {
+        "type": "proof",
+        "kicker": "McDonald's, 2025 annual report",
+        "quote": "The Company's heavily franchised business model is designed to generate stable and predictable revenue, which is largely a function of franchisee sales",
+        "highlight": "stable and predictable revenue",
+        "hl_at": 1.2
+      },
+      "source": "McDonald's 2025 Form 10-K, Business section and MD&A (verbatim)"
+    },
+    {
+      "say": "This fall, its US sales slipped. Profit still went up.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/mc-drive.jpg",
+        "focus": [
+          0.78,
+          0.45
+        ]
+      },
+      "cues": [
+        {
+          "at": "slipped",
+          "type": "emoji",
+          "text": "📉",
+          "x": 0.3,
+          "y": 0.42,
+          "w": 0.24,
+          "rot": -6
+        },
+        {
+          "at": "Profit",
+          "type": "bigword",
+          "text": "UP",
+          "color": "good"
+        }
+      ],
+      "source": "AP via KPTV Nov 4 2026 (US same-store sales -0.2% in Q3, net income +9%); McDonald's Q3 2026 results (US comparable sales -0.2%, operating income +7%, EPS +10%)"
+    },
+    {
+      "say": "The burgers just make sure the rent gets paid. Which is why",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/mc-store2.jpg",
+        "focus": [
+          0.5,
+          0.45
+        ]
+      },
+      "cues": [
+        {
+          "at": "burgers",
+          "type": "cutout",
+          "file": "assets/cutouts/mc-bigmac.png",
+          "x": 0.5,
+          "y": 0.6,
+          "w": 0.56,
+          "rot": -5
+        },
+        {
+          "at": "rent",
+          "type": "follow",
+          "x": 0.5,
+          "y": 0.42
+        }
+      ],
+      "source": "Paraphrase of the second half of the Sonneborn quote ('the greatest producer of revenue, from which our tenants can pay us our rent'), Wall Street Survivor"
+    }
+  ]
+}

@@ -10,6 +10,7 @@ Append weekly findings from analytics here.
 - Nov 9 run: 005 published Nov 9 (YouTube only). Scheduled 006 shopping cart for Nov 12 as ONE post to YouTube + TikTok. Running count, worst case (cross-posts per network): published 5 (001 YT, 001 TT, 002 YT, 002 TT, 005 YT); scheduled 004 Nov 10 (YT), 003 Nov 11 (YT), 006 Nov 12 (YT+TT) -> 9 of 20 by Nov 12. 006 Metricool post uuid 1321449761553862175.
 - Nov 9 afternoon (Hudson live): YouTube ONLY until real traction (006 updated to YouTube only, cover 1500 ms). Extra Short 007 airlines scheduled today 17:00 ET (uuid -5752663574413753750, cover 1500 ms). Count now: published 5; scheduled 007 Nov 9, 004 Nov 10, 003 Nov 11, 006 Nov 12 (all YouTube only) -> 9 of 20 by Nov 12.
 - Nov 10 run (19:30 ET): 007 and 004 published. Scheduled 008 Black Friday deals for Nov 13 12:30 (YouTube only, cover 1500 ms, uuid -7018952521915809451). Count, worst case: published 7 (001 YT+TT, 002 YT+TT, 005, 007, 004); scheduled 003 Nov 11, 006 Nov 12, 008 Nov 13 -> 10 of 20 by Nov 13. Nov 13 calendar event (old popcorn repeat) updated to 008.
+- Nov 11 run (15:10 ET): 003 published today. Scheduled 009 McDonald's real estate for Nov 14 12:30 (YouTube only, cover 1500 ms, uuid -4349776586941051807). Count, worst case: published 8 (001 YT+TT, 002 YT+TT, 005, 007, 004, 003); scheduled 006 Nov 12, 008 Nov 13, 009 Nov 14 -> 11 of 20 by Nov 14. Nov 14 "open slot" calendar event updated to 009.
 
 ## Production notes
 - 2026-11-07: bigword text wider than ~5 characters spills off the frame during the punch-in; keep bigwords to 4-5 characters. Node labels over ~13 characters get cut at the side edges. Emoji with square silhouettes (📅 ↩️) render as blank squares in node icons; use shaped ones (⏳ 🔓 💰 🔍).
@@ -19,6 +20,8 @@ Append weekly findings from analytics here.
 - 2026-11-09: compare_bars reveal words near the END of a sentence leave the second bar on screen for under half a second; reveal the first bar on an early word and add a short tail phrase after the reveal word. Basket emoji 🧺 reads as a face in node icons; 👜 works.
 
 - 2026-11-10: setup.sh's `pip install -q` hung again (5+ min, no output); killing it and rerunning without -q finished in under a minute. 🏬 (department store) renders as a blank square in node icons like 📅; 🛍️ works. Ticker takes `"plain": false` to print thousands separators (2,600).
+
+- 2026-11-11: Openverse's thumb proxy returns "Thumbnail unavailable from provider" for Wikimedia results; only Flickr/StockSnap results download. split_bars: a part with color "text" renders as a white block with no label, and a single bar leaves most of the frame empty; use two bars or compare_bars. compare_bars reveals items in list order, so put the item named EARLY in the sentence first.
 
 ## 2026-11-09: week 1 analytics (Monday report)
 Data: vidIQ get_videos_by_ids (5 credits) at 14:45 ET Nov 9; Metricool YouTube per-video stats still null (2-3 day lag) and Metricool returned no TikTok post rows.
@@ -60,3 +63,4 @@ Takeaways now in the runbook:
 - Log: 006-shopping-cart (sched. Nov 12) = Setup A (af_heart, speed 1.0, no music), Story format. Next new video uses Setup B; make it a Trick or Paradox so formats spread across setups.
 - Log: 007-how-airlines-make-money (Nov 9 17:00) = Setup B (default voice, speed 1.05, Empty Street Static -22 dB), Paradox format, 45 s. Next new video: Setup A.
 - Log: 008-black-friday-fake-deals (Nov 13) = Setup A (af_heart, speed 1.0, no music), Trick format, 32 s, no proof scene (006 and 007 both had one). Setup A so far: Story (006) + Trick (008); Setup B: Paradox (007). Next new video: Setup B; make it a Story so formats keep spreading.
+- Log: 009-mcdonalds-real-estate (Nov 14) = Setup B (default voice, speed 1.05, Empty Street Static -22 dB), Story format, 55 s, with proof scene (10-K quote). Setup A so far: Story (006) + Trick (008); Setup B: Paradox (007) + Story (009). Next new video: Setup A; make it a Paradox or Trick so formats keep spreading.

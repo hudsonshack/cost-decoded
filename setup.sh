@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # One-time setup for a fresh session: voice engine + model files.
 set -e
-pip install --break-system-packages -q kokoro-onnx soundfile numpy pillow scipy faster-whisper "rembg[cpu]"
+pip install --break-system-packages kokoro-onnx soundfile numpy pillow scipy faster-whisper "rembg[cpu]"
 mkdir -p ../models
 for f in kokoro-v1.0.onnx voices-v1.0.bin; do
   [ -s ../models/$f ] || curl -sL -o ../models/$f "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/$f"

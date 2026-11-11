@@ -9,6 +9,7 @@ Append weekly findings from analytics here.
 - Note for the next run: the Nov 13 planned calendar event "Why Movie Theater Popcorn Costs So Much" repeats 005 (scheduled Nov 9). Swap that day for a fresh topic.
 - Nov 9 run: 005 published Nov 9 (YouTube only). Scheduled 006 shopping cart for Nov 12 as ONE post to YouTube + TikTok. Running count, worst case (cross-posts per network): published 5 (001 YT, 001 TT, 002 YT, 002 TT, 005 YT); scheduled 004 Nov 10 (YT), 003 Nov 11 (YT), 006 Nov 12 (YT+TT) -> 9 of 20 by Nov 12. 006 Metricool post uuid 1321449761553862175.
 - Nov 9 afternoon (Hudson live): YouTube ONLY until real traction (006 updated to YouTube only, cover 1500 ms). Extra Short 007 airlines scheduled today 17:00 ET (uuid -5752663574413753750, cover 1500 ms). Count now: published 5; scheduled 007 Nov 9, 004 Nov 10, 003 Nov 11, 006 Nov 12 (all YouTube only) -> 9 of 20 by Nov 12.
+- Nov 10 run (19:30 ET): 007 and 004 published. Scheduled 008 Black Friday deals for Nov 13 12:30 (YouTube only, cover 1500 ms, uuid -7018952521915809451). Count, worst case: published 7 (001 YT+TT, 002 YT+TT, 005, 007, 004); scheduled 003 Nov 11, 006 Nov 12, 008 Nov 13 -> 10 of 20 by Nov 13. Nov 13 calendar event (old popcorn repeat) updated to 008.
 
 ## Production notes
 - 2026-11-07: bigword text wider than ~5 characters spills off the frame during the punch-in; keep bigwords to 4-5 characters. Node labels over ~13 characters get cut at the side edges. Emoji with square silhouettes (📅 ↩️) render as blank squares in node icons; use shaped ones (⏳ 🔓 💰 🔍).
@@ -16,6 +17,8 @@ Append weekly findings from analytics here.
 - 2026-11-09: Flickr (live.staticflickr.com) and Wikimedia return 429 "CIDR range blocked" from the cloud session. Download Openverse results through Openverse's own proxy instead: `curl -sL https://api.openverse.org/v1/images/<id>/thumb/?full_size=true&compressed=false` (full 1024 px). Openverse search often 504s; retry it in a loop, queries in parallel. `photos.py get` (direct Flickr URL) fails while this lasts.
 - 2026-11-09: faster-whisper 1.2.1 with av 19 can't decode files (`metadata_errors` TypeError); pass numpy arrays (the engine already does). The first `pip install -q` in setup.sh sat idle for 10+ min; a rerun without -q finished in under a minute.
 - 2026-11-09: compare_bars reveal words near the END of a sentence leave the second bar on screen for under half a second; reveal the first bar on an early word and add a short tail phrase after the reveal word. Basket emoji 🧺 reads as a face in node icons; 👜 works.
+
+- 2026-11-10: setup.sh's `pip install -q` hung again (5+ min, no output); killing it and rerunning without -q finished in under a minute. 🏬 (department store) renders as a blank square in node icons like 📅; 🛍️ works. Ticker takes `"plain": false` to print thousands separators (2,600).
 
 ## 2026-11-09: week 1 analytics (Monday report)
 Data: vidIQ get_videos_by_ids (5 credits) at 14:45 ET Nov 9; Metricool YouTube per-video stats still null (2-3 day lag) and Metricool returned no TikTok post rows.
@@ -56,3 +59,4 @@ Takeaways now in the runbook:
 - Nov 7 evening: Hudson liked both previews. Rule now: scheduled videos stay as-is; new videos alternate Setup A (female narrator) and Setup B (current voice + quiet beat), starting with A. After 3+ videos each, switch to the winner if its interaction per view is 30%+ higher.
 - Log: 006-shopping-cart (sched. Nov 12) = Setup A (af_heart, speed 1.0, no music), Story format. Next new video uses Setup B; make it a Trick or Paradox so formats spread across setups.
 - Log: 007-how-airlines-make-money (Nov 9 17:00) = Setup B (default voice, speed 1.05, Empty Street Static -22 dB), Paradox format, 45 s. Next new video: Setup A.
+- Log: 008-black-friday-fake-deals (Nov 13) = Setup A (af_heart, speed 1.0, no music), Trick format, 32 s, no proof scene (006 and 007 both had one). Setup A so far: Story (006) + Trick (008); Setup B: Paradox (007). Next new video: Setup B; make it a Story so formats keep spreading.

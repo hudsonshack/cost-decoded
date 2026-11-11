@@ -1,0 +1,226 @@
+{
+  "format": "short",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "playbook": "trick",
+  "ab": "A",
+  "cover_ms": 1500,
+  "title": "Are Black Friday Deals Actually Real?",
+  "description": "A price tracker found that a third of last season's Black Friday deals had been cheaper earlier, and JCPenney once raised prices just so it could mark them down.\n#blackfriday #shopping #money #shorts\n\nSources: Visualping Black Friday 2025 fake deals report; ConsumerAffairs (Nov 2, 2026); MobileSyrup (Dec 4, 2025); AP via MPR News (Apr 8, 2013); Chief Executive (2013); Reuters via Coupons in the News (Mar 2013); Benzinga, citing the New York Post (Mar 2013)\nPhotos: paul bica, Stein Magne, Jessie Pearl, JeepersMedia, danxoneil (CC BY 2.0, Flickr)",
+  "tags": [
+    "black friday",
+    "black friday deals",
+    "are black friday deals real",
+    "fake black friday deals",
+    "anchoring",
+    "jcpenney",
+    "pricing tricks",
+    "money"
+  ],
+  "highlight_words": [
+    "deal",
+    "fakes",
+    "anchoring",
+    "crossed-out"
+  ],
+  "first_comment": "Be honest: ever bought something just because the tag said \"50% off\"? Yes or no? 🏷️",
+  "scenes": [
+    {
+      "say": "One in three Black Friday deals isn't a deal at all.",
+      "visual": {
+        "type": "photo_hook",
+        "file": "assets/photos/bf-mall.jpg",
+        "focus": [
+          0.72,
+          0.5
+        ],
+        "lines": [
+          "1 IN 3 DEALS",
+          "AREN'T DEALS"
+        ],
+        "highlight": [
+          "1",
+          "3"
+        ],
+        "scale": 0.12,
+        "y": 0.13
+      },
+      "cues": [
+        {
+          "at": "deal",
+          "type": "emoji",
+          "text": "🏷️",
+          "x": 0.5,
+          "y": 0.66,
+          "w": 0.26,
+          "rot": -8
+        }
+      ],
+      "source": "Visualping Black Friday 2025 report ('one-third of Black Friday/Cyber Monday deals offered no real savings'); ConsumerAffairs Nov 2 2026 (roughly one-third had been available for less earlier); MobileSyrup Dec 4 2025"
+    },
+    {
+      "say": "A price tracker watched {2,600|twenty six hundred} products every day last season.",
+      "visual": {
+        "type": "ticker",
+        "from": 0,
+        "to": 2600,
+        "count_at": 0.1,
+        "count_dur": 1.2,
+        "color": "good",
+        "lines": [
+          "Products tracked daily",
+          "Oct 1 to Cyber Monday"
+        ],
+        "highlight": [
+          "daily"
+        ],
+        "plain": false
+      },
+      "source": "Visualping report (2,620 products, nine retailers, daily checks Oct 1 to Dec 1 2025); ConsumerAffairs ('more than 2,600 products')"
+    },
+    {
+      "say": "The fakes still cost {37%|thirty seven percent} more than their lowest price of the season.",
+      "visual": {
+        "type": "compare_bars",
+        "title": "Fake deal vs. its lowest price",
+        "reveal_at": [
+          "the",
+          "37%"
+        ],
+        "suffix": "%",
+        "decimals": 0,
+        "items": [
+          {
+            "label": "Lowest price",
+            "value": 100,
+            "color": "text"
+          },
+          {
+            "label": "\"Deal\" price",
+            "value": 137,
+            "color": "bad"
+          }
+        ]
+      },
+      "source": "Visualping ('still 37% higher than the product's lowest observed price', average); ConsumerAffairs ('37% higher'); MobileSyrup ('still 37 per cent higher')"
+    },
+    {
+      "say": "For luggage? {61%|sixty one percent} of the deals.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/bf-suitcase.jpg",
+        "focus": [
+          0.7,
+          0.55
+        ]
+      },
+      "cues": [
+        {
+          "at": "61%",
+          "type": "bigword",
+          "text": "61%",
+          "color": "bad"
+        }
+      ],
+      "source": "Visualping (luggage 61%, highest share of fake deals); ConsumerAffairs (luggage 61%); MobileSyrup (luggage 61%)"
+    },
+    {
+      "say": "It's a trick called anchoring.",
+      "visual": {
+        "type": "statement",
+        "lines": [
+          "IT'S CALLED",
+          "ANCHORING"
+        ],
+        "highlight": [
+          "anchoring"
+        ],
+        "scale": 0.12
+      }
+    },
+    {
+      "say": "The crossed-out price is only there to make the real one feel tiny.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/bf-tag.jpg",
+        "focus": [
+          0.35,
+          0.32
+        ]
+      },
+      "cues": [
+        {
+          "at": "tiny",
+          "type": "bigword",
+          "text": "TINY",
+          "color": "good"
+        }
+      ]
+    },
+    {
+      "say": "When JCPenney dropped fake sales in {2012|twenty twelve}, revenue fell {25%|twenty five percent}.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/bf-jcp.jpg",
+        "focus": [
+          0.24,
+          0.45
+        ]
+      },
+      "cues": [
+        {
+          "at": "25%",
+          "type": "bigword",
+          "text": "-25%",
+          "color": "bad"
+        }
+      ],
+      "source": "AP via MPR News Apr 8 2013 ('Penney ditched coupons and most of its sales events in favor of everyday low prices'; 'Revenue fell 25 percent, to $12.98 billion, from the previous year's $17.26 billion'); Chief Executive 2013 ('fair and square' pricing replacing 'fake prices'; sales plunged from ~$17.5B to $13B)"
+    },
+    {
+      "say": "So Penney raised prices, just to mark them down again.",
+      "visual": {
+        "type": "nodes",
+        "center": {
+          "emoji": "🛍️",
+          "label": "jcpenney"
+        },
+        "nodes": [
+          {
+            "emoji": "💰",
+            "label": "price up"
+          },
+          {
+            "emoji": "🏷️",
+            "label": "mark down"
+          },
+          {
+            "emoji": "🎉",
+            "label": "sale!",
+            "hot": true
+          }
+        ]
+      },
+      "source": "Reuters via Coupons in the News Mar 27 2013 ('has begun raising the regular prices on much of its merchandise'); Benzinga citing NY Post Mar 2013 ('marking up its prices so that they can subsequently be discounted')"
+    },
+    {
+      "say": "So skip the crossed-out price and check the price history. Because",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/bf-50off.jpg",
+        "focus": [
+          0.7,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "history",
+          "type": "follow",
+          "x": 0.5,
+          "y": 0.6
+        }
+      ]
+    }
+  ]
+}

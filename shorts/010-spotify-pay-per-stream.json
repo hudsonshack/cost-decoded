@@ -1,0 +1,293 @@
+{
+  "format": "short",
+  "voice": "af_heart",
+  "speed": 1.0,
+  "playbook": "paradox",
+  "ab": "A",
+  "cover_ms": 1500,
+  "title": "How Much Does Spotify Actually Pay Per Stream?",
+  "description": "Spotify paid the music industry over $11 billion in 2025, yet there is no per-stream rate, and since 2024 a song under 1,000 streams a year earns nothing.\n#spotify #musicindustry #money #shorts\n\nSources: Spotify Loud & Clear (Mar 2026); Music Week (Mar 2026); AP (Aug 2024); TuneCore 2026 guide; Headphonesty (Feb 2025); Spotify for Artists blog (Nov 2023); Engadget (Nov 2023); Music Business Worldwide (Apr 2024); MacRumors (Jan 2026)\nPhotos: ajay_suresh, freestocks.org (CC0), theslowlane, blacklerphotos, comedy_nose (public domain), marfis75, sadsonmusic, James Cridland, nan palmero (CC BY 2.0 unless noted, Flickr)",
+  "tags": [
+    "spotify",
+    "how much does spotify pay per stream",
+    "spotify pay per stream",
+    "spotify royalties",
+    "spotify 1000 streams",
+    "music industry",
+    "how artists get paid",
+    "business explained"
+  ],
+  "highlight_words": [
+    "nothing",
+    "label",
+    "pot"
+  ],
+  "first_comment": "Be honest: would you pay $2 more a month if it all went straight to artists? Yes or no? 🎧",
+  "scenes": [
+    {
+      "say": "Spotify paid out {$11 BILLION|eleven billion dollars} last year.",
+      "visual": {
+        "type": "photo_hook",
+        "file": "assets/photos/sp-hook.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "pan": 0.0,
+        "lines": [
+          "$11 BILLION",
+          "PAID OUT"
+        ],
+        "highlight": [
+          "$11",
+          "BILLION"
+        ],
+        "scale": 0.11,
+        "y": 0.13
+      },
+      "cues": [
+        {
+          "at": "last",
+          "type": "emoji",
+          "text": "🎧",
+          "x": 0.78,
+          "y": 0.5,
+          "w": 0.22,
+          "rot": 8
+        }
+      ],
+      "source": "Spotify Loud & Clear, Mar 11 2026 ('over $11 billion' paid to the music industry in 2025); Music Week Mar 2026 ('more than $11 billion in 2025')"
+    },
+    {
+      "say": "Yet one stream can pay as little as a third of a cent.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/sp-coins.jpg",
+        "focus": [
+          0.4,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "third",
+          "type": "bigword",
+          "text": "0.3¢",
+          "color": "bad"
+        }
+      ],
+      "source": "AP, Aug 30 2024 ('somewhere between $0.003 and $0.005 per stream'); TuneCore 2026 guide ('$0.003 to $0.005 per stream')"
+    },
+    {
+      "say": "You now pay {$12.99|twelve ninety nine} a month after this year's price hike. So where does it go?",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/sp-phone.jpg",
+        "focus": [
+          0.55,
+          0.45
+        ]
+      },
+      "cues": [
+        {
+          "at": "hike",
+          "type": "cutout",
+          "file": "assets/cutouts/sp-headphones.png",
+          "x": 0.55,
+          "y": 0.6,
+          "w": 0.85,
+          "rot": -6
+        }
+      ],
+      "source": "MacRumors Jan 15 2026 (US Premium Individual $11.99 -> $12.99); mxdwn Jan 15 2026 ('price increase to $12.99 per month')"
+    },
+    {
+      "say": "About two thirds goes to whoever owns the music. Spotify keeps the rest.",
+      "visual": {
+        "type": "donut",
+        "value": 67,
+        "color": "good",
+        "caption": "OF EACH DOLLAR GOES TO THE MUSIC'S OWNERS"
+      },
+      "source": "AP Aug 2024 ('Spotify pays roughly two-thirds of each dollar it makes from music streams'); Headphonesty Feb 2025 (about 70% to rights holders); TuneCore (70/30 split)"
+    },
+    {
+      "say": "That's usually not the artist. It's the label and the publisher, and they pay the artist by contract.",
+      "visual": {
+        "type": "nodes",
+        "center": {
+          "emoji": "💰",
+          "label": "your money"
+        },
+        "nodes": [
+          {
+            "emoji": "🏢",
+            "label": "label"
+          },
+          {
+            "emoji": "📝",
+            "label": "publisher"
+          },
+          {
+            "emoji": "🎤",
+            "label": "artist",
+            "hot": true
+          }
+        ]
+      },
+      "source": "AP Aug 2024 ('goes to their label and their publisher', 'who then pay their artists according to their contracts'); Headphonesty quoting Spotify ('streaming services do not pay artists or songwriters directly')"
+    },
+    {
+      "say": "Funny thing is, there's no per stream rate at all.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/sp-mixer.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "pan": 0.03
+      },
+      "cues": [
+        {
+          "at": "rate",
+          "type": "bigword",
+          "text": "NONE",
+          "color": "bad"
+        }
+      ],
+      "source": "AP Aug 2024 ('There is no per stream rate'; payouts set by 'streamshare'); TuneCore (pro-rata pool split by streamshare)"
+    },
+    {
+      "say": "It all goes in one pot, split by each song's share of streams.",
+      "visual": {
+        "type": "statement",
+        "lines": [
+          "ONE POT",
+          "SPLIT BY",
+          "STREAMS"
+        ],
+        "highlight": [
+          "pot"
+        ],
+        "scale": 0.12
+      },
+      "source": "AP Aug 2024 (streamshare); TuneCore 2026 (revenue pooled, 70% to rights holders by streamshare)"
+    },
+    {
+      "say": "But here's the part most people miss: since {2024|twenty twenty four}, songs under {1,000|a thousand} streams a year earn nothing.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/sp-stage.jpg",
+        "focus": [
+          0.5,
+          0.45
+        ]
+      },
+      "cues": [
+        {
+          "at": "nothing",
+          "type": "bigword",
+          "text": "$0",
+          "color": "bad"
+        }
+      ],
+      "source": "Spotify for Artists blog Nov 21 2023 + MBW (live April 1 2024); Engadget Nov 2023 ('not be eligible for any payment whatsoever')"
+    },
+    {
+      "say": "Spotify's own announcement spelled it out: a thousand streams, or no royalties.",
+      "visual": {
+        "type": "proof",
+        "kicker": "Spotify for Artists, November 2023",
+        "quote": "Starting in early 2024, tracks must have reached at least 1,000 streams in the previous 12 months in order to generate recorded royalties.",
+        "highlight": "at least 1,000 streams",
+        "hl_at": 0.6
+      },
+      "source": "Spotify for Artists blog, 'Modernizing Our Royalty System', Nov 21 2023 (verbatim, re-checked)"
+    },
+    {
+      "say": "Spotify says that money goes to songs above the line.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/sp-guitar.jpg",
+        "focus": [
+          0.6,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "above",
+          "type": "emoji",
+          "text": "📈",
+          "x": 0.74,
+          "y": 0.44,
+          "w": 0.24,
+          "rot": 6
+        }
+      ],
+      "source": "Spotify for Artists blog Nov 2023 ('no change to the size of the music royalty pool'; about $40M a year redirected); Engadget Nov 2023 ($40 million per year)"
+    },
+    {
+      "say": "At a third of a cent, it takes three hundred streams to make one dollar.",
+      "visual": {
+        "type": "ticker",
+        "from": 0,
+        "to": 300,
+        "count_at": 0.6,
+        "count_dur": 1.2,
+        "color": "good",
+        "label_top": "streams",
+        "lines": [
+          "to earn",
+          "one dollar"
+        ],
+        "highlight": [
+          "dollar"
+        ]
+      },
+      "source": "Arithmetic from AP and TuneCore low end ($0.003-$0.0033 per stream -> about 300 streams per $1)"
+    },
+    {
+      "say": "Only about {13,800|thirteen thousand eight hundred} artists made a hundred grand from Spotify last year.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/sp-crowd.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "hundred",
+          "type": "bigword",
+          "text": "100K",
+          "color": "good"
+        }
+      ],
+      "source": "Spotify Loud & Clear Mar 2026 ('more than 13,800 artists generated at least $100,000'); Music Week Mar 2026 (same figure)"
+    },
+    {
+      "say": "One pot, one label, one thousand stream cutoff. That's how",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/sp-vinyl.jpg",
+        "focus": [
+          0.45,
+          0.5
+        ],
+        "pan": 0.03
+      },
+      "cues": [
+        {
+          "at": "cutoff",
+          "type": "follow",
+          "x": 0.5,
+          "y": 0.58
+        }
+      ],
+      "source": "Summary of the beats above; loops into the hook ('Spotify paid out eleven billion dollars last year')"
+    }
+  ]
+}

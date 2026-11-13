@@ -1,0 +1,212 @@
+{
+  "format": "short",
+  "speed": 1.1,
+  "music": {
+    "file": "assets/music/empty-street-static.mp3",
+    "db": -22,
+    "duck_db": 4
+  },
+  "playbook": "trick",
+  "ab": "B",
+  "cover_ms": 1500,
+  "title": "Does Starbucks Have a Secret Cheaper Size?",
+  "description": "Starbucks still makes an 8-ounce Short with the same espresso shot as a Tall, and keeping it off the menu is a classic pricing trick.\n#starbucks #coffee #money #shorts\n\nSources: Tim Harford, Slate (Jan 6, 2006); Better Homes & Gardens via Yahoo (Apr 2019); Food Republic (Dec 2023); GOBankingRates (Jul 2025); Caffeine Informer; Starbucks fiscal 2026 results, Form 8-K (Oct 29, 2026); Finsee Q4 FY2026 review\nPhotos: Charles Williams, Sam Howzit, Cherrysweetdeal, cahadikin, Esparta (CC BY 2.0, Flickr)",
+  "tags": [
+    "starbucks",
+    "starbucks short size",
+    "starbucks secret size",
+    "starbucks sizes",
+    "price discrimination",
+    "starbucks hacks",
+    "pricing tricks",
+    "coffee prices"
+  ],
+  "highlight_words": [
+    "short",
+    "secret",
+    "discrimination",
+    "profit"
+  ],
+  "first_comment": "Be honest: did you know Starbucks had a Short size? Yes or no? ☕",
+  "scenes": [
+    {
+      "say": "Starbucks has a fourth, cheaper size it keeps off the menu.",
+      "visual": {
+        "type": "photo_hook",
+        "file": "assets/photos/sb-hook.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "lines": [
+          "THE 4TH SIZE",
+          "OFF THE MENU"
+        ],
+        "highlight": [
+          "4th"
+        ],
+        "scale": 0.12,
+        "y": 0.13
+      },
+      "source": "BHG via Yahoo Apr 2019 ('Every Starbucks also has a fourth option: short'; 'isn't usually found on the menu; you have to know to ask for it'); Slate/Harford Jan 2006 (not on the menu board or website); Food Republic Dec 2023 ('may not be displayed on the Starbucks menu'); GOBankingRates Jul 2025 ('the short costs less than the tall')"
+    },
+    {
+      "say": "It's called a Short: eight ounces.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/sb-wall.jpg",
+        "focus": [
+          0.55,
+          0.4
+        ]
+      },
+      "cues": [
+        {
+          "at": "Short",
+          "type": "cutout",
+          "file": "assets/cutouts/sb-short.png",
+          "x": 0.5,
+          "y": 0.7,
+          "w": 0.42,
+          "rot": -4
+        },
+        {
+          "at": "eight",
+          "type": "bigword",
+          "text": "8 OZ",
+          "color": "good"
+        }
+      ],
+      "source": "Food Republic Dec 2023 ('smallest size you can order at 8 ounces (as opposed to a 12-ounce tall)'); Slate/Harford 2006 ('at 8 ounces, a third smaller than the smallest size on the official menu'); BHG 2019 (8 ounces)"
+    },
+    {
+      "say": "Same single shot of espresso as a Tall.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/sb-espresso.jpg",
+        "focus": [
+          0.5,
+          0.55
+        ]
+      },
+      "cues": [
+        {
+          "at": "single",
+          "type": "bigword",
+          "text": "ONE",
+          "color": "good"
+        }
+      ],
+      "source": "Food Republic Dec 2023 ('All short and most tall espresso drinks made with milk will contain one shot of espresso'); Caffeine Informer (Caffe Latte: Short 75 mg, Tall 75 mg); Slate/Harford 2006 (same espresso as the tall)"
+    },
+    {
+      "say": "In {2006|two thousand six}, an economist paid {$2.35|two thirty five} for one, instead of {$2.65|two sixty five}.",
+      "visual": {
+        "type": "compare_bars",
+        "title": "Cappuccino, 2006",
+        "reveal_at": [
+          "2006",
+          "instead"
+        ],
+        "prefix": "$",
+        "decimals": 2,
+        "items": [
+          {
+            "label": "Short",
+            "value": 2.35,
+            "color": "good"
+          },
+          {
+            "label": "Tall",
+            "value": 2.65,
+            "color": "bad"
+          }
+        ]
+      },
+      "source": "Tim Harford, 'The mystery of the short cappuccino', Slate, Jan 6 2006 ('This secret cappuccino is cheaper, too: at my local Starbucks, $2.35 instead of $2.65'). Second source for 'cheaper': GOBankingRates Jul 2025 ('the short costs less than the tall'); BHG 2019 ('often around 10 cents')"
+    },
+    {
+      "say": "So why hide it? It's called price discrimination.",
+      "visual": {
+        "type": "statement",
+        "lines": [
+          "IT'S CALLED",
+          "PRICE",
+          "DISCRIMINATION"
+        ],
+        "highlight": [
+          "discrimination"
+        ],
+        "scale": 0.085
+      },
+      "source": "Slate/Harford 2006 (hiding the cheap option lets Starbucks charge price-sensitive customers less without losing the higher price from everyone else: 'making the cheap product invisible'); BHG 2019 (keeping the smallest size off the menu nudges customers to bigger drinks)"
+    },
+    {
+      "say": "Only people who know to ask pay less. Everyone else trades up.",
+      "visual": {
+        "type": "nodes",
+        "center": {
+          "emoji": "☕",
+          "label": "the menu"
+        },
+        "nodes": [
+          {
+            "emoji": "🔍",
+            "label": "askers save",
+            "hot": true
+          },
+          {
+            "emoji": "💰",
+            "label": "others pay"
+          }
+        ]
+      },
+      "source": "Slate/Harford 2006 ('They will serve you a better, stronger cappuccino if you want one, and they will charge you less for it'); BHG 2019 ('you have to know to ask for it')"
+    },
+    {
+      "say": "Product costs are just {32¢|thirty two cents} of each Starbucks dollar, running the stores {45¢|forty five}. So bigger cups are where the profit is.",
+      "visual": {
+        "type": "compare_bars",
+        "title": "Of every $1 Starbucks takes in",
+        "reveal_at": [
+          "Product",
+          "running"
+        ],
+        "suffix": "¢",
+        "decimals": 0,
+        "items": [
+          {
+            "label": "Product",
+            "value": 32,
+            "color": "good"
+          },
+          {
+            "label": "Stores",
+            "value": 45,
+            "color": "bad"
+          }
+        ]
+      },
+      "source": "Starbucks FY2026 results 8-K Oct 29 2026: product and distribution costs $12,235.2M = 32.3% of $37,910.6M revenue; coffeehouse operating expenses $17,189.8M = 45.3%. Finsee Q4 FY2026 review (product and distribution costs 32.0% of revenue in Q4). Harford/Slate 2006: staff time, queue space and packaging cost about the same across sizes, so bigger drinks carry bigger markups"
+    },
+    {
+      "say": "So next time, just ask for a Short. Because",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/sb-red.jpg",
+        "focus": [
+          0.6,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "Short",
+          "type": "follow",
+          "x": 0.5,
+          "y": 0.6
+        }
+      ]
+    }
+  ]
+}

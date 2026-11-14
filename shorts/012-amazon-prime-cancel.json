@@ -1,0 +1,289 @@
+{
+  "format": "short",
+  "speed": 1.05,
+  "music": {
+    "file": "assets/music/empty-street-static.mp3",
+    "db": -22,
+    "duck_db": 4
+  },
+  "playbook": "story",
+  "ab": "B",
+  "cover_ms": 1500,
+  "post_slot": "12:30",
+  "title": "Why Is It So Hard to Cancel Amazon Prime?",
+  "description": "Amazon's own code name for the Prime cancel flow was 'Iliad', and the FTC case over it ended in a $2.5 billion settlement that is still paying refunds of up to $200.\n#amazon #amazonprime #money #shorts\n\nSources: FTC press release (Sep 25, 2025); FTC complaint, FTC v. Amazon (Jun 2023) via Quartz and Yahoo/Business Insider; The Register (Jun 2023); Fortune (Sep 25, 2025); FTC Amazon refunds page and FTC press release (Sep 17, 2026); Amazon Q4 2025 results (Feb 2026); Marketplace Pulse\nPhotos: stockcatalog, shopblocks, Jorge Lascar, Blue MauMau, MDGovpics, Rob Ireton, Phillip Pessar (CC BY 2.0, Flickr)",
+  "tags": [
+    "amazon prime",
+    "how to cancel amazon prime",
+    "amazon prime cancel",
+    "amazon ftc settlement",
+    "amazon prime refund",
+    "iliad flow",
+    "subscription traps",
+    "business explained"
+  ],
+  "highlight_words": [
+    "cancel",
+    "iliad",
+    "refunds"
+  ],
+  "first_comment": "Be honest: do you still pay for Prime, or did you make it through the cancel maze? 📦",
+  "scenes": [
+    {
+      "say": "Amazon agreed to pay {$2.5 BILLION|two and a half billion dollars} over Prime's cancel maze.",
+      "visual": {
+        "type": "photo_hook",
+        "file": "assets/photos/amz-hook.jpg",
+        "focus": [
+          0.32,
+          0.55
+        ],
+        "pan": 0.0,
+        "lines": [
+          "PRIME'S $2.5B",
+          "CANCEL MAZE"
+        ],
+        "highlight": [
+          "$2.5B"
+        ],
+        "scale": 0.11,
+        "y": 0.13
+      },
+      "source": "FTC press release Sep 25 2025 ('FTC Secures Historic $2.5 Billion Settlement Against Amazon'); Fortune Sep 25 2025 ($2.5B: $1B penalty + $1.5B refunds)"
+    },
+    {
+      "say": "Joining took one or two clicks.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/amz-phone.jpg",
+        "focus": [
+          0.5,
+          0.45
+        ]
+      },
+      "cues": [
+        {
+          "at": "clicks",
+          "type": "emoji",
+          "text": "👆",
+          "x": 0.72,
+          "y": 0.62,
+          "w": 0.24,
+          "rot": -8
+        }
+      ],
+      "source": "FTC complaint Jun 2023 as reported by Quartz and The Register (enrollment 'in one or two clicks')"
+    },
+    {
+      "say": "Canceling took four pages, six clicks and fifteen options.",
+      "visual": {
+        "type": "nodes",
+        "center": {
+          "emoji": "❌",
+          "label": "cancel prime"
+        },
+        "nodes": [
+          {
+            "emoji": "📖",
+            "label": "4 pages"
+          },
+          {
+            "emoji": "👆",
+            "label": "6 clicks"
+          },
+          {
+            "emoji": "🌀",
+            "label": "15 options",
+            "hot": true
+          }
+        ]
+      },
+      "source": "FTC complaint via The Register Jun 21 2023 ('a four-page, six-click, fifteen-option cancellation process'); Quartz Jun 2023 (same wording)"
+    },
+    {
+      "say": "Inside Amazon, its code name was Iliad.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/amz-troy.jpg",
+        "focus": [
+          0.42,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "Iliad",
+          "type": "bigword",
+          "text": "ILIAD",
+          "color": "bad"
+        }
+      ],
+      "source": "Fortune Sep 2025 (FTC alleges Amazon internally called the process 'Iliad'); The Register Jun 2023 (internal code name)"
+    },
+    {
+      "say": "The lawsuit says that's Homer's epic about the long, arduous Trojan War.",
+      "visual": {
+        "type": "proof",
+        "kicker": "FTC complaint against Amazon, June 2023",
+        "quote": "Fittingly, Amazon named that process 'Iliad,' which refers to Homer's epic about the long, arduous Trojan War.",
+        "highlight": "the long, arduous Trojan War",
+        "hl_at": 1.4
+      },
+      "source": "FTC v. Amazon complaint (Jun 21 2023), verbatim as quoted by Quartz and by Yahoo/Business Insider"
+    },
+    {
+      "say": "And the button to skip Prime said: No, I don't want free shipping.",
+      "visual": {
+        "type": "statement",
+        "lines": [
+          "NO, I DON'T",
+          "WANT FREE",
+          "SHIPPING"
+        ],
+        "highlight": [
+          "free",
+          "shipping"
+        ],
+        "scale": 0.1
+      },
+      "source": "FTC press release Sep 25 2025 ('Amazon can no longer have a button that says, \"No, I don't want Free Shipping.\"'); Fortune Sep 2025"
+    },
+    {
+      "say": "The government sued, and Amazon settled.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/amz-ftc.jpg",
+        "focus": [
+          0.5,
+          0.45
+        ]
+      },
+      "cues": [
+        {
+          "at": "settled",
+          "type": "cutout",
+          "file": "assets/cutouts/gavel.png",
+          "x": 0.5,
+          "y": 0.7,
+          "w": 0.6,
+          "rot": -6
+        }
+      ],
+      "source": "FTC sued Jun 2023, settled Sep 25 2025 (FTC press release; Fortune)"
+    },
+    {
+      "say": "{$1 BILLION|one billion} in fines, and {$1.5 BILLION|one and a half billion} back to customers.",
+      "visual": {
+        "type": "compare_bars",
+        "title": "Amazon's settlement",
+        "reveal_at": [
+          "$1",
+          "$1.5"
+        ],
+        "prefix": "$",
+        "suffix": "B",
+        "decimals": 1,
+        "items": [
+          {
+            "label": "Fine",
+            "value": 1.0,
+            "color": "bad"
+          },
+          {
+            "label": "Refunds",
+            "value": 1.5,
+            "color": "good"
+          }
+        ]
+      },
+      "source": "FTC press release Sep 25 2025 ($1 billion civil penalty; $1.5 billion consumer redress for ~35M consumers); Fortune Sep 2025"
+    },
+    {
+      "say": "But here's the interesting part: Amazon's subscriptions made {$49.6 BILLION|forty nine point six billion} last year.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/amz-warehouse.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "subscriptions",
+          "type": "emoji",
+          "text": "💰",
+          "x": 0.5,
+          "y": 0.62,
+          "w": 0.28,
+          "rot": 6
+        }
+      ],
+      "source": "Amazon Q4 2025 results (Feb 2026): subscription services net sales Q1-Q4 2025 $11,715M + $12,208M + $12,574M + $13,122M = $49,619M; Marketplace Pulse ($49.62B in 2025, up 12%)"
+    },
+    {
+      "say": "The whole settlement? About {18|eighteen} days of that.",
+      "visual": {
+        "type": "ticker",
+        "from": 0,
+        "to": 18,
+        "suffix": " DAYS",
+        "count_at": 0.3,
+        "count_dur": 1.2,
+        "color": "good",
+        "lines": [
+          "of Amazon subscription",
+          "money, 2025"
+        ],
+        "highlight": [
+          "subscription"
+        ]
+      },
+      "source": "Calculation: $49.619B / 365 = $0.136B a day; $2.5B / $0.136B = 18.4 days"
+    },
+    {
+      "say": "If it caught you, refunds up to {$200|two hundred dollars} are still going out.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/amz-doormat.jpg",
+        "focus": [
+          0.55,
+          0.45
+        ]
+      },
+      "cues": [
+        {
+          "at": "$200",
+          "type": "emoji",
+          "text": "💵",
+          "x": 0.5,
+          "y": 0.3,
+          "w": 0.3,
+          "rot": -6
+        }
+      ],
+      "source": "FTC press release Sep 17 2026 (per-consumer maximum raised from $51 to $200; automatic payments from Oct 1 2026); FTC Amazon refunds page (automatic refunds through April 2027, max $200)"
+    },
+    {
+      "say": "Eighteen days. That's the real story behind the headline:",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/amz-truck.jpg",
+        "focus": [
+          0.8,
+          0.4
+        ]
+      },
+      "cues": [
+        {
+          "at": "story",
+          "type": "follow",
+          "x": 0.5,
+          "y": 0.42
+        }
+      ],
+      "source": "Loop line into the hook"
+    }
+  ],
+  "review_fix": "Nov 14 review: 003 opened on a Swedish-signage gift card rack and 004's headline stated a fact, not a claim, so 012 opens on a close-up of a US Amazon Prime box (English 'prime' tape) with brand + number in the headline (PRIME'S $2.5B / CANCEL MAZE). Line 1 is the claim in 10 words. Posted at 12:30 for the post-time test (009 17:00, 010 12:30, 011 17:00, 012 12:30)."
+}

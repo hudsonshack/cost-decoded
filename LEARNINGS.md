@@ -82,3 +82,4 @@ Takeaways now in the runbook:
   - 006 Cart: 9 views, 60% swiped. Cause: female narrator + a slow 65 s story; YouTube stopped testing it.
   - 008 Black Friday: 40 views, 80% swiped. Cause: female narrator + an opening Christmas-tree photo that didn't show a deal or a price tag.
   - Applied today: A/B winner = Setup B for all videos; 010 Spotify switched to B; new hooks for 009 ("McDonald's isn't really a burger company") and 010 ("300 streams to make one dollar"); all three scheduled videos re-rendered with the instant headline.
+- 2026-11-13 evening fixes, scheduled: 009 McDonald's moved to Nov 14 17:00 (44 s, new hook), 010 Spotify Nov 15 12:30 (33 s, Setup B, new hook), 011 Starbucks Nov 16 17:00 (30 s, instant headline). Post-time test: 009 = 17:00, 010 = 12:30, 011 = 17:00; next new videos keep alternating. All three use media/*-v2.mp4 at commit de8b278.

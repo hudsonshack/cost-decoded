@@ -55,6 +55,24 @@ Matched frame-by-frame to Hudson's reference Shorts. Keep every video in this st
   - Variety protects monetization: YouTube's inauthentic-content policy targets templated, mass-produced channels, so no two videos in a row share a format or visual order, and every script must contain real research and a point of view.
 - **Voice:** free smooth voice, speed 1.05 for Story/Paradox (about 160 words a minute, like the winners), 1.10 for Trick.
 
+## Nov 13 review: why views dropped, and the fixes (these override older rules where they conflict)
+Studio data (first 8 Shorts, ~4K views, 2 subscribers): 55% of viewers swiped away. Best: airlines, 60% stayed, 48% average viewed (male voice + beat, 45 s, shock number + brand in line 1). Worst: Black Friday, 80% swiped, and shopping cart, 60% swiped, which YouTube then barely showed (40 and 9 views); both were the female narrator. The 62 s Story (popcorn) kept only 35% on average. Every Short lost viewers in the first second because the headline faded in after the opening frame.
+Rules from now on:
+1. **The first frame sells the video.** The photo_hook headline is now on screen from frame 1 (engine change). The opening photo must show the exact subject (the product, the brand's store or logo-free signage, the object), never a vague mood shot. Headline is 2 short lines (12 characters max each) that state the shocking claim.
+2. **Line 1 is a claim the viewer feels, in 10 words or fewer:** a "you" angle or a famous brand plus a number that sounds wrong ("McDonald's isn't really a burger company." / "It takes 300 streams to make one dollar."). No dates, setup or names before the claim.
+3. **Length 30-45 s for every format** (Story included). Cut scenes until it fits; the best performer was 45 s.
+4. **Voice and music: Setup B (current male voice + quiet beat) is the default.** The A/B decision rule fired early on a large gap: Setup A averaged 30% stayed-to-watch vs 60% for B. Don't use the female narrator unless a future test says otherwise.
+5. **Swipe-away target: 35% or less (65%+ stayed).** Any video over 55% swiped gets a written cause in the review log, and the next script must fix that cause.
+6. **Post time test:** the 17:00 ET airlines post beat every 12:30 post. Alternate 12:30 and 17:00 for the next 6 videos and log which wins.
+
+## Daily review loop (every run, before making anything new)
+1. Read the Google Sheet "Cost Decoded stats" (spreadsheet id 1FF4QKssRrnTG4NhKu8Oa0pSUmsVrycpd_UjeOcRJwPc, Sheet1). A local check on Hudson's Mac copies YouTube Studio numbers into it each afternoon (views, stayed to watch %, swiped away %, watch time, likes, subscribers). If a published video has no row yet, add its row (ID, title, file, published time, length, setup, format) and leave the Studio columns blank.
+2. For every video at least 24 h old whose "Review notes" are blank or say "Studio check to fill in": compare it with the channel's best and median. Name the most likely cause of a weak result from this checklist, in order: (a) opening frame and headline, (b) first spoken line, (c) topic relevance for US viewers, (d) length vs avg view, (e) voice/music setup, (f) visual pacing in the first 5 s, (g) post time. Write a one-line cause + fix in "Review notes" and in LEARNINGS.md "Video reviews".
+3. Apply the fix to the next script you make today, and say in the script JSON `"review_fix"` what you changed and why.
+4. If the same cause shows up in 2 or more videos, make it a rule in this section and commit it.
+5. If the newest Short is still in the 24-48 h window with fewer than 100 views and 60%+ swiped, don't repeat its topic type, hook pattern or opening image style in the next video.
+6. Never change already-published videos. Fixing already-scheduled ones (hook headline, first line, setup) is allowed when the review shows a clear problem.
+
 ## A/B tests (approved by Hudson, Nov 7; split rule set the same evening)
 Hudson liked both previews. Already-scheduled videos stay as they are. Every NEW video alternates between the two setups:
 - **Setup A, female narrator:** `"voice": "af_heart", "speed": 1.0`, no music.

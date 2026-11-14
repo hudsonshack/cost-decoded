@@ -156,7 +156,8 @@ def v_broll(d, img, W, H, t, dur, s):
         y0 = H * s.get("y", 0.52)
         hc = PALETTE[s.get("hl_color", "bad")]
         for i, line in enumerate(s["lines"]):
-            st = s.get("lines_at", 0.1) + 0.22 * i
+            # the hook headline is fully on screen from frame 1: viewers decide in under a second (Nov 13 review)
+            st = -1.0 if (s.get("type") == "photo_hook" and not s.get("animate_lines")) else s.get("lines_at", 0.1) + 0.22 * i
             if t < st:
                 continue
             lf = fit_font(d, line, W * 0.92, f0.size, BLACK_W)

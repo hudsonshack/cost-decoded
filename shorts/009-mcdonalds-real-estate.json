@@ -30,7 +30,7 @@
   "first_comment": "Be honest: would you rather own a McDonald's, or the land under it? 🍔🏠",
   "scenes": [
     {
-      "say": "McDonald's made {$10.4 BILLION|ten point four billion dollars} last year from rent.",
+      "say": "McDonald's isn't really a burger company. Last year it made {$10.4 BILLION|ten point four billion dollars} from rent.",
       "visual": {
         "type": "photo_hook",
         "file": "assets/photos/mc-hook.jpg",
@@ -40,12 +40,11 @@
         ],
         "pan": 0.0,
         "lines": [
-          "$10.4 BILLION",
-          "FROM RENT"
+          "NOT A BURGER",
+          "COMPANY"
         ],
         "highlight": [
-          "$10.4",
-          "BILLION"
+          "NOT"
         ],
         "scale": 0.11,
         "y": 0.13
@@ -91,7 +90,7 @@
       "source": "McDonald's 2025 10-K: sales by Company-owned and operated restaurants $9,690M; rents $10,442M (largest revenue line; total revenues $26,885M). Footnote Brief: 2024 rents $10.02B vs company-operated sales $9.78B"
     },
     {
-      "say": "It started in the {1950s|fifties}. Ray Kroc franchised McDonald's for {1.9%|one point nine percent} of each restaurant's sales.",
+      "say": "It started in the {1950s|fifties}. Ray Kroc kept just {1.4%|one point four percent} of each restaurant's sales.",
       "visual": {
         "type": "broll",
         "file": "assets/photos/mc-downey.jpg",
@@ -103,35 +102,13 @@
       },
       "cues": [
         {
-          "at": "1.9%",
+          "at": "1.4%",
           "type": "bigword",
           "text": "1.9%",
           "color": "text"
         }
       ],
       "source": "SABR biography of Ray Kroc ('1.9 percent of the gross sales'); Entrepreneur, Ray Kroc: Burger Baron ('1.9 percent of the gross sales')"
-    },
-    {
-      "say": "After paying the McDonald brothers, he kept just {1.4%|one point four percent}.",
-      "visual": {
-        "type": "broll",
-        "file": "assets/photos/mc-retro.jpg",
-        "focus": [
-          0.45,
-          0.5
-        ],
-        "archival": true,
-        "pan": 0.03
-      },
-      "cues": [
-        {
-          "at": "1.4%",
-          "type": "bigword",
-          "text": "1.4%",
-          "color": "bad"
-        }
-      ],
-      "source": "SABR (brothers kept 0.5 percent); Entrepreneur (paid the brothers one-half percent); Footnote Brief (1.4% royalty)"
     },
     {
       "say": "Then a finance guy named Harry Sonneborn said: buy the land first.",
@@ -216,46 +193,6 @@
       "source": "McDonald's 2025 10-K ('owned approximately 56% of the land and approximately 80% of the buildings for restaurants in its consolidated markets'); Footnote Brief (land under about 45% of all restaurants)"
     },
     {
-      "say": "Its own annual report calls the model stable and predictable.",
-      "visual": {
-        "type": "proof",
-        "kicker": "McDonald's, 2025 annual report",
-        "quote": "The Company's heavily franchised business model is designed to generate stable and predictable revenue, which is largely a function of franchisee sales",
-        "highlight": "stable and predictable revenue",
-        "hl_at": 1.2
-      },
-      "source": "McDonald's 2025 Form 10-K, Business section and MD&A (verbatim)"
-    },
-    {
-      "say": "This fall, its US sales slipped. Profit still went up.",
-      "visual": {
-        "type": "broll",
-        "file": "assets/photos/mc-drive.jpg",
-        "focus": [
-          0.78,
-          0.45
-        ]
-      },
-      "cues": [
-        {
-          "at": "slipped",
-          "type": "emoji",
-          "text": "📉",
-          "x": 0.3,
-          "y": 0.42,
-          "w": 0.24,
-          "rot": -6
-        },
-        {
-          "at": "Profit",
-          "type": "bigword",
-          "text": "UP",
-          "color": "good"
-        }
-      ],
-      "source": "AP via KPTV Nov 4 2026 (US same-store sales -0.2% in Q3, net income +9%); McDonald's Q3 2026 results (US comparable sales -0.2%, operating income +7%, EPS +10%)"
-    },
-    {
       "say": "The burgers just make sure the rent gets paid. Which is why",
       "visual": {
         "type": "broll",
@@ -284,5 +221,6 @@
       ],
       "source": "Paraphrase of the second half of the Sonneborn quote ('the greatest producer of revenue, from which our tenants can pay us our rent'), Wall Street Survivor"
     }
-  ]
+  ],
+  "review_fix": "Nov 13 review: hook changed to a 6-word claim, instant headline, trimmed from 57 s to ~45 s (popcorn at 62 s kept only 35% on average)."
 }

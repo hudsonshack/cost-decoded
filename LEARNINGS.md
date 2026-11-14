@@ -72,3 +72,13 @@ Takeaways now in the runbook:
 - Log: 009-mcdonalds-real-estate (Nov 14) = Setup B (default voice, speed 1.05, Empty Street Static -22 dB), Story format, 55 s, with proof scene (10-K quote). Setup A so far: Story (006) + Trick (008); Setup B: Paradox (007) + Story (009). Next new video: Setup A; make it a Paradox or Trick so formats keep spreading.
 - Log: 010-spotify-pay-per-stream (Nov 15) = Setup A (af_heart, speed 1.0, no music), Paradox format, 55 s, with proof scene (Spotify for Artists quote). Setup A so far: Story (006) + Trick (008) + Paradox (010); Setup B: Paradox (007) + Story (009). Next new video: Setup B; make it a Trick so B gets all three formats. 010 is A's 3rd video: once it has 3+ days of data (Nov 18) and B's 3rd does too, apply the decision rule.
 - Log: 011-starbucks-short-size (Nov 16) = Setup B (default voice, speed 1.10, Empty Street Static -22 dB), Trick format, 30.5 s, no proof scene (009 and 010 both had one). Setup A so far: Story (006) + Trick (008) + Paradox (010); Setup B: Paradox (007) + Story (009) + Trick (011). Both setups now have all three formats. Next new video: Setup A. Decision rule can run once 011 has 3+ days of data (Nov 19).
+
+## Video reviews
+- 2026-11-13 (Hudson asked for a fix; full Studio pull): channel 4.0K views in 28 days, 1.7K engaged, 44 likes, 2 subs; 55% swiped away overall, 96% of views from the Shorts feed.
+  - 001 Costco: 1.2K views, 34% stayed, 38% avg viewed. Cause: frame 1 had no headline, and the line 1 number had no context. Fix: instant headline (engine).
+  - 002 Wolf: 882, 45% stayed, 45% avg. Cause: same opening problem.
+  - 005 Popcorn: 264, 53% stayed, 35% avg viewed. Cause: 62 s is too long for our retention. Fix: 30-45 s cap.
+  - 007 Airlines: 1.2K, 60% stayed, 48% avg (best). Works: brand + "more than its whole profit" paradox in line 1, male voice + beat, 45 s, 17:00 post.
+  - 006 Cart: 9 views, 60% swiped. Cause: female narrator + a slow 65 s story; YouTube stopped testing it.
+  - 008 Black Friday: 40 views, 80% swiped. Cause: female narrator + an opening Christmas-tree photo that didn't show a deal or a price tag.
+  - Applied today: A/B winner = Setup B for all videos; 010 Spotify switched to B; new hooks for 009 ("McDonald's isn't really a burger company") and 010 ("300 streams to make one dollar"); all three scheduled videos re-rendered with the instant headline.

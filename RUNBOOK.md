@@ -64,6 +64,7 @@ Rules from now on:
 4. **Voice and music: Setup B (current male voice + quiet beat) is the default.** The A/B decision rule fired early on a large gap: Setup A averaged 30% stayed-to-watch vs 60% for B. Don't use the female narrator unless a future test says otherwise.
 5. **Swipe-away target: 35% or less (65%+ stayed).** Any video over 55% swiped gets a written cause in the review log, and the next script must fix that cause.
 6. **Post time test:** the 17:00 ET airlines post beat every 12:30 post. Alternate 12:30 and 17:00 for the next 6 videos and log which wins.
+7. **Opening photo passes the US-viewer test (Nov 14, from 003 + 008):** the frame-0 photo shows the exact product or brand a US viewer knows, with English signage only (no foreign-language text), and the headline says what it does to YOU or names the brand + number. Look at frame 0 before scheduling and reject any photo that fails.
 
 ## Daily review loop (every run, before making anything new)
 1. Read the Google Sheet "Cost Decoded stats" (spreadsheet id 1FF4QKssRrnTG4NhKu8Oa0pSUmsVrycpd_UjeOcRJwPc, Sheet1). A local check on Hudson's Mac copies YouTube Studio numbers into it each afternoon (views, stayed to watch %, swiped away %, watch time, likes, subscribers). If a published video has no row yet, add its row (ID, title, file, published time, length, setup, format) and leave the Studio columns blank.

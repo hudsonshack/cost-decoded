@@ -104,11 +104,11 @@
         {
           "at": "1.4%",
           "type": "bigword",
-          "text": "1.9%",
+          "text": "1.4%",
           "color": "text"
         }
       ],
-      "source": "SABR biography of Ray Kroc ('1.9 percent of the gross sales'); Entrepreneur, Ray Kroc: Burger Baron ('1.9 percent of the gross sales')"
+      "source": "Encyclopedia.com, McDonald, Mac & Dick ('1.9 percent, of which Kroc would get 1.4 percent and the brothers would get 0.5 percent'); SABR biography of Ray Kroc ('1.9 percent of the gross sales'); Entrepreneur"
     },
     {
       "say": "Then a finance guy named Harry Sonneborn said: buy the land first.",
@@ -222,5 +222,5 @@
       "source": "Paraphrase of the second half of the Sonneborn quote ('the greatest producer of revenue, from which our tenants can pay us our rent'), Wall Street Survivor"
     }
   ],
-  "review_fix": "Nov 13 review: hook changed to a 6-word claim, instant headline, trimmed from 57 s to ~45 s (popcorn at 62 s kept only 35% on average)."
+  "review_fix": "Nov 13 review: hook changed to a 6-word claim, instant headline, trimmed from 57 s to ~45 s (popcorn at 62 s kept only 35% on average). Nov 14: bigword corrected from 1.9% to 1.4% to match the narration (Kroc kept 1.4% of the 1.9% fee)."
 }

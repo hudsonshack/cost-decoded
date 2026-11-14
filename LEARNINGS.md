@@ -83,3 +83,9 @@ Takeaways now in the runbook:
   - 008 Black Friday: 40 views, 80% swiped. Cause: female narrator + an opening Christmas-tree photo that didn't show a deal or a price tag.
   - Applied today: A/B winner = Setup B for all videos; 010 Spotify switched to B; new hooks for 009 ("McDonald's isn't really a burger company") and 010 ("300 streams to make one dollar"); all three scheduled videos re-rendered with the instant headline.
 - 2026-11-13 evening fixes, scheduled: 009 McDonald's moved to Nov 14 17:00 (44 s, new hook), 010 Spotify Nov 15 12:30 (33 s, Setup B, new hook), 011 Starbucks Nov 16 17:00 (30 s, instant headline). Post-time test: 009 = 17:00, 010 = 12:30, 011 = 17:00; next new videos keep alternating. All three use media/*-v2.mp4 at commit de8b278.
+- 2026-11-14 review (no fresh Studio pull; Metricool per-video rows empty, vidIQ 0 credits until Dec 6; channel daily views 1,061 Nov 7 -> 355 Nov 11, Metricool lags after that):
+  - 002 Wolf: (a) frame 1 had no headline + the topic is a movie/person, not an everyday brand -> instant headline (done); keep topics on brands people use. It also shows a photo of the real Jordan Belfort: published, so left alone, but never again.
+  - 004 Gas: (a) frame 1 blank, then the headline "9/10 OF A CENT" states a fact, not what it does to the viewer; 192 views vs 264 median -> headline says what it does to YOU ("YOU PAY / A FAKE COIN").
+  - 003 Gift cards: (a)+(c) frame 1 blank and the opening photo is a gift-card rack with Swedish signage; 143 views -> opening photo must look American (English signage, no foreign text).
+  - Repeat cause (008 Christmas tree, 003 Swedish rack): the opening photo didn't sell a US viewer on the claim. Now a rule (Nov 13 review, rule 7).
+  - Today's fix (012): a "you" headline and an opening photo of the exact US product with English text, checked at frame 0.

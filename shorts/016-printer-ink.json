@@ -1,0 +1,138 @@
+{
+  "format": "short",
+  "speed": 1.05,
+  "music": {
+    "file": "assets/music/empty-street-static.mp3",
+    "db": -22,
+    "duck_db": 4
+  },
+  "playbook": "paradox",
+  "ab": "B",
+  "cover_ms": 1500,
+  "post_slot": "12:30",
+  "review_fix": "Nov 18 review: no per-video numbers yet for 009-012, so the fix comes from the frame-0 audit: exact product on frame 1 (a real HP printer with the logo visible), dark band behind a two-line claim, line 1 is the claim in 9 words. Paradox format so no format repeats three times in a row (014 Story, 015 Trick, 016 Paradox). No proof card this time because 014 and 015 both have one.",
+  "title": "Why Is Printer Ink So Expensive?",
+  "description": "Printers are often sold at a loss because the real money is in the ink, and HP's printing business earns nearly four times the margin of its PCs.\n#printerink #hp #money #shorts\n\nSources: Consumer Reports (printer ink and wasted ink investigations); U.S. PIRG; The Register (Jan 19, 2024); PetaPixel (Jan 24, 2024); TechRadar (Jan 22, 2024); HotHardware (2024); Techlicious (Jan 1, 2025); HP Q3 fiscal 2026 results (Aug 2026); Print in the Channel (Aug 28, 2026)\nPhotos: cartridgesaveimages, freestockimages, spacekermit, Rellenadodecartuchos, leokoivulehto (CC BY, Flickr)",
+  "tags": [
+    "printer ink",
+    "why is printer ink so expensive",
+    "hp ink",
+    "hp printer",
+    "ink cartridges",
+    "razor and blades",
+    "hidden costs",
+    "business explained"
+  ],
+  "highlight_words": [
+    "ink",
+    "loss",
+    "investment"
+  ],
+  "first_comment": "Be honest: do you buy HP brand ink, or the cheap third-party cartridges? 🖨️",
+  "scenes": [
+    {
+      "say": "Your printer was sold at a loss on purpose.",
+      "visual": {
+        "type": "photo_hook",
+        "file": "assets/photos/ink-hook.jpg",
+        "focus": [0.52, 0.55],
+        "pan": 0.0,
+        "lines": ["YOUR PRINTER", "IS THE BAIT"],
+        "highlight": ["bait"],
+        "scale": 0.115,
+        "y": 0.13
+      },
+      "source": "Consumer Reports citing IHS Markit (cost to build a printer is higher than the retail price of most consumer printers; classic razor-and-blade model); U.S. PIRG (makers sell printers at a loss to lock buyers into ink); TechRadar Jan 22 2024 (HP CEO confirmed a loss on many models)"
+    },
+    {
+      "say": "HP's CEO calls every printer it sells an investment.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/ink-coin.jpg",
+        "focus": [0.36, 0.38]
+      },
+      "source": "The Register Jan 19 2024 (Lores on CNBC: 'Every time a customer buys a printer, it's an investment for us'); PetaPixel Jan 24 2024 (same remark)"
+    },
+    {
+      "say": "So how do they make money?",
+      "visual": {
+        "type": "statement",
+        "lines": ["SO HOW DO", "THEY MAKE", "MONEY"],
+        "highlight": ["money"],
+        "scale": 0.12
+      },
+      "source": "Paradox turn, no figure"
+    },
+    {
+      "say": "The ink. HP cartridges can cost over {$40|forty dollars} an ounce.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/ink-boxes.jpg",
+        "focus": [0.5, 0.5]
+      },
+      "cues": [
+        {"at": "cartridges", "type": "bigword", "text": "$40", "color": "good"}
+      ],
+      "source": "Techlicious Jan 1 2025 (HP 962 standard cartridge $40.22 per ounce); Consumer Reports wasted-ink investigation (HP 64XL about $93 per ounce)"
+    },
+    {
+      "say": "And Consumer Reports found many printers put half or less of your ink on the page.",
+      "visual": {
+        "type": "donut",
+        "value": 50,
+        "color": "bad",
+        "caption": "or less of your ink reaches the page"
+      },
+      "source": "Consumer Reports wasted-ink investigation ('many models delivered half or less of their ink to the page'); U.S. PIRG citing Consumer Reports (more than half of the ink you buy never winds up on a page, with many printers)"
+    },
+    {
+      "say": "But here's the interesting part. Use a cartridge HP says violates its {IP|I P}, and its CEO says they stop the printer.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/ink-refill.jpg",
+        "focus": [0.38, 0.6]
+      },
+      "cues": [
+        {"at": "stop", "type": "emoji", "text": "🛑", "x": 0.5, "y": 0.62, "w": 0.3, "rot": -6}
+      ],
+      "source": "The Register Jan 19 2024 (Lores: 'when we identify cartridges that are violating our IP, we stop the printers from work[ing]'); HotHardware 2024 (same quote)"
+    },
+    {
+      "say": "And customers who skip HP's ink? He told CNBC, it's a bad investment.",
+      "visual": {
+        "type": "statement",
+        "lines": ["A BAD", "INVESTMENT"],
+        "highlight": ["bad"],
+        "scale": 0.11
+      },
+      "source": "The Register Jan 19 2024 and PetaPixel Jan 24 2024 (Lores: if a customer 'doesn't print enough or doesn't use our supplies, it's a bad investment'); HotHardware 2024"
+    },
+    {
+      "say": "HP's printing business earns an {18%|eighteen percent} margin. Its PC business? Under {5%|five}.",
+      "visual": {
+        "type": "compare_bars",
+        "title": "HP operating margin, Q3 2026",
+        "reveal_at": ["printing", "PC"],
+        "suffix": "%",
+        "decimals": 1,
+        "items": [
+          {"label": "Printing", "value": 18.1, "color": "good"},
+          {"label": "PCs", "value": 4.6, "color": "bad"}
+        ]
+      },
+      "source": "HP Q3 fiscal 2026 earnings release, 8-K Aug 2026 (Printing 18.1% operating margin, Personal Systems 4.6%); Print in the Channel Aug 28 2026 (same figures)"
+    },
+    {
+      "say": "So the printer was never the product. The ink is. That's why",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/ink-jam.jpg",
+        "focus": [0.55, 0.45]
+      },
+      "cues": [
+        {"at": "never", "type": "follow", "x": 0.5, "y": 0.6}
+      ],
+      "source": "Loop line into the hook; summary, no new figure"
+    }
+  ]
+}

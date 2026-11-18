@@ -1,0 +1,194 @@
+{
+  "format": "short",
+  "speed": 1.1,
+  "music": {
+    "file": "assets/music/empty-street-static.mp3",
+    "db": -22,
+    "duck_db": 4
+  },
+  "playbook": "trick",
+  "ab": "B",
+  "cover_ms": 1500,
+  "post_slot": "17:00",
+  "review_fix": "Nov 18 review: still no per-video numbers for 009-012 (Studio snapshot stale since Nov 14, Metricool per-video rows empty, vidIQ 0 credits), so the fix comes from the frame-0 audit: the strongest openers (009, 013, 014) show the exact product a US viewer knows with a dark band behind a two-line claim. 015 opens on real US Gatorade bottles, headline SAME PRICE / 4 OZ LESS, line 1 is the claim in 8 words, and it is a 'they're doing this to you' topic, which the runbook says pulls the most comments.",
+  "title": "Why Did Gatorade Bottles Get Smaller?",
+  "description": "Gatorade's 32-ounce bottle became 28 ounces at the same price, and the company's explanation was that the new shape is more aerodynamic.\n#gatorade #shrinkflation #money #shorts\n\nSources: Quartz via World Economic Forum (Mar 2022); AP via GPB (Jun 8, 2022); Sen. Bob Casey shrinkflation report (Dec 2023); Business Insider (Mar 2022); KSL (Mar 8, 2022); KOMO News (Mar 17, 2022); Mental Floss (Mar 2022)\nPhotos: JeepersMedia (Mike Mozart), m01229 (CC BY 2.0, Flickr)",
+  "tags": [
+    "gatorade",
+    "why did gatorade bottles get smaller",
+    "gatorade 28 oz",
+    "shrinkflation",
+    "doritos shrinkflation",
+    "hidden price increase",
+    "grocery prices",
+    "business explained"
+  ],
+  "highlight_words": [
+    "shrank",
+    "price",
+    "shrinkflation"
+  ],
+  "first_comment": "Be honest: do you check the ounces, or just the price? 👀",
+  "scenes": [
+    {
+      "say": "Your Gatorade shrank four ounces. The price didn't.",
+      "visual": {
+        "type": "photo_hook",
+        "file": "assets/photos/gt-hook.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "pan": 0.0,
+        "lines": [
+          "SAME PRICE",
+          "4 OZ LESS"
+        ],
+        "highlight": [
+          "4",
+          "oz"
+        ],
+        "scale": 0.115,
+        "y": 0.13
+      },
+      "source": "Quartz via World Economic Forum Mar 2022 (32 oz to 28 oz at the same price); Sen. Casey report Dec 2023 (Gatorade 32 oz to 28 oz, same price); AP via GPB Jun 2022 (32 oz bottles phased out for 28 oz)"
+    },
+    {
+      "say": "{32|Thirty two} ounces became {28|twenty eight}, same price.",
+      "visual": {
+        "type": "compare_bars",
+        "title": "Gatorade bottle",
+        "reveal_at": [
+          "32",
+          "28"
+        ],
+        "suffix": " oz",
+        "decimals": 0,
+        "items": [
+          {
+            "label": "Before",
+            "value": 32,
+            "color": "good"
+          },
+          {
+            "label": "Now",
+            "value": 28,
+            "color": "bad"
+          }
+        ]
+      },
+      "source": "Quartz via WEF Mar 2022; Sen. Casey report Dec 2023; KSL Mar 8 2022 (32 fl oz reduced to 28 fl oz)"
+    },
+    {
+      "say": "That's a hidden {14%|fourteen percent} price hike.",
+      "visual": {
+        "type": "big_number",
+        "value": 14,
+        "suffix": "%",
+        "decimals": 0,
+        "color": "bad",
+        "caption": "more per ounce"
+      },
+      "source": "Quartz via WEF Mar 2022 (equates to a 14% price increase); Business Insider Mar 2022 (price increase of about 14%); arithmetic 32/28 = 1.143"
+    },
+    {
+      "say": "The company's explanation? The new bottle is more aerodynamic and easier to grab.",
+      "visual": {
+        "type": "proof",
+        "kicker": "Gatorade rep, via Quartz, 2022",
+        "quote": "Basically we redesigned the bottle, it's more aerodynamic and it's easier to grab.",
+        "highlight": "more aerodynamic",
+        "hl_at": 1.6
+      },
+      "source": "Quartz via World Economic Forum Mar 22 2022, verbatim company representative quote; repeated in Business Insider Mar 2022 via Quartz"
+    },
+    {
+      "say": "Doritos did it too. Five fewer chips per bag.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/gt-dor2.jpg",
+        "focus": [
+          0.5,
+          0.3
+        ]
+      },
+      "cues": [
+        {
+          "at": "Five",
+          "type": "bigword",
+          "text": "-5",
+          "color": "bad"
+        }
+      ],
+      "source": "KOMO News Mar 17 2022 (9.75 oz to 9.25 oz, an average of five fewer chips, Frito-Lay confirmed); Mental Floss Mar 2022 (roughly five fewer chips, price unchanged); Sen. Casey report Dec 2023 (9.75 oz to 9.25 oz)"
+    },
+    {
+      "say": "Charmin's Mega roll lost twenty sheets.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/gt-roll.jpg",
+        "focus": [
+          0.62,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "lost",
+          "type": "bigword",
+          "text": "-20",
+          "color": "bad"
+        }
+      ],
+      "source": "Sen. Casey report Dec 2023 (Charmin Ultra Soft Mega 264 sheets to 244); KSL Mar 8 2022 citing Edgar Dworsky (264 to 244 two-ply sheets per roll)"
+    },
+    {
+      "say": "It's called shrinkflation, and it works because you watch the price, not the size.",
+      "visual": {
+        "type": "statement",
+        "lines": [
+          "YOU WATCH",
+          "THE PRICE",
+          "NOT THE SIZE"
+        ],
+        "highlight": [
+          "price"
+        ],
+        "scale": 0.1
+      },
+      "source": "KOMO News Mar 2022 (Cornell's Andrew Novakovic: people pay attention to price and often don't notice a size change); ConsumerWorld definition via KOMO"
+    },
+    {
+      "say": "And once a product shrinks, it rarely grows back.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/gt-blue.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ]
+      },
+      "source": "AP via GPB Jun 8 2022 (consumer advocate Edgar Dworsky: upsizing is rare, once a product shrinks it usually stays smaller)"
+    },
+    {
+      "say": "So check the unit price on the shelf tag. It's the one number they can't shrink, because",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/gt-tag.jpg",
+        "focus": [
+          0.35,
+          0.6
+        ]
+      },
+      "cues": [
+        {
+          "at": "check",
+          "type": "follow",
+          "x": 0.5,
+          "y": 0.6
+        }
+      ],
+      "source": "Loop line into the hook; takeaway, no figure"
+    }
+  ]
+}

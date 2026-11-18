@@ -1,0 +1,171 @@
+{
+  "format": "short",
+  "speed": 1.05,
+  "music": {
+    "file": "assets/music/empty-street-static.mp3",
+    "db": -22,
+    "duck_db": 4
+  },
+  "playbook": "paradox",
+  "ab": "B",
+  "cover_ms": 1500,
+  "post_slot": "17:00",
+  "review_fix": "Nov 17 review: no per-video numbers yet for 009-011 (Studio snapshot stale since Nov 14), so the fix comes from the frame-0 check: 011's white headline sat on a busy white/green logo and its second line touched the edges. 013's hook photo gets a dark band behind the headline (wall above the TV darkened) and both lines stay at 12 characters or less. Headline keeps the Nov 14 rule: a 'you' claim with brand + number (YOU PAY 2.5X / FOR NETFLIX). Posted at 17:00 for the post-time test (009 17:00, 010 12:30, 011 17:00, 012 12:30, 013 17:00).",
+  "title": "Why Does Netflix Keep Raising Its Price?",
+  "description": "Netflix went from $7.99 in 2011 to $19.99 for Standard today, and its cheapest plan now has ads and still costs more than the whole service did back then.\n#netflix #streaming #money #shorts\n\nSources: TheWrap (Mar 26, 2026); FOX Television Stations (Mar 27, 2026); BGR (2026); Android Authority price timeline; Looper; Antenna data via Business Insider (Mar 2026) and MediaPost; Netflix ad-revenue outlook via TheWrap and DesignRush (2026)\nPhotos: rawpixel (CC0), Marit & Toomas Hinnosaar, brianc, stockcatalog, nan palmero (CC BY 2.0, Flickr)",
+  "tags": [
+    "netflix",
+    "netflix price increase",
+    "netflix price hike",
+    "why is netflix so expensive",
+    "netflix ads plan",
+    "streaming prices",
+    "subscription prices",
+    "business explained"
+  ],
+  "highlight_words": [
+    "netflix",
+    "ads",
+    "twice"
+  ],
+  "first_comment": "Be honest: at $19.99, are you keeping Netflix or canceling? 📺",
+  "scenes": [
+    {
+      "say": "Netflix now costs two and a half times what it did.",
+      "visual": {
+        "type": "photo_hook",
+        "file": "assets/photos/nf-hook.jpg",
+        "focus": [0.5, 0.5],
+        "pan": 0.0,
+        "lines": ["YOU PAY 2.5X", "FOR NETFLIX"],
+        "highlight": ["2.5x"],
+        "scale": 0.115,
+        "y": 0.13
+      },
+      "source": "$7.99 streaming-only in 2011 (Android Authority timeline; Looper 'each costing $8/month') -> $19.99 Standard after the March 2026 hike (TheWrap Mar 26 2026; FOX Mar 27 2026; BGR 2026). 19.99 / 7.99 = 2.50"
+    },
+    {
+      "say": "In {2011|twenty eleven}, streaming Netflix was {$7.99|seven ninety nine} a month.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/nf-envelope.jpg",
+        "focus": [0.3, 0.5],
+        "archival": true
+      },
+      "source": "Android Authority timeline (2011: $7.99 streaming plan); Looper (2011 DVD and streaming split, 'each costing $8/month')"
+    },
+    {
+      "say": "{$7.99|Seven ninety nine} then. {$19.99|Nineteen ninety nine} for Standard today.",
+      "visual": {
+        "type": "compare_bars",
+        "title": "Netflix, per month",
+        "reveal_at": ["$7.99", "$19.99"],
+        "prefix": "$",
+        "decimals": 2,
+        "items": [
+          {"label": "2011", "value": 7.99, "color": "good"},
+          {"label": "2026", "value": 19.99, "color": "bad"}
+        ]
+      },
+      "source": "TheWrap Mar 26 2026 (Standard now $19.99, up $2); FOX Mar 27 2026 (Standard $19.99, previously $17.99); BGR 2026 (March 2026: Standard from $17.99 to $19.99)"
+    },
+    {
+      "say": "You'd think people would cancel. But only about two in a hundred quit each month.",
+      "visual": {
+        "type": "people_grid",
+        "rows": 10,
+        "cols": 10,
+        "lit": 2,
+        "color": "bad",
+        "caption": "2 IN 100 QUIT A MONTH"
+      },
+      "source": "Antenna via Business Insider/iTiger Mar 27 2026 ('averaging around 2% monthly compared with 6% to 8% for many other services, according to data firm Antenna'); MediaPost 'Netflix Monthly Subscriber Churn Still Lowest At 2%'"
+    },
+    {
+      "say": "Rivals lose three or four times as many.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/nf-button.jpg",
+        "focus": [0.35, 0.5]
+      },
+      "cues": [
+        {"at": "four", "type": "emoji", "text": "👆", "x": 0.68, "y": 0.62, "w": 0.24, "rot": -8}
+      ],
+      "source": "Antenna via Business Insider/iTiger Mar 2026: Netflix ~2% vs 6-8% for many other services = 3-4x"
+    },
+    {
+      "say": "So how does Netflix get away with it? The hikes come one or two dollars at a time.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/nf-remote.jpg",
+        "focus": [0.5, 0.5]
+      },
+      "cues": [
+        {"at": "dollars", "type": "emoji", "text": "💸", "x": 0.5, "y": 0.66, "w": 0.3, "rot": 6}
+      ],
+      "source": "BGR 2026 and Android Authority: Standard rose +$1 (2014), +$1 (2015), +$1 (2017), +$2 (2019), +$1 (2020), +$1.50 (2022), +$2.50 (2025), +$2 (2026)"
+    },
+    {
+      "say": "But here's the interesting part. The cheapest plan now has ads.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/nf-laptop.jpg",
+        "focus": [0.5, 0.5]
+      },
+      "cues": [
+        {"at": "ads", "type": "bigword", "text": "ADS", "color": "bad"}
+      ],
+      "source": "TheWrap Mar 2026 (Standard With Ads now $8.99); FOX Mar 2026 (Standard with Ads $8.99/month)"
+    },
+    {
+      "say": "And at {$8.99|eight ninety nine}, it costs more than all of Netflix did in {2011|twenty eleven}.",
+      "visual": {
+        "type": "statement",
+        "lines": ["MORE THAN", "ALL OF NETFLIX", "IN 2011"],
+        "highlight": ["more"],
+        "scale": 0.09
+      },
+      "source": "$8.99 ads plan (TheWrap; FOX, Mar 2026) vs $7.99 streaming in 2011 (Android Authority; Looper)"
+    },
+    {
+      "say": "Those ads should bring in {$3 BILLION|three billion dollars} this year, double last year.",
+      "visual": {
+        "type": "ticker",
+        "from": 0,
+        "to": 3,
+        "prefix": "$",
+        "suffix": "B",
+        "count_at": 0.3,
+        "count_dur": 1.2,
+        "color": "good",
+        "lines": ["Netflix ad money,", "2026 forecast"],
+        "highlight": ["ad"]
+      },
+      "source": "TheWrap Mar 2026 (Netflix projects ad revenue will double to $3 billion from $1.5 billion in 2025); DesignRush 'Netflix Ad Revenue Set to Hit $3 Billion in 2026'; PPC Land Q1 2026 ('ads business chases $3B target')"
+    },
+    {
+      "say": "So Netflix gets paid twice: once by you, once by advertisers.",
+      "visual": {
+        "type": "nodes",
+        "center": {"emoji": "🍿", "label": "netflix"},
+        "nodes": [
+          {"emoji": "💰", "label": "you pay", "hot": true},
+          {"emoji": "🛍️", "label": "advertisers"}
+        ]
+      },
+      "source": "Subscription price (TheWrap/FOX) + ad revenue (TheWrap/DesignRush) on the ads plan"
+    },
+    {
+      "say": "So next time that price email shows up, remember:",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/nf-room.jpg",
+        "focus": [0.3, 0.45]
+      },
+      "cues": [
+        {"at": "email", "type": "follow", "x": 0.5, "y": 0.6}
+      ],
+      "source": "Loop line into the hook"
+    }
+  ]
+}

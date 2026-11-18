@@ -1,0 +1,225 @@
+{
+  "format": "short",
+  "speed": 1.05,
+  "music": {
+    "file": "assets/music/empty-street-static.mp3",
+    "db": -22,
+    "duck_db": 4
+  },
+  "playbook": "story",
+  "ab": "B",
+  "cover_ms": 1500,
+  "post_slot": "12:30",
+  "review_fix": "Nov 17 review: no per-video numbers yet for 009-011 (Studio snapshot stale since Nov 14); the frame-0 check flagged 011's low-contrast headline over a busy logo, so 014 opens on a real Ticketmaster ticket with a dark band behind a 'you' headline (YOU PAY 44% / MORE IN FEES), both lines 12 characters or less. Line 1 is the claim in 8 words. Posted at 12:30 to finish the 6-video post-time test (009 17:00, 010 12:30, 011 17:00, 012 12:30, 013 17:00, 014 12:30).",
+  "title": "Why Are Ticketmaster Fees So High?",
+  "description": "The FTC says Ticketmaster fees reached as high as 44% of a ticket and totaled $16.4 billion from 2019 to 2024, and a New York jury found Live Nation and Ticketmaster ran a monopoly.\n#ticketmaster #concerts #money #shorts\n\nSources: FTC press release (Sep 18, 2025); TicketNews (Sep 2025); CNN via KVIA (Apr 15, 2026); Quartz (Apr 2026); FTC fees rule via TechCrunch (May 5, 2025) and Barnes & Thornburg (2025); CelebrityAccess (May 12, 2026); CPI/PYMNTS (May 22, 2026)\nPhotos: rick, Jeffrey, bary0n, James Cridland, marfis75 (CC BY 2.0, Flickr)",
+  "tags": [
+    "ticketmaster",
+    "ticketmaster fees",
+    "why are ticketmaster fees so high",
+    "live nation",
+    "concert tickets",
+    "hidden fees",
+    "ticketmaster lawsuit",
+    "business explained"
+  ],
+  "highlight_words": [
+    "fees",
+    "monopoly",
+    "ticketmaster"
+  ],
+  "first_comment": "Be honest: would you still pay Ticketmaster fees for your favorite artist, or skip the show? 🎤",
+  "scenes": [
+    {
+      "say": "Ticketmaster fees can add {44%|forty four percent} to your ticket.",
+      "visual": {
+        "type": "photo_hook",
+        "file": "assets/photos/tm-hook.jpg",
+        "focus": [
+          0.62,
+          0.5
+        ],
+        "pan": 0.0,
+        "lines": [
+          "YOU PAY 44%",
+          "MORE IN FEES"
+        ],
+        "highlight": [
+          "44%"
+        ],
+        "scale": 0.115,
+        "y": 0.13
+      },
+      "source": "FTC press release Sep 18 2025 (Ticketmaster 'hid the mandatory fees, which are as high as 44% of the cost of the ticket'); TicketNews Sep 2025 (mandatory fees can add up to 44% to the ticket cost)"
+    },
+    {
+      "say": "There's a service fee, a facility fee, an order processing fee.",
+      "visual": {
+        "type": "nodes",
+        "center": {
+          "emoji": "💰",
+          "label": "checkout"
+        },
+        "nodes": [
+          {
+            "emoji": "🛍️",
+            "label": "service fee"
+          },
+          {
+            "emoji": "⏳",
+            "label": "facility fee"
+          },
+          {
+            "emoji": "🌀",
+            "label": "order fee",
+            "hot": true
+          }
+        ]
+      },
+      "source": "TicketNews Sep 2025 (fee types: service charges, order processing fees, facility fees); FTC fees rule coverage via TechCrunch May 2025 (labels like 'service fees' or 'processing fees')"
+    },
+    {
+      "say": "For years, the FTC says, they showed up at the very end.",
+      "visual": {
+        "type": "statement",
+        "lines": [
+          "AT THE",
+          "VERY END"
+        ],
+        "highlight": [
+          "end"
+        ],
+        "scale": 0.12
+      },
+      "source": "FTC press release Sep 2025 (fees not added 'until the very end of the transaction'); TicketNews Sep 2025 (fees not fully revealed until the final steps of an online sale)"
+    },
+    {
+      "say": "Even the FTC's chairman said it shouldn't cost an arm and a leg.",
+      "visual": {
+        "type": "proof",
+        "kicker": "FTC Chairman Andrew Ferguson, 2025",
+        "quote": "It should not cost an arm and a leg to take the family to a baseball game or attend your favorite musician's show.",
+        "highlight": "an arm and a leg",
+        "hl_at": 1.6
+      },
+      "source": "FTC press release Sep 18 2025, 'FTC Sues Live Nation and Ticketmaster for Engaging in Illegal Ticket Resale Tactics...', quote from Chairman Andrew N. Ferguson (verbatim); suit also reported by TicketNews and Gizmodo Sep 2025"
+    },
+    {
+      "say": "Those fees totaled {$16.4 BILLION|sixteen point four billion dollars} in six years.",
+      "visual": {
+        "type": "big_number",
+        "value": 16.4,
+        "prefix": "$",
+        "suffix": "B",
+        "decimals": 1,
+        "color": "good",
+        "caption": "Ticketmaster fees, 2019-2024"
+      },
+      "source": "FTC press release Sep 2025 ('The fees totaled $16.4 billion from 2019-2024.'); TicketNews Sep 2025 ($16.4 billion in fees from 2019 to 2024)"
+    },
+    {
+      "say": "Then in April, a New York jury found Live Nation and Ticketmaster ran a monopoly.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/tm-court.jpg",
+        "focus": [
+          0.62,
+          0.4
+        ]
+      },
+      "cues": [
+        {
+          "at": "jury",
+          "type": "cutout",
+          "file": "assets/cutouts/gavel.png",
+          "x": 0.5,
+          "y": 0.7,
+          "w": 0.6,
+          "rot": -6
+        }
+      ],
+      "source": "CNN via KVIA Apr 15 2026 ('A New York federal jury found that Live Nation and Ticketmaster operated as a monopoly'); Quartz Apr 2026; CPI/PYMNTS May 2026 (jury found Live Nation unlawfully maintained monopoly power)"
+    },
+    {
+      "say": "And that fans were overcharged {$1.72|a dollar seventy two} on every ticket.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/tm-crowd.jpg",
+        "focus": [
+          0.5,
+          0.45
+        ]
+      },
+      "cues": [
+        {
+          "at": "overcharged",
+          "type": "emoji",
+          "text": "🎟️",
+          "x": 0.5,
+          "y": 0.64,
+          "w": 0.3,
+          "rot": -6
+        }
+      ],
+      "source": "Quartz Apr 2026 (jury found fans were overcharged '$1.72 per ticket'); CNN via KVIA Apr 15 2026 (overcharged $1.72 per ticket)"
+    },
+    {
+      "say": "But here's the interesting part. Since May {2025|twenty twenty five}, sites must show the total price up front.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/tm-arena.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "total",
+          "type": "emoji",
+          "text": "👆",
+          "x": 0.7,
+          "y": 0.62,
+          "w": 0.24,
+          "rot": -8
+        }
+      ],
+      "source": "FTC Rule on Unfair or Deceptive Fees, effective May 12 2025: 'Sites must disclose the total price upfront in ads and other offers for live-event tickets' (TechCrunch May 5 2025); Barnes & Thornburg alert 2025 (rule takes effect May 12, 2025)"
+    },
+    {
+      "say": "The fees didn't go away. They're just inside the first number you see.",
+      "visual": {
+        "type": "statement",
+        "lines": [
+          "SAME FEES,",
+          "FIRST SCREEN"
+        ],
+        "highlight": [
+          "fees"
+        ],
+        "scale": 0.1
+      },
+      "source": "TechCrunch May 2025 ('The total price must include all known charges and fees'); fees still charged: FTC suit Sep 2025 and the pending DOJ settlement terms (CNN via KVIA Apr 2026, fee cap proposal)"
+    },
+    {
+      "say": "Now {33|thirty three} states want Ticketmaster split off. Until then, check the total, because",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/tm-stage.jpg",
+        "focus": [
+          0.5,
+          0.45
+        ]
+      },
+      "cues": [
+        {
+          "at": "check",
+          "type": "follow",
+          "x": 0.5,
+          "y": 0.6
+        }
+      ],
+      "source": "CelebrityAccess May 12 2026 (coalition of 33 states and D.C. seeking 'a full separation of Live Nation and Ticketmaster'); CPI/PYMNTS May 22 2026 (states seek Ticketmaster's divestiture). Loop line into the hook"
+    }
+  ]
+}

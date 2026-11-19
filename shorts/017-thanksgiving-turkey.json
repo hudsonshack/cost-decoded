@@ -1,0 +1,210 @@
+{
+  "format": "short",
+  "speed": 1.1,
+  "music": {
+    "file": "assets/music/empty-street-static.mp3",
+    "db": -22,
+    "duck_db": 4
+  },
+  "playbook": "trick",
+  "ab": "B",
+  "cover_ms": 1500,
+  "post_slot": "17:00",
+  "review_fix": "Nov 19 review (first fresh Studio pull since Nov 14): the openers that got pushed state a concrete, self-contained claim (009 'isn't really a burger company', 1.4K views; 010 '300 streams = $1', 1.0K), while 013's multiplier with no baseline ('2.5x what it did') lost 79% in the swipe, like 001's context-free number. And the two 44 s videos (009, 012) held only 28% avg viewed vs 37% for the 33 s Spotify, at the same ~12 s average view. So 017 opens on two concrete numbers with their meaning (79-cent turkey vs $1.80 store cost) and runs about 33 s.",
+  "title": "Why Is Thanksgiving Turkey So Cheap?",
+  "description": "Wholesale turkey runs about $1.80 a pound this fall, yet Target sells its frozen turkey for 79 cents, because grocery stores use the bird as a loss leader to win the rest of your cart.\n#thanksgiving #turkey #money #shorts\n\nSources: Texas A&M via Farm Progress (Nov 9, 2026) and Feedstuffs (Nov 5, 2026); The Shelby Report citing USDA (Nov 13, 2026); NBC Chicago (Nov 12, 2026); Axios (Nov 15, 2025); Scripps News (Nov 19, 2025); Daily Voice via AOL (2025)\nPhotos: Anthony Quintano, Phillip Pessar, BruceTurner (CC BY 2.0, Flickr); sarahstierch (CC0, Flickr)",
+  "tags": [
+    "thanksgiving turkey",
+    "why is turkey so cheap",
+    "turkey prices 2026",
+    "loss leader",
+    "grocery store tricks",
+    "butterball",
+    "thanksgiving 2026",
+    "business explained"
+  ],
+  "highlight_words": [
+    "lose",
+    "loss",
+    "cheap"
+  ],
+  "first_comment": "Be honest: do you stick to the list, or does the cart always fill up? 🛒",
+  "scenes": [
+    {
+      "say": "Your {79¢|seventy nine cent} turkey costs the store {$1.80|a dollar eighty}.",
+      "visual": {
+        "type": "photo_hook",
+        "file": "assets/photos/tk-hook.jpg",
+        "focus": [
+          0.5,
+          0.55
+        ],
+        "pan": 0.0,
+        "lines": [
+          "79¢ TURKEY",
+          "COSTS $1.80"
+        ],
+        "highlight": [
+          "$1.80"
+        ],
+        "scale": 0.115,
+        "y": 0.13
+      },
+      "source": "Farm Progress Nov 9 2026 + Feedstuffs Nov 5 2026 (Texas A&M's David Anderson: late October wholesale whole turkeys averaged $1.80 per pound); Shelby Report Nov 13 2026 (USDA: frozen basted hens $1.81 a pound week of Nov 2-6); NBC Chicago Nov 12 2026 + Shelby Report Nov 13 2026 (Target Good & Gather frozen turkey 79 cents per pound)"
+    },
+    {
+      "say": "Target charges {79¢|seventy nine cents} a pound. Stores pay {$1.80|a dollar eighty} for it, wholesale.",
+      "visual": {
+        "type": "compare_bars",
+        "title": "Turkey, per pound",
+        "reveal_at": [
+          "79¢",
+          "$1.80"
+        ],
+        "prefix": "$",
+        "decimals": 2,
+        "items": [
+          {
+            "label": "Target",
+            "value": 0.79,
+            "color": "good"
+          },
+          {
+            "label": "Store pays",
+            "value": 1.8,
+            "color": "bad"
+          }
+        ]
+      },
+      "source": "Farm Progress Nov 9 2026 + Feedstuffs Nov 5 2026 (Texas A&M's David Anderson: late October wholesale whole turkeys averaged $1.80 per pound); Shelby Report Nov 13 2026 (USDA: frozen basted hens $1.81 a pound week of Nov 2-6); Target 79 cents: NBC Chicago Nov 12 2026, Shelby Report Nov 13 2026 (third straight year)"
+    },
+    {
+      "say": "Walmart? {97¢|Ninety seven cents} for a Butterball.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/tk-fresh.jpg",
+        "focus": [
+          0.6,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "97¢",
+          "type": "bigword",
+          "text": "97¢",
+          "color": "text"
+        }
+      ],
+      "source": "NBC Chicago Nov 12 2026 (Butterball turkey priced at 97 cents per pound in Walmart's meal basket); Shelby Report Nov 13 2026 (Walmart kept Butterball at 97 cents a pound, unchanged from 2025)"
+    },
+    {
+      "say": "So stores lose money on the bird. On purpose.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/tk-freezer.jpg",
+        "focus": [
+          0.45,
+          0.55
+        ]
+      },
+      "cues": [
+        {
+          "at": "lose",
+          "type": "emoji",
+          "text": "💸",
+          "x": 0.5,
+          "y": 0.5,
+          "w": 0.34,
+          "rot": -6
+        }
+      ],
+      "source": "Axios Nov 15 2025 (many retailers selling turkeys at or below cost to draw shoppers in for higher-margin items); Daily Voice via AOL 2025 (stores may actually lose money on each bird sold); arithmetic: 79 cents retail vs ~$1.80 wholesale"
+    },
+    {
+      "say": "Some stores even give the turkey away free, once you spend enough.",
+      "visual": {
+        "type": "statement",
+        "lines": [
+          "FREE TURKEY",
+          "IF YOU SPEND",
+          "ENOUGH"
+        ],
+        "highlight": [
+          "free"
+        ],
+        "scale": 0.1
+      },
+      "source": "Shelby Report Nov 13 2026 (BJ's free Butterball after a $150 spend Oct 31-Nov 9; ShopRite free turkey tied to Price Plus spend; Giant/Martin's for points); GMA 2025 + BJ's press release Oct 30 2025 (free Butterball for members who spend $150+)"
+    },
+    {
+      "say": "The turkey industry's own trade group says turkeys are kind of the loss leader on the Thanksgiving table.",
+      "visual": {
+        "type": "proof",
+        "kicker": "National Turkey Federation CEO",
+        "quote": "Turkeys are kind of the loss leader on the Thanksgiving table.",
+        "highlight": "loss leader",
+        "hl_at": 2.2
+      },
+      "source": "Axios Nov 15 2025, verbatim quote from Leslee Oden, National Turkey Federation president and CEO; loss-leader framing also in Scripps News Nov 19 2025"
+    },
+    {
+      "say": "Because nobody walks out with just a turkey.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/tk-publix.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ]
+      },
+      "source": "Scripps News Nov 19 2025 (grocery chains discount turkeys to draw shoppers, then make up sales on other products); Daily Voice via AOL 2025 (to bring customers in for other purchases)"
+    },
+    {
+      "say": "They make it back on the pie, the wine, the decorations.",
+      "visual": {
+        "type": "nodes",
+        "center": {
+          "emoji": "🛒",
+          "label": "your cart"
+        },
+        "nodes": [
+          {
+            "emoji": "🥧",
+            "label": "pie"
+          },
+          {
+            "emoji": "🍷",
+            "label": "wine"
+          },
+          {
+            "emoji": "🕯️",
+            "label": "decor",
+            "hot": true
+          }
+        ]
+      },
+      "source": "Axios Nov 15 2025 (higher-margin items like wine, desserts and decor)"
+    },
+    {
+      "say": "So grab the cheap bird, and stick to your list. Because",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/tk-list.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "grab",
+          "type": "follow",
+          "x": 0.5,
+          "y": 0.6
+        }
+      ],
+      "source": "Loop line into the hook; takeaway, no figure"
+    }
+  ]
+}

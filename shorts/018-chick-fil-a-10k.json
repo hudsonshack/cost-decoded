@@ -1,0 +1,195 @@
+{
+  "format": "short",
+  "speed": 1.05,
+  "music": {
+    "file": "assets/music/empty-street-static.mp3",
+    "db": -22,
+    "duck_db": 4
+  },
+  "playbook": "paradox",
+  "ab": "B",
+  "cover_ms": 1500,
+  "post_slot": "12:30",
+  "review_fix": "Nov 20 review: the three most-viewed Shorts (009 McDonald's 1.4K, 007 airlines 1.2K, 010 Spotify 1.0K) are all 'how X really makes money' reversals about a famous brand, while the last stretch leaned on 'they're doing this to you' tricks (011, 013 underperformed; 015-017 are tricks or fee stories). So 018 goes back to the winning reversal: a famous US brand, two concrete numbers on frame 1 ($9M A YEAR / FOR $10,000, rule 8), the brand logo filling the opening photo with a dark band behind the headline, line 1 is the claim in 10 words, and about 34 s (rule 9). Paradox format so no format runs three in a row (016 Paradox, 017 Trick, 018 Paradox). No proof card (017 had one).",
+  "title": "Why Does a Chick-fil-A Cost Only $10,000 to Open?",
+  "description": "Chick-fil-A operators put up just $10,000, but the company keeps the land, the building and the equipment, then takes 15% of sales and half of the profit that's left.\n#chickfila #franchise #business #shorts\n\nSources: Chick-fil-A 2026 Franchise Disclosure Document via Franchise Chatter (Sep 2026); The Atlanta Journal-Constitution (Apr 9, 2026); Restaurant Business (2026); Food Republic (Apr 24, 2026); The Hustle (Jun 24, 2024); Business Insider via AOL (Apr 2017); InvestmentGrade (Sep 2026)\nPhotos: ccPixs.com, JeepersMedia (Mike Mozart), Kzoo Cowboy (CC BY 2.0, Flickr); Generic Brand Productions, j.reed (CC BY-SA 2.0, Flickr)",
+  "tags": [
+    "chick-fil-a",
+    "chick fil a franchise",
+    "how much does it cost to open a chick fil a",
+    "chick-fil-a operator",
+    "how chick fil a makes money",
+    "franchise business model",
+    "business explained"
+  ],
+  "highlight_words": [
+    "never",
+    "half",
+    "theirs"
+  ],
+  "first_comment": "Be honest: would you run a Chick-fil-A for $10K and half the profit, or pass? 🐔",
+  "scenes": [
+    {
+      "say": "A Chick-fil-A selling {$9 million|nine million} a year costs {$10,000|ten grand}.",
+      "visual": {
+        "type": "photo_hook",
+        "file": "assets/photos/cf-hook.jpg",
+        "focus": [
+          0.53,
+          0.55
+        ],
+        "pan": 0.0,
+        "lines": [
+          "$9M A YEAR",
+          "FOR $10,000"
+        ],
+        "highlight": [
+          "$10,000"
+        ],
+        "scale": 0.115,
+        "y": 0.13
+      },
+      "source": "$10,000: Chick-fil-A 2026 FDD Item 5 via Franchise Chatter Sep 2026 ('Initial Franchise Fee: $10,000'); Business Insider via AOL ('charges franchisees only $10,000 to open a new restaurant'); Food Republic Apr 24 2026. $9M: AJC Apr 9 2026 (freestanding restaurants 'almost $9.2 million in 2025'); Franchise Chatter (2026 FDD Item 19: non-mall average $9,161,239 across 2,302 units); Restaurant Business ('just under $9.2 million')"
+    },
+    {
+      "say": "That's the average standalone store, and it's closed every single Sunday.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/cf-sunday.jpg",
+        "focus": [
+          0.36,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "average",
+          "type": "bigword",
+          "text": "$9M",
+          "color": "good"
+        }
+      ],
+      "source": "AJC Apr 9 2026 ('restaurants that are closed on Sunday'); InvestmentGrade Sep 2026 ('Restaurants close on Sundays'); averages as in scene 1"
+    },
+    {
+      "say": "So why would Chick-fil-A hand one over to you for {$10,000|ten grand}?",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/cf-store.jpg",
+        "focus": [
+          0.55,
+          0.5
+        ]
+      },
+      "source": "Paradox turn, no new figure"
+    },
+    {
+      "say": "Because you never own it.",
+      "visual": {
+        "type": "statement",
+        "lines": [
+          "YOU NEVER",
+          "OWN IT"
+        ],
+        "highlight": [
+          "never"
+        ],
+        "scale": 0.12
+      },
+      "source": "Food Republic Apr 24 2026 ('all of it belongs to the company ... the owner-operators don't earn a financial interest in their franchise'); The Hustle Jun 24 2024 ('Chick-fil-A pays for (and retains ownership of) everything')"
+    },
+    {
+      "say": "Chick-fil-A pays for the land, the building, the kitchen equipment, and it keeps all of it.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/cf-build.jpg",
+        "focus": [
+          0.45,
+          0.5
+        ]
+      },
+      "source": "Business Insider via AOL ('pays for all startup costs — including real estate, restaurant construction, and equipment'); The Hustle Jun 24 2024 ('pays for (and retains ownership of) everything — real estate, equipment, inventory'); InvestmentGrade Sep 2026 (building, equipment and furnishings stay Chick-fil-A's; land is Chick-fil-A's or a third party's, never the operator's)"
+    },
+    {
+      "say": "Then it takes {15%|fifteen percent} of every sale,",
+      "visual": {
+        "type": "big_number",
+        "value": 15,
+        "suffix": "%",
+        "decimals": 0,
+        "color": "bad",
+        "caption": "of every sale"
+      },
+      "source": "Chick-fil-A 2026 FDD Item 6 via Franchise Chatter (Base Operating Service Fee: 15% of Gross Receipts, net of equipment rental); Business Insider via AOL ('15% of sales plus 50% of pretax profit remaining'); Food Republic Apr 24 2026 ('15% of annual sales and 50% of the profit'); The Hustle Jun 24 2024"
+    },
+    {
+      "say": "plus half of the profit that's left.",
+      "visual": {
+        "type": "donut",
+        "value": 50,
+        "color": "bad",
+        "caption": "of the profit that's left"
+      },
+      "source": "Chick-fil-A 2026 FDD Item 6 via Franchise Chatter (Additional Operating Service Fee: '50% of the Net Profit'); Business Insider via AOL ('50% of pretax profit remaining'); Food Republic Apr 24 2026; The Hustle Jun 24 2024"
+    },
+    {
+      "say": "And most operators are only allowed to run one store.",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/cf-fries.jpg",
+        "focus": [
+          0.5,
+          0.5
+        ]
+      },
+      "cues": [
+        {
+          "at": "only",
+          "type": "emoji",
+          "text": "👆",
+          "x": 0.5,
+          "y": 0.62,
+          "w": 0.3,
+          "rot": -6
+        }
+      ],
+      "source": "Business Insider via AOL ('prohibits most of its franchisees from opening multiple units'); The Hustle Jun 24 2024 ('In most cases, they aren't permitted to own multiple locations'); Food Republic Apr 24 2026 ('usually aren't allowed to operate more than one restaurant')"
+    },
+    {
+      "say": "So ten grand doesn't buy you a restaurant. It buys you a job running theirs.",
+      "visual": {
+        "type": "statement",
+        "lines": [
+          "NOT A",
+          "RESTAURANT",
+          "A JOB"
+        ],
+        "highlight": [
+          "job"
+        ],
+        "scale": 0.1
+      },
+      "source": "Point of view drawn from the ownership and fee facts above; no new figure"
+    },
+    {
+      "say": "And that's exactly why",
+      "visual": {
+        "type": "broll",
+        "file": "assets/photos/cf-sandwich.jpg",
+        "focus": [
+          0.62,
+          0.45
+        ]
+      },
+      "cues": [
+        {
+          "at": "that's",
+          "type": "follow",
+          "x": 0.5,
+          "y": 0.6
+        }
+      ],
+      "source": "Loop line into the hook; no new figure"
+    }
+  ]
+}

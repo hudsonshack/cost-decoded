@@ -42,7 +42,7 @@ Append weekly findings from analytics here.
 
 - 2026-11-19: compare_bars with the cheap item first ("Target charges 79¢... Stores pay $1.80 for it, wholesale") puts both bars up by ~7 s; the tail phrase after the second reveal word keeps it on screen. A green bigword (97¢) disappears over green/blue packaging; use "text" (white). 💸 renders clean as an emoji cue; 🥧 renders as a dark blob in node icons, 🍷 and 🕯️ fine. Anthony Quintano's Flickr (CC BY 2.0) has clean US Butterball case shots with no people.
 
-- 2026-11-20: Chick-fil-A on Openverse: ccPixs.com (CC BY) storefront logo crops perfectly to 9:16 at focus x 0.53; JeepersMedia 'CLOSED SUNDAY' pylon (CC BY) at x 0.36. Avoid the in-store 'Closed on Sunday' posters (Truett Cathy's face). 💰-free scenes: 👆 renders clean as an emoji cue; a '$9M' bigword (3 chars) fits. Kokoro at speed 1.05 runs ~2.9 words/s: 90 words = 30 s, so aim for 92-100 words to land in 31-35 s.
+- 2026-11-20: Chick-fil-A on Openverse: ccPixs.com (CC BY) storefront logo crops perfectly to 9:16 at focus x 0.53; JeepersMedia 'CLOSED SUNDAY' pylon (CC BY) at x 0.36. Avoid the in-store 'Closed on Sunday' posters (Truett Cathy's face). 👆 renders clean as an emoji cue; a '$9M' bigword (3 chars) fits. Kokoro at speed 1.05 runs ~2.9 words/s: 90 words = 30 s, so aim for 92-100 words to land in 31-35 s.
 
 ## 2026-11-09: week 1 analytics (Monday report)
 Data: vidIQ get_videos_by_ids (5 credits) at 14:45 ET Nov 9; Metricool YouTube per-video stats still null (2-3 day lag) and Metricool returned no TikTok post rows.

@@ -21,6 +21,7 @@ Append weekly findings from analytics here.
 - Nov 19 run (14:45 ET): 014 published 12:30 today (bC1MS3cw2yE). Nov 20-21 filled (015, 016), Nov 22 empty, so one new Short: 017 Thanksgiving turkey loss leader for Nov 22 17:00 (uuid -5359075089405227412), YouTube only, cover 1500 ms, media at commit f4f6da2. Count, worst case: published 15 (001 YT+TT, 002 YT+TT, 005, 007, 004, 003, 006, 008, 009, 010, 011, 012, 013); scheduled 014 (now published), 015, 016, 017 -> 19 of 20 by Nov 22. ONE Metricool post left for Nov 23-30; after that, videos wait for the Mac upload route. Nov 22 planned 'Real Cost of Thanksgiving Dinner 2026' event updated to 017 (the 2026 AFBF survey wasn't out yet; only 2025's $55.18 was published).
 - Nov 20 run (14:45 ET): no new uploads since 014 (015 posts today 17:00, 016 Nov 21, 017 Nov 22). Nov 23 was empty, so one new Short: 018 Chick-fil-A $10K operator model for Nov 23 12:30 (uuid 1633331239488277380), YouTube only, cover 1500 ms, media at commit ee0fa58. Count, worst case: published 15; scheduled 015, 016, 017, 018 -> 20 of 20 by Nov 23. CAP REACHED: no more Metricool posts in November. Videos for Nov 24-30 wait for the Mac upload route (Hudson told). Metricool resets Dec 1.
 - Nov 21 run (14:45 ET): 016 published 12:30 today (KL1FCXRLVrU); 015 published Nov 20 17:00 (U1Twk2PlW-c). Nov 22-23 filled (017, 018), Nov 24 empty, so one new Short: 019 Visa swipe fees, planned Nov 24 17:00. NOT scheduled: cap is 20 of 20 (published 17: 001 YT+TT, 002 YT+TT, 005, 007, 004, 003, 006, 008, 009, 010, 011, 012, 013, 014, 015, 016; scheduled 017, 018). 019 waits in media/ (commit 345e91e) for the Mac upload route or Dec 1. Nov 24 calendar event created with status 'waiting'.
+- Nov 22 run (14:45 ET): 017 posts today 17:00, 018 Nov 23 12:30 (both still pending in Metricool). 019 waits for Nov 24. Nov 25 was the first empty day, so one new Short: 020 Google pays Apple $20B, planned Nov 25 12:30. NOT scheduled: cap still 20 of 20 (published 17; scheduled 017, 018). 020 waits in media/ with 019 for the Mac upload route or Dec 1. Nov 25 calendar event created with status 'waiting'.
 
 ## Production notes
 - 2026-11-07: bigword text wider than ~5 characters spills off the frame during the punch-in; keep bigwords to 4-5 characters. Node labels over ~13 characters get cut at the side edges. Emoji with square silhouettes (📅 ↩️) render as blank squares in node icons; use shaped ones (⏳ 🔓 💰 🔍).
@@ -46,6 +47,8 @@ Append weekly findings from analytics here.
 - 2026-11-20: Chick-fil-A on Openverse: ccPixs.com (CC BY) storefront logo crops perfectly to 9:16 at focus x 0.53; JeepersMedia 'CLOSED SUNDAY' pylon (CC BY) at x 0.36. Avoid the in-store 'Closed on Sunday' posters (Truett Cathy's face). 👆 renders clean as an emoji cue; a '$9M' bigword (3 chars) fits. Kokoro at speed 1.05 runs ~2.9 words/s: 90 words = 30 s, so aim for 92-100 words to land in 31-35 s.
 
 - 2026-11-21: Visa on Openverse: Images_of_Money 'Visa Credit Card' (CC BY, portrait 768x1024) fills frame 1 with the logo; rawpixel CC0 'OPEN / VISA' door sign; dreamcicle19772006 'Your BankAmericard welcome here' sticker (CC BY) works as archival; JeepersMedia Walmart checkout with price signs and no people. 💳 renders as a blank white square in node icons (like 📅); 👆 works as a node center. compare_bars reveal words: reveal on the number tokens ($23.5B, $46B) plus a 2-word tail ('More than half.') kept the second bar up ~2 s; revealing on the last word ('revenue') never showed it. The web-fetch agent can't read YouTube pages (permission prompt times out), so public view counts aren't reachable from a scheduled run.
+
+- 2026-11-22: a portrait logo photo (Apple logo, psd, CC BY) gets cropped to a blown-out white blob when the engine fills 9:16 from 3:4; padding it onto a black 900x1600 canvas (logo ~95% width, low in the frame) and dimming to 0.8 keeps the whole logo readable under the headline. Kokoro said 'Bing' so whisper heard 'being': avoid short brand names that sound like common words, or check them with base.en. Speed 1.10 ran ~2.95 words/s (104 words = 35.3 s). 💰 in nodes renders as a dark bag (readable); node labels of 11 characters ('payments ok') clip at the left edge, 8 fit.
 
 ## 2026-11-09: week 1 analytics (Monday report)
 Data: vidIQ get_videos_by_ids (5 credits) at 14:45 ET Nov 9; Metricool YouTube per-video stats still null (2-3 day lag) and Metricool returned no TikTok post rows.
@@ -102,6 +105,8 @@ Takeaways now in the runbook:
 
 - Log: 019-visa-swipe-fees (planned Nov 24 17:00, waiting for the Mac upload route) = Setup B (default voice, speed 1.05, Empty Street Static -22 dB), Story format, 35.2 s, proof scene (Visa 10-K quote). Post-time alternation: 17:00 = 009, 011, 013, 015, 017, 019; 12:30 = 010, 012, 014, 016, 018.
 
+- Log: 020-google-pays-apple (planned Nov 25 12:30, waiting for the Mac upload route or Dec 1) = Setup B (default voice, speed 1.10, Empty Street Static -22 dB), Trick format, 35.3 s, no proof scene (019 had one). Post-time alternation: 17:00 = 009, 011, 013, 015, 017, 019; 12:30 = 010, 012, 014, 016, 018, 020.
+
 ## Video reviews
 - 2026-11-13 (Hudson asked for a fix; full Studio pull): channel 4.0K views in 28 days, 1.7K engaged, 44 likes, 2 subs; 55% swiped away overall, 96% of views from the Shorts feed.
   - 001 Costco: 1.2K views, 34% stayed, 38% avg viewed. Cause: frame 1 had no headline, and the line 1 number had no context. Fix: instant headline (engine).
@@ -147,4 +152,10 @@ Takeaways now in the runbook:
   - 015 Gatorade (22 h) and 016 printer ink (2 h): under 24 h, no review yet. Video IDs added to the sheet.
   - No repeat cause with numbers behind it, so no new rule. Scheduled 017 (32 s) and 018 (31 s) already meet rules 7-9.
   - Today's fix (019): brand logo filling frame 1 (Visa card), two concrete numbers on the headline (VISA LENT $0 / $23B PROFIT), 8-word claim line 1, 35 s, brand-reversal topic. It can't post before Dec 1 unless the Mac route runs.
-
+- 2026-11-22 review (Studio snapshot Nov 21 15:50, 1 day old; vidIQ 0 credits until Dec 6). Channel best 1.4K views (009), best stayed 59.5% (007); median of 001-016: 225 views, 40% stayed.
+  - 014 Ticketmaster: 28 views, 65.4% swiped after 2 days (weakest B video). (a) frame 1 is an old paper stub for a niche band with no Ticketmaster brand, '44%' with no dollar baseline; plus (c) fee topic and (d) 43.7 s -> brand logo on frame 1, dollar numbers, 30-36 s.
+  - 015 Gatorade: 325 views (above median), 40% stayed, 59.9% swiped, 7.8 s avg view. Frame 1 passes. (c) a 2022-era, low-stakes change in the consumer-gripe group -> brand reversals, current changes only.
+  - 016 Printer ink (3 h snapshot, early): 102 views, 56.7% swiped, 18% avg viewed (lowest of B). (d) 39 s + (a) dim grey close-up with no number -> 30-36 s, a number on frame 1. Recheck when Studio refreshes.
+  - Repeat cause made a rule: RUNBOOK Nov 13 review rule 10 (2 of every 3 videos are brand reversals). Reversals 007/009/010 average 53% stayed and ~1.2K views; gripe topics 011/013/014/015/016 average 34% and ~215 views.
+  - Scheduled 017 (turkey, posts in 2 h) is framed as the store's loss-leader engine with concrete numbers, so left as is; 018 and 019 are already reversals.
+  - Today's fix (020): brand reversal about Apple and Google, full Apple logo on frame 1 on black, GOOGLE PAYS / APPLE $20B, 8-word claim, 35 s.

@@ -1,0 +1,218 @@
+{
+ "format": "short",
+ "speed": 1.1,
+ "music": {
+  "file": "assets/music/empty-street-static.mp3",
+  "db": -22,
+  "duck_db": 4
+ },
+ "playbook": "trick",
+ "ab": "B",
+ "cover_ms": 1500,
+ "post_slot": "12:30",
+ "review_fix": "Nov 22 review: brand-reversal Shorts (007 airlines, 009 McDonald's, 010 Spotify) average 53% stayed and 1.2K views, while the consumer-gripe fee/trick Shorts (011, 013, 014, 015, 016) average 34% stayed and about 215 views; 015 and 016 held only 7-8 s on average. Now rule 10. So 020 is a brand reversal about the two biggest brands in a US pocket (how Apple makes money from Google), Apple logo filling frame 1 on a black band, two concrete pieces on the headline (GOOGLE PAYS / APPLE $20B), line 1 is the claim in 8 words, about 33 s (rule 9). Trick format so no format runs three in a row (018 Paradox, 019 Story, 020 Trick). No proof card (019 had one).",
+ "title": "Why Does Google Pay Apple $20 Billion a Year?",
+ "description": "Google paid Apple about $20 billion in 2022 just to stay the default search engine in Safari, and Apple keeps 36% of the ad money from those searches.\n#apple #google #money #shorts\n\nSources: MacRumors (Aug 5, 2024; Sep 2, 2025; Oct 27, 2022); Yahoo Finance via AOL (2025); Engadget (Nov 13, 2023); Search Engine Land (2023, 2025); 9to5Mac (Sep 3, 2025); iClarified (Sep 3, 2025); Business Insider via Yahoo (Dec 6, 2025); PYMNTS (Feb 4, 2026); Apple Q4 FY2022 results\nPhotos: psd, Janitors, Carlos Luna, bluesparknz, rpongsaj (CC BY, Flickr)",
+ "tags": [
+  "google pays apple",
+  "google apple deal",
+  "why does google pay apple",
+  "default search engine",
+  "safari google",
+  "default effect",
+  "apple services revenue",
+  "business explained"
+ ],
+ "highlight_words": [
+  "default",
+  "quarter",
+  "payments"
+ ],
+ "first_comment": "Be honest: have you ever changed your phone's default search engine, or never touched it? 🔍",
+ "scenes": [
+  {
+   "say": "Google pays Apple {$20 billion|twenty billion dollars} for one setting.",
+   "visual": {
+    "type": "photo_hook",
+    "file": "assets/photos/gs-hook.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ],
+    "pan": 0.0,
+    "lines": [
+     "GOOGLE PAYS",
+     "APPLE $20B"
+    ],
+    "highlight": [
+     "$20B"
+    ],
+    "scale": 0.115,
+    "y": 0.13
+   },
+   "source": "MacRumors Aug 5 2024 ('In 2022, Google paid Apple $20 billion', per the DOJ in the antitrust case); Yahoo Finance via AOL 2025 ('the $20 billion figure is an estimate for 2022 found in the antitrust court documents'); MacRumors Sep 2 2025 (~$20B annually)"
+  },
+  {
+   "say": "The search bar in Safari, on every iPhone.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/gs-icons.jpg",
+    "focus": [
+     0.52,
+     0.5
+    ]
+   },
+   "source": "Google is the default search engine in Safari on iPhone (MacRumors Sep 2 2025; Engadget Nov 2023)"
+  },
+  {
+   "say": "Court documents put the {2022|twenty twenty two} check at {$20 billion|twenty billion}.",
+   "visual": {
+    "type": "ticker",
+    "from": 0,
+    "to": 20,
+    "prefix": "$",
+    "suffix": "B",
+    "count_at": 0.3,
+    "count_dur": 1.2,
+    "color": "good",
+    "label_top": "court documents",
+    "lines": [
+     "paid by Google",
+     "in 2022 alone"
+    ],
+    "highlight": [
+     "Google"
+    ]
+   },
+   "source": "Yahoo Finance via AOL 2025; MacRumors Aug 5 2024"
+  },
+  {
+   "say": "Apple also keeps {36%|thirty six percent} of the ad money from those searches.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/gs-google.jpg",
+    "focus": [
+     0.5,
+     0.45
+    ]
+   },
+   "cues": [
+    {
+     "at": "keeps",
+     "type": "bigword",
+     "text": "36%",
+     "color": "good"
+    }
+   ],
+   "source": "Engadget Nov 13 2023 (Kevin Murphy testimony; Pichai confirmed 36%); Search Engine Land 2023 ('Google CEO Sundar Pichai has confirmed that the company pays Apple 36% of its Safari search revenue')"
+  },
+  {
+   "say": "{$20 billion|Twenty billion}, next to {$78 billion|seventy eight billion} for all of Apple's services. About a quarter.",
+   "visual": {
+    "type": "compare_bars",
+    "title": "Apple, 2022",
+    "reveal_at": [
+     "$20",
+     "$78"
+    ],
+    "prefix": "$",
+    "suffix": "B",
+    "decimals": 0,
+    "items": [
+     {
+      "label": "From Google",
+      "value": 20,
+      "color": "good"
+     },
+     {
+      "label": "All services",
+      "value": 78,
+      "color": "text"
+     }
+    ]
+   },
+   "source": "MacRumors Oct 27 2022 + Apple Q4 FY2022 results (services revenue $78B in fiscal 2022); $20B / $78B = 26%"
+  },
+  {
+   "say": "But you can switch search engines in a few taps. So why pay?",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/gs-settings.jpg",
+    "focus": [
+     0.5,
+     0.42
+    ]
+   },
+   "cues": [
+    {
+     "at": "taps",
+     "type": "emoji",
+     "text": "👆",
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.3,
+     "rot": -6
+    }
+   ],
+   "source": "Safari lets users pick Google, Yahoo, Bing, DuckDuckGo or Ecosia under Settings > Safari > Search Engine (Apple support)"
+  },
+  {
+   "say": "Because Google is betting you'll never change it. It's called the default effect.",
+   "visual": {
+    "type": "statement",
+    "lines": [
+     "THE",
+     "DEFAULT",
+     "EFFECT"
+    ],
+    "highlight": [
+     "default"
+    ],
+    "scale": 0.12
+   },
+   "source": "Named concept (default bias); no figure"
+  },
+  {
+   "say": "In {2025|twenty twenty five}, a judge banned exclusive deals, but let the payments keep coming.",
+   "visual": {
+    "type": "nodes",
+    "center": {
+     "emoji": "🔍",
+     "label": "the ruling"
+    },
+    "nodes": [
+     {
+      "emoji": "❌",
+      "label": "exclusive"
+     },
+     {
+      "emoji": "💰",
+      "label": "payments",
+      "hot": true
+     }
+    ]
+   },
+   "source": "MacRumors Sep 2 2025 ('not allowed to enter into exclusive contracts... still allowed to pay Apple'); iClarified Sep 3 2025 (court rejected a ban on payments); PYMNTS Feb 4 2026 (appeals pending, payments not blocked)"
+  },
+  {
+   "say": "So every time you search on your iPhone, you're the reason",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/gs-cube.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "cues": [
+    {
+     "at": "search",
+     "type": "follow",
+     "x": 0.5,
+     "y": 0.6
+    }
+   ],
+   "source": "Loop line into the hook"
+  }
+ ]
+}

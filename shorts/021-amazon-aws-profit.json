@@ -1,0 +1,215 @@
+{
+ "format": "short",
+ "speed": 1.05,
+ "music": {
+  "file": "assets/music/empty-street-static.mp3",
+  "db": -22,
+  "duck_db": 4
+ },
+ "playbook": "paradox",
+ "ab": "B",
+ "cover_ms": 1500,
+ "post_slot": "17:00",
+ "review_fix": "No Studio numbers newer than the Nov 21 snapshot, so the fix comes from the standing review: the channel's best-viewed Short (009, 1.4K) used the 'X isn't really a Y' reversal, and rule 10 says 2 of every 3 videos are brand reversals. 021 copies that pattern for the biggest store in the US the day before Black Friday: AMAZON ISN'T / A STORE on a black band over the exact Amazon boxes and logo on frame 1, line 1 is the 5-word claim, about 33 s (rule 9), and the profit split is two concrete cents-per-dollar numbers (8 cents vs 39 cents) instead of a ratio (rule 8). Paradox format (018 Paradox, 019 Story, 020 Trick), proof card back in (020 had none).",
+ "title": "How Does Amazon Actually Make Money?",
+ "description": "Amazon's online store brings in most of its sales, but Amazon Web Services, the cloud business renting out computer servers, made 63% of its operating profit last quarter.\n#amazon #aws #business #shorts\n\nSources: Amazon Q3 2026 results (Oct 29, 2026) via aboutamazon.com and Business Wire; Cord Cutters News (Oct 2026); Amazon Q4 2025 results (Feb 5, 2026)\nPhotos: jencu, bugeaters, stockcatalog, MDGovpics, Phillip Pessar, Rob Ireton (CC BY 2.0, Flickr)",
+ "tags": [
+  "how does amazon make money",
+  "amazon aws",
+  "amazon web services profit",
+  "amazon business model",
+  "amazon earnings 2026",
+  "aws explained",
+  "business explained"
+ ],
+ "highlight_words": [
+  "profit",
+  "servers",
+  "AWS"
+ ],
+ "first_comment": "Be honest: did you know Amazon makes most of its profit from AWS, or did you think it was the shopping? 📦",
+ "scenes": [
+  {
+   "say": "Amazon isn't really a store.",
+   "visual": {
+    "type": "photo_hook",
+    "file": "assets/photos/az-hook.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ],
+    "pan": 0.0,
+    "lines": [
+     "AMAZON ISN'T",
+     "A STORE"
+    ],
+    "highlight": [
+     "STORE"
+    ],
+    "scale": 0.115,
+    "y": 0.13
+   },
+   "source": "Amazon Q3 2026 results (Oct 29 2026, aboutamazon.com + Business Wire via Finviz): AWS operating income $17.8B of $28.1B total operating income (63%); same pattern in FY2025 ($45.6B of $80.0B, 57%). Rhetorical reversal, explained in the video."
+  },
+  {
+   "say": "Last quarter: {$202 billion|two hundred two billion dollars} in sales.",
+   "visual": {
+    "type": "ticker",
+    "from": 0,
+    "to": 202,
+    "prefix": "$",
+    "suffix": "B",
+    "count_at": 0.3,
+    "count_dur": 1.3,
+    "color": "good",
+    "label_top": "July to September",
+    "lines": [
+     "in sales",
+     "at Amazon"
+    ],
+    "highlight": [
+     "sales"
+    ]
+   },
+   "source": "Amazon Q3 2026 release: 'Net sales increased 12% to $201.9 billion in the third quarter' (aboutamazon.com; Business Wire via Finviz; Cord Cutters News 'Amazon Posts $201.9 Billion in Q3 Sales')"
+  },
+  {
+   "say": "But most of the profit isn't from your shopping cart.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/az-stack.jpg",
+    "focus": [
+     0.5,
+     0.45
+    ]
+   },
+   "cues": [
+    {
+     "at": "cart",
+     "type": "emoji",
+     "text": "🛒",
+     "x": 0.5,
+     "y": 0.55,
+     "w": 0.3,
+     "rot": -6
+    }
+   ],
+   "source": "Q3 2026: AWS $17.8B of $28.1B operating income = 63%, i.e. most (aboutamazon.com + Business Wire)"
+  },
+  {
+   "say": "{63%|Sixty three percent} of it came from one place.",
+   "visual": {
+    "type": "donut",
+    "value": 63,
+    "color": "good",
+    "caption": "of Amazon's profit"
+   },
+   "source": "17.8 / 28.1 = 63.3% (AWS segment operating income vs total operating income, Q3 2026 release)"
+  },
+  {
+   "say": "Amazon Web Services.",
+   "visual": {
+    "type": "statement",
+    "lines": [
+     "AWS",
+     "AMAZON WEB",
+     "SERVICES"
+    ],
+    "highlight": [
+     "aws"
+    ],
+    "scale": 0.1
+   },
+   "source": "AWS = Amazon Web Services, an Amazon segment (Q3 2026 release)"
+  },
+  {
+   "say": "It rents out computer servers to other companies.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/az-servers.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "source": "AWS sells cloud computing (compute, storage) to businesses; segment description in Amazon releases and 10-K"
+  },
+  {
+   "say": "On every dollar of sales, the store side in North America keeps about {8¢|eight cents}. AWS keeps {39¢|thirty nine}.",
+   "visual": {
+    "type": "compare_bars",
+    "title": "Profit per $1 of sales",
+    "reveal_at": [
+     "dollar",
+     "AWS"
+    ],
+    "suffix": "¢",
+    "decimals": 0,
+    "items": [
+     {
+      "label": "Store, N. America",
+      "value": 8,
+      "color": "bad"
+     },
+     {
+      "label": "AWS",
+      "value": 39,
+      "color": "good"
+     }
+    ]
+   },
+   "source": "Q3 2026 release: North America segment sales $112.9B, operating income $8.7B (8.7/112.9 = 7.7 cents per $1); AWS sales $46.0B, operating income $17.8B (17.8/46.0 = 38.7 cents per $1). aboutamazon.com + Business Wire via Finviz"
+  },
+  {
+   "say": "Amazon's own report says AWS made seventeen point eight billion in three months.",
+   "visual": {
+    "type": "proof",
+    "kicker": "Amazon, Q3 2026 results",
+    "quote": "AWS segment operating income was $17.8 billion, compared with $11.4 billion in third quarter 2025.",
+    "highlight": "$17.8 billion",
+    "hl_at": 1.8
+   },
+   "source": "Amazon Q3 2026 release, verbatim: 'AWS segment operating income was $17.8 billion, compared with $11.4 billion in third quarter 2025.' (aboutamazon.com and Business Wire text via Finviz)"
+  },
+  {
+   "say": "The packages are the part you see. The servers are where the profit is.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/amz-warehouse.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "cues": [
+    {
+     "at": "servers",
+     "type": "bigword",
+     "text": "AWS",
+     "color": "good"
+    }
+   ],
+   "source": "Point of view summarising the segment numbers above"
+  },
+  {
+   "say": "Which is why, for all those boxes on your porch,",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/amz-doormat.jpg",
+    "focus": [
+     0.5,
+     0.55
+    ]
+   },
+   "cues": [
+    {
+     "at": "boxes",
+     "type": "follow",
+     "x": 0.5,
+     "y": 0.6
+    }
+   ],
+   "source": "Loop line into the hook ('Amazon isn't really a store')."
+  }
+ ]
+}

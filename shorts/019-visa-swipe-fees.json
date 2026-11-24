@@ -1,215 +1,214 @@
 {
-  "format": "short",
-  "speed": 1.05,
-  "music": {
-    "file": "assets/music/empty-street-static.mp3",
-    "db": -22,
-    "duck_db": 4
+ "format": "short",
+ "speed": 1.05,
+ "music": {
+  "file": "assets/music/empty-street-static.mp3",
+  "db": -22,
+  "duck_db": 4
+ },
+ "playbook": "story",
+ "ab": "B",
+ "cover_ms": 1500,
+ "post_slot": "17:00",
+ "review_fix": "Nov 21 review: still no per-video numbers since the Nov 19 Studio snapshot, so the fix follows the rules plus a frame-0 audit of 014 (Ticketmaster): its opening ticket stub never shows the brand, '44%' has no dollar baseline, and it ran 43.7 s. So 019 keeps the brand-reversal pattern that won (009/007/010), puts the brand's logo filling frame 1 (Visa card), states two concrete numbers on the headline (VISA LENT $0 / $23B PROFIT), opens with the claim in 8 words, and runs about 34 s. Nov 24 re-render (v2): rule 11 (from 017 + 018) says the headline reads as a plain sentence with at most one number, so the two-number headline VISA LENT $0 / $23B PROFIT became VISA ISN'T / A BANK (backed by the 10-K line 'Visa is not a financial institution'), and line 1 became the 10-word claim 'Visa isn't a bank. It's never lent you a dollar.' The $23.5B profit stays in the chart.",
+ "title": "How Does Visa Actually Make Money?",
+ "description": "Visa doesn't issue cards or lend a cent, yet it kept $23.5 billion in profit last fiscal year by taking a cut of every swipe, a fee stores build into the prices everyone pays.\n#visa #creditcards #money #shorts\n\nSources: Visa fiscal 2026 results, SEC Form 8-K (Oct 27, 2026); Digital Transactions (Oct 28, 2026); Visa fiscal 2025 Form 10-K (Nov 2025); Nilson Report via Mass Market Retailers (Nov 19, 2026); NACS (Mar 20, 2025); Federal Reserve Bank of Boston study via WBUR and Marketplace (Jul 2010) and Boston Fed working paper 20-13 (Dec 2020); Wikipedia and American Banker (Dee Hock)\nPhotos: Images_of_Money, dreamcicle19772006, JeepersMedia (Mike Mozart), Steve Snodgrass (CC BY 2.0, Flickr); rawpixel (CC0)",
+ "tags": [
+  "visa",
+  "how does visa make money",
+  "visa business model",
+  "credit card swipe fees",
+  "interchange fees",
+  "credit cards",
+  "business explained"
+ ],
+ "highlight_words": [
+  "never",
+  "risk",
+  "cash"
+ ],
+ "first_comment": "Be honest: do you pay with a card for the points, or stick to cash? 💳",
+ "scenes": [
+  {
+   "say": "Visa isn't a bank. It's never lent you a dollar.",
+   "visual": {
+    "type": "photo_hook",
+    "file": "assets/photos/vs-hook.jpg",
+    "focus": [
+     0.55,
+     0.55
+    ],
+    "pan": 0.0,
+    "lines": [
+     "VISA ISN'T",
+     "A BANK"
+    ],
+    "highlight": [
+     "ISN'T"
+    ],
+    "scale": 0.115,
+    "y": 0.13
+   },
+   "source": "Visa FY2025 Form 10-K, Item 1: 'Visa is not a financial institution. We do not issue cards, extend credit or set rates and fees for account holders of Visa products' (and earns no revenue from and bears no credit risk on those activities); Visa FY2026 8-K Oct 27 2026: GAAP net income $23,504M (also jamessharp.co.uk reproduction of the release: $23.5B)"
   },
-  "playbook": "story",
-  "ab": "B",
-  "cover_ms": 1500,
-  "post_slot": "17:00",
-  "review_fix": "Nov 21 review: still no per-video numbers since the Nov 19 Studio snapshot, so the fix follows the rules plus a frame-0 audit of 014 (Ticketmaster): its opening ticket stub never shows the brand, '44%' has no dollar baseline, and it ran 43.7 s. So 019 keeps the brand-reversal pattern that won (009/007/010), puts the brand's logo filling frame 1 (Visa card), states two concrete numbers on the headline (VISA LENT $0 / $23B PROFIT), opens with the claim in 8 words, and runs about 34 s.",
-  "title": "How Does Visa Actually Make Money?",
-  "description": "Visa doesn't issue cards or lend a cent, yet it kept $23.5 billion in profit last fiscal year by taking a cut of every swipe, a fee stores build into the prices everyone pays.\n#visa #creditcards #money #shorts\n\nSources: Visa fiscal 2026 results, SEC Form 8-K (Oct 27, 2026); Digital Transactions (Oct 28, 2026); Visa fiscal 2025 Form 10-K (Nov 2025); Nilson Report via Mass Market Retailers (Nov 19, 2026); NACS (Mar 20, 2025); Federal Reserve Bank of Boston study via WBUR and Marketplace (Jul 2010) and Boston Fed working paper 20-13 (Dec 2020); Wikipedia and American Banker (Dee Hock)\nPhotos: Images_of_Money, dreamcicle19772006, JeepersMedia (Mike Mozart), Steve Snodgrass (CC BY 2.0, Flickr); rawpixel (CC0)",
-  "tags": [
-    "visa",
-    "how does visa make money",
-    "visa business model",
-    "credit card swipe fees",
-    "interchange fees",
-    "credit cards",
-    "business explained"
-  ],
-  "highlight_words": [
-    "never",
-    "risk",
-    "cash"
-  ],
-  "first_comment": "Be honest: do you pay with a card for the points, or stick to cash? 💳",
-  "scenes": [
-    {
-      "say": "Visa has never lent you a single dollar.",
-      "visual": {
-        "type": "photo_hook",
-        "file": "assets/photos/vs-hook.jpg",
-        "focus": [
-          0.55,
-          0.55
-        ],
-        "pan": 0.0,
-        "lines": [
-          "VISA LENT $0",
-          "$23B PROFIT"
-        ],
-        "highlight": [
-          "$0",
-          "$23B"
-        ],
-        "scale": 0.115,
-        "y": 0.13
-      },
-      "source": "Visa FY2025 Form 10-K, Item 1: 'Visa is not a financial institution. We do not issue cards, extend credit or set rates and fees for account holders of Visa products' (and earns no revenue from and bears no credit risk on those activities); Visa FY2026 8-K Oct 27 2026: GAAP net income $23,504M (also jamessharp.co.uk reproduction of the release: $23.5B)"
+  {
+   "say": "Its founder, Dee Hock, set it up differently.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/vs-bankamericard.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ],
+    "archival": true
+   },
+   "source": "Wikipedia (Dee Hock: founder and CEO of the Visa association; convinced Bank of America to give up control of BankAmericard licensing, forming a company owned by its member banks, renamed Visa in 1976); American Banker (Hock CEO of the card brand 1970-1984, convinced banks to collaborate on a payment network that became Visa)"
+  },
+  {
+   "say": "The banks issue the cards and carry the risk. Visa just runs the network.",
+   "visual": {
+    "type": "nodes",
+    "center": {
+     "emoji": "👆",
+     "label": "visa"
     },
+    "nodes": [
+     {
+      "emoji": "🏦",
+      "label": "banks lend"
+     },
+     {
+      "emoji": "🛍️",
+      "label": "stores pay"
+     },
+     {
+      "emoji": "💰",
+      "label": "visa: fees",
+      "hot": true
+     }
+    ]
+   },
+   "source": "Visa FY2025 10-K (does not issue cards, extend credit, or bear credit risk); Wikipedia (member banks owned the association)"
+  },
+  {
+   "say": "Here's the trick: every credit card swipe, the store pays over {2%|two percent}, and Visa takes a cut.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/vs-open.jpg",
+    "focus": [
+     0.3,
+     0.6
+    ]
+   },
+   "cues": [
     {
-      "say": "Its founder, Dee Hock, set it up differently.",
-      "visual": {
-        "type": "broll",
-        "file": "assets/photos/vs-bankamericard.jpg",
-        "focus": [
-          0.5,
-          0.5
-        ],
-        "archival": true
-      },
-      "source": "Wikipedia (Dee Hock: founder and CEO of the Visa association; convinced Bank of America to give up control of BankAmericard licensing, forming a company owned by its member banks, renamed Visa in 1976); American Banker (Hock CEO of the card brand 1970-1984, convinced banks to collaborate on a payment network that became Visa)"
-    },
-    {
-      "say": "The banks issue the cards and carry the risk. Visa just runs the network.",
-      "visual": {
-        "type": "nodes",
-        "center": {
-          "emoji": "👆",
-          "label": "visa"
-        },
-        "nodes": [
-          {
-            "emoji": "🏦",
-            "label": "banks lend"
-          },
-          {
-            "emoji": "🛍️",
-            "label": "stores pay"
-          },
-          {
-            "emoji": "💰",
-            "label": "visa: fees",
-            "hot": true
-          }
-        ]
-      },
-      "source": "Visa FY2025 10-K (does not issue cards, extend credit, or bear credit risk); Wikipedia (member banks owned the association)"
-    },
-    {
-      "say": "Here's the trick: every credit card swipe, the store pays over {2%|two percent}, and Visa takes a cut.",
-      "visual": {
-        "type": "broll",
-        "file": "assets/photos/vs-open.jpg",
-        "focus": [
-          0.3,
-          0.6
-        ]
-      },
-      "cues": [
-        {
-          "at": "2%",
-          "type": "bigword",
-          "text": "2%",
-          "color": "good"
-        }
-      ],
-      "source": "Nilson Report via Mass Market Retailers Nov 19 2026 (Visa and Mastercard credit card fees averaged 2.36% in 2025); NACS Mar 20 2025 (rose to 2.35% in 2024); CMSPI puts it at 2.92% (2025). Visa revenue comes from per-transaction service and data processing fees (FY2026 8-K)"
-    },
-    {
-      "say": "That's {281 billion|two hundred eighty one billion} transactions in one year.",
-      "visual": {
-        "type": "ticker",
-        "from": 0,
-        "to": 281,
-        "count_at": 0.1,
-        "count_dur": 1.2,
-        "label_top": "fiscal 2026",
-        "lines": [
-          "billion transactions",
-          "run by Visa"
-        ],
-        "highlight": [
-          "billion"
-        ]
-      },
-      "source": "Visa FY2026 8-K Oct 27 2026: total processed transactions for the twelve months ended Sep 30 2026 were 281.3 billion, up 9% (same figure in the jamessharp.co.uk reproduction of the release)"
-    },
-    {
-      "say": "Its own annual report says Visa doesn't issue cards or extend credit.",
-      "visual": {
-        "type": "proof",
-        "kicker": "Visa, fiscal 2025 annual report",
-        "quote": "Visa is not a financial institution. We do not issue cards, extend credit or set rates and fees for account holders of Visa products",
-        "highlight": "extend credit",
-        "hl_at": 2.4
-      },
-      "source": "Visa FY2025 Form 10-K, Item 1 Business, verbatim (read in the 10-K PDF via fortune.com/company-assets; wording matches the MarketScreener 10-K summary)"
-    },
-    {
-      "say": "Yet Visa kept {$23.5B|twenty three and a half billion} in profit, on {$46B|forty six billion} in revenue. More than half.",
-      "visual": {
-        "type": "compare_bars",
-        "title": "Visa, fiscal 2026",
-        "reveal_at": [
-          "$23.5B",
-          "$46B"
-        ],
-        "prefix": "$",
-        "suffix": "B",
-        "decimals": 1,
-        "items": [
-          {
-            "label": "Profit",
-            "value": 23.5,
-            "color": "good"
-          },
-          {
-            "label": "Revenue",
-            "value": 45.9,
-            "color": "text"
-          }
-        ]
-      },
-      "source": "Visa FY2026 8-K Oct 27 2026: net revenue $45,903M (+15%), GAAP net income $23,504M; Digital Transactions Oct 28 2026 and jamessharp.co.uk: $45.9B revenue, $23.5B net income; 23.5/45.9 = 51%, so 'more than half'"
-    },
-    {
-      "say": "And stores bake that fee into their prices.",
-      "visual": {
-        "type": "broll",
-        "file": "assets/photos/vs-walmart.jpg",
-        "focus": [
-          0.4,
-          0.45
-        ]
-      },
-      "cues": [
-        {
-          "at": "bake",
-          "type": "emoji",
-          "text": "💸",
-          "x": 0.5,
-          "y": 0.55,
-          "w": 0.32,
-          "rot": -6
-        }
-      ],
-      "source": "WBUR Jul 28 2010 on the Boston Fed study (stores raise prices to cover card fees, so cash users pay the higher prices too); Marketplace Jul 30 2010 (fees usually passed on through higher prices); Boston Fed WP 20-13 Dec 2020 (merchants pass costs through to all consumers)"
-    },
-    {
-      "say": "So you pay it, even with cash. Because remember,",
-      "visual": {
-        "type": "broll",
-        "file": "assets/photos/vs-register.jpg",
-        "focus": [
-          0.5,
-          0.5
-        ]
-      },
-      "cues": [
-        {
-          "at": "pay",
-          "type": "follow",
-          "x": 0.5,
-          "y": 0.6
-        }
-      ],
-      "source": "WBUR Jul 28 2010 (when you use cash, you still pay the higher prices); Boston Fed WP 20-13 (credit card transactions cross-subsidized by debit and cash payments). Loop line into the hook."
+     "at": "2%",
+     "type": "bigword",
+     "text": "2%",
+     "color": "good"
     }
-  ]
+   ],
+   "source": "Nilson Report via Mass Market Retailers Nov 19 2026 (Visa and Mastercard credit card fees averaged 2.36% in 2025); NACS Mar 20 2025 (rose to 2.35% in 2024); CMSPI puts it at 2.92% (2025). Visa revenue comes from per-transaction service and data processing fees (FY2026 8-K)"
+  },
+  {
+   "say": "That's {281 billion|two hundred eighty one billion} transactions in one year.",
+   "visual": {
+    "type": "ticker",
+    "from": 0,
+    "to": 281,
+    "count_at": 0.1,
+    "count_dur": 1.2,
+    "label_top": "fiscal 2026",
+    "lines": [
+     "billion transactions",
+     "run by Visa"
+    ],
+    "highlight": [
+     "billion"
+    ]
+   },
+   "source": "Visa FY2026 8-K Oct 27 2026: total processed transactions for the twelve months ended Sep 30 2026 were 281.3 billion, up 9% (same figure in the jamessharp.co.uk reproduction of the release)"
+  },
+  {
+   "say": "Its own annual report says Visa doesn't issue cards or extend credit.",
+   "visual": {
+    "type": "proof",
+    "kicker": "Visa, fiscal 2025 annual report",
+    "quote": "Visa is not a financial institution. We do not issue cards, extend credit or set rates and fees for account holders of Visa products",
+    "highlight": "extend credit",
+    "hl_at": 2.4
+   },
+   "source": "Visa FY2025 Form 10-K, Item 1 Business, verbatim (read in the 10-K PDF via fortune.com/company-assets; wording matches the MarketScreener 10-K summary)"
+  },
+  {
+   "say": "Yet Visa kept {$23.5B|twenty three and a half billion} in profit, on {$46B|forty six billion} in revenue. More than half.",
+   "visual": {
+    "type": "compare_bars",
+    "title": "Visa, fiscal 2026",
+    "reveal_at": [
+     "$23.5B",
+     "$46B"
+    ],
+    "prefix": "$",
+    "suffix": "B",
+    "decimals": 1,
+    "items": [
+     {
+      "label": "Profit",
+      "value": 23.5,
+      "color": "good"
+     },
+     {
+      "label": "Revenue",
+      "value": 45.9,
+      "color": "text"
+     }
+    ]
+   },
+   "source": "Visa FY2026 8-K Oct 27 2026: net revenue $45,903M (+15%), GAAP net income $23,504M; Digital Transactions Oct 28 2026 and jamessharp.co.uk: $45.9B revenue, $23.5B net income; 23.5/45.9 = 51%, so 'more than half'"
+  },
+  {
+   "say": "And stores bake that fee into their prices.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/vs-walmart.jpg",
+    "focus": [
+     0.4,
+     0.45
+    ]
+   },
+   "cues": [
+    {
+     "at": "bake",
+     "type": "emoji",
+     "text": "💸",
+     "x": 0.5,
+     "y": 0.55,
+     "w": 0.32,
+     "rot": -6
+    }
+   ],
+   "source": "WBUR Jul 28 2010 on the Boston Fed study (stores raise prices to cover card fees, so cash users pay the higher prices too); Marketplace Jul 30 2010 (fees usually passed on through higher prices); Boston Fed WP 20-13 Dec 2020 (merchants pass costs through to all consumers)"
+  },
+  {
+   "say": "So you pay it, even with cash. Because remember,",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/vs-register.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "cues": [
+    {
+     "at": "pay",
+     "type": "follow",
+     "x": 0.5,
+     "y": 0.6
+    }
+   ],
+   "source": "WBUR Jul 28 2010 (when you use cash, you still pay the higher prices); Boston Fed WP 20-13 (credit card transactions cross-subsidized by debit and cash payments). Loop line into the hook."
+  }
+ ]
 }

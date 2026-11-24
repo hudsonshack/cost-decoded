@@ -1,0 +1,216 @@
+{
+ "format": "short",
+ "speed": 1.05,
+ "music": {
+  "file": "assets/music/empty-street-static.mp3",
+  "db": -22,
+  "duck_db": 4
+ },
+ "playbook": "story",
+ "ab": "B",
+ "cover_ms": 1500,
+ "post_slot": "12:30",
+ "review_fix": "Nov 24 review: 017 (79c TURKEY / COSTS $1.80, 68% swiped) and 018 ($9M A YEAR / FOR $10,000, 65% swiped) both opened on a two-number equation the viewer has to work out in the first second, while the two best-kept Shorts open on a plain-word claim (009 NOT A BURGER / COMPANY, 54% stayed) or one number plus a surprising source (007 $8.2 BILLION / FROM A CREDIT CARD, 59.5%). New rule 11: the headline reads as a plain sentence with at most one number. So 022 opens on PARKS BEAT / THE MOVIES over the exact Cinderella Castle, line 1 is the 8-word claim, the two profit figures move to a chart in scene 3, and the chart starts on the first spoken word of its line so it is never empty (017's chart sat empty at 4 s). Story format (019 Story, 020 Trick, 021 Paradox), proof card, about 34 s.",
+ "title": "How Does Disney Actually Make Money?",
+ "description": "Disney's parks, cruise ships and merchandise earned $11.2 billion in operating profit in fiscal 2026, more than twice its movies, TV and streaming combined, and a 1957 company chart shows it was the plan all along.\n#disney #disneyworld #business #shorts\n\nSources: The Walt Disney Company fiscal 2026 fourth quarter and full year earnings release (Nov 17, 2026); StockTitan (Nov 2026); BlogMickey (Nov 2026); Daring Fireball (Aug 17, 2023) and AOL (Jul 20, 2015) on Disney's 1957 corporate strategy chart\nPhotos: ladymugsi, davitydave, Orange County Archives, Steve Jurvetson (CC BY 2.0, Flickr)",
+ "tags": [
+  "how does disney make money",
+  "disney parks profit",
+  "disney business model",
+  "disney earnings 2026",
+  "disney world",
+  "disney synergy",
+  "business explained"
+ ],
+ "highlight_words": [
+  "parks",
+  "middle",
+  "record"
+ ],
+ "first_comment": "Be honest: a trip to a Disney park, or Disney movies at home? Which one gets your money? 🏰",
+ "scenes": [
+  {
+   "say": "Disney's parks make more money than its movies.",
+   "visual": {
+    "type": "photo_hook",
+    "file": "assets/photos/dn-hook.jpg",
+    "focus": [
+     0.5,
+     0.55
+    ],
+    "pan": 0.0,
+    "lines": [
+     "PARKS BEAT",
+     "THE MOVIES"
+    ],
+    "highlight": [
+     "PARKS"
+    ],
+    "scale": 0.115,
+    "y": 0.13
+   },
+   "source": "Disney FY2026 earnings release Nov 17 2026 (q4-fy26-earnings.pdf p.3, Summarized Segment Financial Results, year ended Oct 3 2026): Experiences segment operating income $11,191M vs Entertainment $5,443M (Entertainment = movies, TV networks, streaming). StockTitan Nov 2026: Experiences $11.2B, Entertainment $5.4B. Profit, explained in scene 2-3."
+  },
+  {
+   "say": "Its parks, cruise ships and merch made {$11.2B|eleven point two billion} in profit last year.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/dn-cruise.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "cues": [
+    {
+     "at": "$11.2B",
+     "type": "bigword",
+     "text": "$11B",
+     "color": "good"
+    }
+   ],
+   "source": "Disney FY2026 release p.3: Experiences segment operating income $11,191M (FY2025 $9,995M, +12%); Experiences = parks, resorts, cruise line and consumer products (as reported for FY2026). BlogMickey Nov 2026: 'operating income grew 12% to a record $11.19 billion'. StockTitan: $11.2B vs $10.0B."
+  },
+  {
+   "say": "Movies, TV and streaming, combined? {$5.4B|five point four billion}. Less than half.",
+   "visual": {
+    "type": "compare_bars",
+    "title": "Disney profit, fiscal 2026",
+    "reveal_at": [
+     "Movies",
+     "$5.4B"
+    ],
+    "prefix": "$",
+    "suffix": "B",
+    "decimals": 1,
+    "items": [
+     {
+      "label": "Parks",
+      "value": 11.2,
+      "color": "good"
+     },
+     {
+      "label": "Movies & TV",
+      "value": 5.4,
+      "color": "text"
+     }
+    ]
+   },
+   "source": "Disney FY2026 release p.3: Entertainment segment operating income $5,443M (FY2025 $4,674M); StockTitan Nov 2026: Entertainment $5.4B. 5.443/11.191 = 49%, so 'less than half'."
+  },
+  {
+   "say": "Funny thing is, that was the plan all along.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/dn-1950s-castle.jpg",
+    "focus": [
+     0.42,
+     0.5
+    ],
+    "archival": true
+   },
+   "source": "Daring Fireball Aug 17 2023 and AOL Jul 20 2015 / kottke.org Jun 2015 on Disney's 1957 corporate strategy chart (see next scenes)."
+  },
+  {
+   "say": "In {1957|nineteen fifty seven}, Disney drew a chart of its whole business.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/dn-1955.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ],
+    "archival": true
+   },
+   "cues": [
+    {
+     "at": "1957",
+     "type": "bigword",
+     "text": "1957",
+     "color": "text"
+    }
+   ],
+   "source": "AOL Jul 20 2015 ('a 1957 drawing from the Disney archives'); Daring Fireball Aug 17 2023 (1957 chart of the Disney business); kottke.org Jun 2015 ('a drawing of the synergistic strategy of Walt Disney Productions'). Photo: Disneyland, Anaheim, July 15 1955 (Orange County Archives)."
+  },
+  {
+   "say": "Movies sat in the middle. TV, music and Disneyland all revolved around them.",
+   "visual": {
+    "type": "nodes",
+    "center": {
+     "emoji": "🎬",
+     "label": "movies"
+    },
+    "nodes": [
+     {
+      "emoji": "📺",
+      "label": "tv"
+     },
+     {
+      "emoji": "🎵",
+      "label": "music"
+     },
+     {
+      "emoji": "🏰",
+      "label": "parks",
+      "hot": true
+     }
+    ]
+   },
+   "source": "Daring Fireball Aug 17 2023: 'At the center of the Disney business in the 1957 chart were theatrical films', with 'TV, music, magazines and comics, and the then-new Disneyland' that 'funneled into and revolved around the theatrical films'. AOL Jul 20 2015: business 'grounded in films', publications and parks around them."
+  },
+  {
+   "say": "The movie is the ad. The park is the cash register.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/dn-night.jpg",
+    "focus": [
+     0.45,
+     0.5
+    ]
+   },
+   "cues": [
+    {
+     "at": "register",
+     "type": "emoji",
+     "text": "💸",
+     "x": 0.5,
+     "y": 0.6,
+     "w": 0.3,
+     "rot": -6
+    }
+   ],
+   "source": "Point of view drawn from the chart and the profit split; kottke.org Jun 2015: 'movies drive merchandise sales and theme park visits'."
+  },
+  {
+   "say": "In its own results, Disney calls this a record year for the parks business.",
+   "visual": {
+    "type": "proof",
+    "kicker": "Disney, fiscal 2026 results",
+    "quote": "The fourth quarter and full year were record periods for Experiences revenue and segment operating income",
+    "highlight": "record periods",
+    "hl_at": 0.45
+   },
+   "source": "Disney FY2026 earnings release Nov 17 2026, p.6, verbatim: 'The fourth quarter and full year were record periods for Experiences revenue and segment operating income, even without the contribution of the 53rd week.' BlogMickey Nov 2026 also reports record Q4 and full year for Experiences."
+  },
+  {
+   "say": "So next time a Disney movie ends, remember:",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/dn-castle2.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "cues": [
+    {
+     "at": "next",
+     "type": "follow",
+     "x": 0.5,
+     "y": 0.6
+    }
+   ],
+   "source": "Loop line into the hook ('remember: Disney's parks make more money than its movies')."
+  }
+ ]
+}

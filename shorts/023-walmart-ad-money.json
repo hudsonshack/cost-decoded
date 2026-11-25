@@ -1,0 +1,213 @@
+{
+ "format": "short",
+ "speed": 1.1,
+ "music": {
+  "file": "assets/music/empty-street-static.mp3",
+  "db": -22,
+  "duck_db": 4
+ },
+ "playbook": "trick",
+ "ab": "B",
+ "cover_ms": 1500,
+ "post_slot": "17:00",
+ "review_fix": "Nov 25 review: no fresh Studio numbers since the Nov 23 snapshot, so no new cause; applying the open rules. Rule 11 (from 017 + 018): the headline is one number plus a surprising source, the pattern of the best-kept Short (007 '$8.2 BILLION / FROM A CREDIT CARD', 59.5% stayed): '$6.4 BILLION / FROM ADS', over the exact Walmart storefront and logo (rule 7). Line 1 is that claim in 11 spoken words. Rule 10: framed as Walmart's money engine with a change from this month's earnings (U.S. ads up 37%), not a years-old gripe. Rule 9: about 33 s. Trick format so the run goes Paradox (021), Story (022), Trick (023). No proof card (021 and 022 had one). The ticker starts on the first word of its line (rule 11).",
+ "title": "How Does Walmart Make $6.4 Billion From Ads?",
+ "description": "Walmart's ad business, the sponsored spots in its app and site that brands pay for, made about $6.4 billion last year and grew 37% in the U.S. this fall.\n#walmart #retailmedia #money #shorts\n\nSources: Walmart Q3 FY2027 earnings release via Business Wire/Finviz (Nov 19, 2026); Walmart Q3 FY2027 earnings call via The Motley Fool (Nov 19, 2026); PPC Land (Nov 2026; Feb 22, 2026); Supermarket News (Nov 2026); Digital Commerce 360 (Feb 23, 2026); Marketing Dive and AdExchanger (2026); Digiday/Modern Retail (Oct 13, 2025)\nPhotos: Walmart Corporate, Rusty Clark, Clean Wal-Mart, Mike Mozart/JeepersMedia (CC BY, Flickr)",
+ "tags": [
+  "walmart ads",
+  "walmart advertising",
+  "how does walmart make money",
+  "walmart connect",
+  "retail media",
+  "sponsored products",
+  "walmart",
+  "business explained"
+ ],
+ "highlight_words": [
+  "ads",
+  "sponsored",
+  "break-even"
+ ],
+ "first_comment": "Be honest: do you tap the first result, or scroll past the sponsored ones? 👇",
+ "scenes": [
+  {
+   "say": "Walmart made {$6.4 billion|six point four billion dollars} last year from ads.",
+   "visual": {
+    "type": "photo_hook",
+    "file": "assets/photos/wm-hook.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ],
+    "pan": 0.0,
+    "lines": [
+     "$6.4 BILLION",
+     "FROM ADS"
+    ],
+    "highlight": [
+     "$6.4",
+     "BILLION"
+    ],
+    "scale": 0.115,
+    "y": 0.13
+   },
+   "source": "PPC Land Feb 22 2026 ('Walmart's global advertising business grew 46% to nearly $6.4 billion in FY26'); Digital Commerce 360 Feb 23 2026 (Rainey: advertising up 46% globally to $6.4 billion); Marketing Dive + AdExchanger 2026 ($6.4B). Fiscal 2026 ended Jan 31 2026."
+  },
+  {
+   "say": "Not groceries. Brands paying to reach you.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/wm-aisle.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "cues": [
+    {
+     "at": "Brands",
+     "type": "emoji",
+     "text": "💸",
+     "x": 0.5,
+     "y": 0.62,
+     "w": 0.3,
+     "rot": -6
+    }
+   ],
+   "source": "Walmart Connect sells ads to brands and sellers (walmartconnect.com; Walmart Marketplace sponsored search guide)"
+  },
+  {
+   "say": "Search paper towels in the app, and some top results say sponsored.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/wm-towels.jpg",
+    "focus": [
+     0.55,
+     0.5
+    ]
+   },
+   "source": "Digiday / Modern Retail Oct 13 2025 ('Walmart.com's search results put ads front and center'); Walmart Connect sponsored search places sponsored products in search results (marketplacelearn.walmart.com)"
+  },
+  {
+   "say": "Brands paid for that spot, right where you tap.",
+   "visual": {
+    "type": "statement",
+    "lines": [
+     "SPONSORED"
+    ],
+    "highlight": [
+     "sponsored"
+    ],
+    "scale": 0.1
+   },
+   "cues": [
+    {
+     "at": "right",
+     "type": "emoji",
+     "text": "👆",
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.3,
+     "rot": -6
+    }
+   ],
+   "source": "Walmart Connect sponsored search: advertisers pay for placement in search results"
+  },
+  {
+   "say": "The twist? Walmart's finance chief says without ads, its online store is only around break-even.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/wm-checkout.jpg",
+    "focus": [
+     0.55,
+     0.5
+    ]
+   },
+   "cues": [
+    {
+     "at": "without",
+     "type": "bigword",
+     "text": "ADS",
+     "color": "bad"
+    }
+   ],
+   "source": "CFO John David Rainey, Q3 FY2027 call Nov 19 2026: 'we are actually getting to a point where we are pretty close to break-even without advertising' (PPC Land Nov 2026); The Motley Fool transcript summary: 'the U.S. e-commerce business is approaching break-even profitability when excluding advertising revenue'"
+  },
+  {
+   "say": "And Walmart's U.S. ad business grew {37%|thirty seven percent} this fall.",
+   "visual": {
+    "type": "ticker",
+    "from": 0,
+    "to": 37,
+    "prefix": "+",
+    "suffix": "%",
+    "count_at": 0.1,
+    "count_dur": 1.4,
+    "color": "good",
+    "label_top": "Walmart U.S. ads",
+    "lines": [
+     "vs. a year ago",
+     "Aug to Oct 2026"
+    ],
+    "highlight": [
+     "year"
+    ]
+   },
+   "source": "Walmart Q3 FY2027 release Nov 19 2026 via Finviz ('Walmart U.S. advertising up 37%'); Supermarket News Nov 2026; PPC Land Nov 2026 (quarter ended Oct 31 2026, includes VIZIO and Vibe)"
+  },
+  {
+   "say": "It's called retail media: selling your attention to the brands on the shelf.",
+   "visual": {
+    "type": "nodes",
+    "center": {
+     "emoji": "🛍️",
+     "label": "walmart"
+    },
+    "nodes": [
+     {
+      "emoji": "💰",
+      "label": "brands"
+     },
+     {
+      "emoji": "👆",
+      "label": "you",
+      "hot": true
+     }
+    ]
+   },
+   "source": "Industry term 'retail media' (Walmart Connect is Walmart's retail media business; Digiday 2025); no figure"
+  },
+  {
+   "say": "So scroll past the first result. The best deal isn't always on top.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/wm-alley.jpg",
+    "focus": [
+     0.5,
+     0.45
+    ]
+   },
+   "source": "Takeaway; no figure"
+  },
+  {
+   "say": "Because that top spot is how",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/wm-registers.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "cues": [
+    {
+     "at": "top",
+     "type": "follow",
+     "x": 0.5,
+     "y": 0.6
+    }
+   ],
+   "source": "Loop line into the hook"
+  }
+ ]
+}

@@ -1,0 +1,209 @@
+{
+ "format": "short",
+ "speed": 1.05,
+ "music": {
+  "file": "assets/music/empty-street-static.mp3",
+  "db": -22,
+  "duck_db": 4
+ },
+ "playbook": "paradox",
+ "ab": "B",
+ "cover_ms": 1500,
+ "post_slot": "12:30",
+ "review_fix": "Nov 26 review: no Short has published since Nov 23 (November Metricool cap) and the Studio snapshot is still Nov 23, so no new cause; applying the open rules. Rule 11: plain-sentence headline with no numbers, a 'you' claim like 009's reversal (YOUR CARD IS / THE PROFIT) over the exact Costco logo on frame 1 (rule 7), line 1 is that claim in 7 words. Rule 10: brand reversal about how a store every US shopper knows really makes money, with current FY2026 numbers. Rule 9: about 33 s. Rule 11 chart timing: the donut and big number start on the first word of their lines. Paradox format (022 Story, 023 Trick, 024 Paradox), proof card back in (023 had none), and a different visual order from 021 (people grid, donut, bigwords instead of ticker and compare bars).",
+ "title": "How Does Costco Actually Make Money?",
+ "description": "Costco sells groceries and TVs at razor-thin margins, but its $5.9 billion in membership fees last year equaled about half of its operating profit.\n#costco #costcofinds #business #shorts\n\nSources: Costco fiscal 2026 results (Sept 24, 2026) via GlobeNewswire/Finviz; Mass Market Retailers (Sept 24, 2026); Costco fiscal 2026 Form 10-K; Costco Q4 FY2026 earnings call (Motley Fool transcript); Zacks/Nasdaq (Sept 25, 2026); Fortune interview with Ron Vachris via CNBC and Fox Business (Jun 24, 2024)\nPhotos: JeepersMedia (Mike Mozart), basykes, m01229, krossbow, Daquella manera, thekirbster (CC BY 2.0, Flickr)",
+ "tags": [
+  "how does costco make money",
+  "costco membership",
+  "costco membership fee",
+  "costco business model",
+  "costco profit",
+  "costco earnings 2026",
+  "business explained"
+ ],
+ "highlight_words": [
+  "profit",
+  "card",
+  "fees"
+ ],
+ "first_comment": "Be honest: is your Costco membership worth it, or do you only go for the hot dog? 🌭",
+ "scenes": [
+  {
+   "say": "Costco's real profit is your membership card.",
+   "visual": {
+    "type": "photo_hook",
+    "file": "assets/photos/cm-hook.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ],
+    "pan": 0.0,
+    "lines": [
+     "YOUR CARD IS",
+     "THE PROFIT"
+    ],
+    "highlight": [
+     "PROFIT"
+    ],
+    "scale": 0.115,
+    "y": 0.13
+   },
+   "source": "Rhetorical reversal, explained in the video: FY2026 membership fees $5,907M vs operating income $11,685M = 50.6% (Costco FY2026 release via GlobeNewswire/Finviz; Mass Market Retailers Sept 24 2026: fees $5.91B, operating income $11.69B). Zacks/Nasdaq Sept 25 2026: FY2025 fees 'about half' of operating income."
+  },
+  {
+   "say": "The store itself runs on razor thin margins.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/cm-aisle.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "cues": [
+    {
+     "at": "razor",
+     "type": "emoji",
+     "text": "🤏",
+     "x": 0.5,
+     "y": 0.45,
+     "w": 0.3,
+     "rot": -6
+    }
+   ],
+   "source": "Costco FY2026 10-K Item 1: '...operate profitably at significantly lower gross margins (net sales less merchandise costs) than most other retailers.' TheStreet via Yahoo Feb 9 2026 (RetailWire: markups capped at 14% outside brands, 15% store brands); Moneywise (caps around 14% / 15%)."
+  },
+  {
+   "say": "Yet last year it made {$9.2 billion|nine point two billion dollars} in profit.",
+   "visual": {
+    "type": "big_number",
+    "value": 9.2,
+    "prefix": "$",
+    "suffix": "B",
+    "decimals": 1,
+    "color": "good",
+    "caption": "Costco profit, fiscal 2026"
+   },
+   "source": "Costco FY2026 release (52 weeks ended Aug 30 2026): 'Net income for the fiscal year was $9.226 billion' (GlobeNewswire via Finviz); Mass Market Retailers Sept 24 2026: 'increased to $9.23 billion'; 10-K cash flow statement net income $9,226M."
+  },
+  {
+   "say": "So where's it coming from?",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/cm-carts.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "cues": [
+    {
+     "at": "where's",
+     "type": "emoji",
+     "text": "🤔",
+     "x": 0.5,
+     "y": 0.42,
+     "w": 0.28,
+     "rot": -6
+    }
+   ],
+   "source": "Paradox question"
+  },
+  {
+   "say": "{84 million|Eighty four million} members pay just to get in the door.",
+   "visual": {
+    "type": "people_grid",
+    "rows": 10,
+    "cols": 10,
+    "color": "good",
+    "caption": "84 MILLION PAID MEMBERS"
+   },
+   "source": "Costco FY2026 10-K Item 1 membership table: paid members 84,100 thousand; Q4 FY2026 call (Motley Fool via Webull): '84.1 million total paid members, up 3.8% versus last year'; Zacks/Nasdaq Sept 25 2026 (84.1 million). Fee: 10-K 'Our annual fee for memberships is $65 in the U.S.'; TheStreet via Yahoo ($65 Gold, $130 Executive)."
+  },
+  {
+   "say": "Those fees brought in {$5.9 billion|five point nine billion dollars}.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/cm-stacks.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "cues": [
+    {
+     "at": "fees",
+     "type": "emoji",
+     "text": "💸",
+     "x": 0.5,
+     "y": 0.45,
+     "w": 0.3,
+     "rot": 6
+    }
+   ],
+   "source": "Costco FY2026 release income statement: membership fees $5,907M (vs $5,323M FY2025) (GlobeNewswire via Finviz); Mass Market Retailers Sept 24 2026: 'membership fees increased to $5.91 billion from $5.32 billion'."
+  },
+  {
+   "say": "About half of Costco's entire operating profit.",
+   "visual": {
+    "type": "donut",
+    "value": 51,
+    "color": "good",
+    "caption": "of operating profit"
+   },
+   "source": "5,907 / 11,685 = 50.6% (FY2026 membership fees vs operating income, Costco release via Finviz; Mass Market Retailers: fees $5.91B, operating income $11.69B). Zacks/Nasdaq: FY2025 fees ~$5.3B 'about half of the company's $10.4 billion in operating income'."
+  },
+  {
+   "say": "Costco's CEO said it himself: the most important item we sell is the membership card.",
+   "visual": {
+    "type": "proof",
+    "kicker": "Costco CEO Ron Vachris, 2024",
+    "quote": "The most important item we sell is the membership card.",
+    "highlight": "the membership card",
+    "hl_at": 3.0
+   },
+   "source": "Verbatim, Ron Vachris to Fortune (May 2024), reported by Fox Business (Jun 24 2024) and CNBC via NBC Chicago (Jun 24 2024): 'The most important item we sell is the membership card.' Same idea on the Q4 FY2026 call: 'Our membership continues to be the most important item we sell'."
+  },
+  {
+   "say": "The low prices are just why you renew. And {92%|ninety two percent} do.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/cm-aisle2.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "cues": [
+    {
+     "at": "92%",
+     "type": "bigword",
+     "text": "92%",
+     "color": "good"
+    }
+   ],
+   "source": "Costco FY2026 10-K: 'Our member renewal rate was 92.3% in the U.S. and Canada and 89.8% worldwide at the end of 2026.' Q4 FY2026 call: 'our U.S. and Canada renewal rate was 92.3%'. Zacks/Nasdaq Sept 25 2026: 92.3%. Narration says 'ninety two percent' for US and Canada members (the video's audience)."
+  },
+  {
+   "say": "So next time you flash that card at the door,",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/cm-price.jpg",
+    "focus": [
+     0.4,
+     0.5
+    ]
+   },
+   "cues": [
+    {
+     "at": "card",
+     "type": "follow",
+     "x": 0.5,
+     "y": 0.6
+    }
+   ],
+   "source": "Loop line into the hook ('Costco's real profit is your membership card')."
+  }
+ ]
+}

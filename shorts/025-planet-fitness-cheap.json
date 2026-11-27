@@ -1,0 +1,239 @@
+{
+ "format": "short",
+ "speed": 1.05,
+ "music": {
+  "file": "assets/music/empty-street-static.mp3",
+  "db": -22,
+  "duck_db": 4
+ },
+ "playbook": "story",
+ "ab": "B",
+ "cover_ms": 1500,
+ "post_slot": "17:00",
+ "review_fix": "Nov 27 review: no new Studio data since Nov 23 and nothing has published since (Metricool cap), so the open rules apply, led by rule 11 (017 + 018: two-number headlines lost 65-68% in the swipe). 025 opens on a plain no-number 'you' headline YOU SKIP, / THEY PROFIT over the exact Planet Fitness pylon on black (rules 7 + 11), line 1 is the 9-word claim with no setup (rule 2), brand money-engine reversal (rule 10), the per-gym number goes in a ticker that starts counting on its line's first word (rule 11), about 35 s (rule 9). Story format (022 Story, 023 Trick, 024 Paradox), no proof card (024 had one), a visual order unlike 024 (ticker, archival, statement, emoji cues; no people grid or donut).",
+ "title": "Why Is Planet Fitness So Cheap?",
+ "description": "Planet Fitness has 21.5 million members but fewer than 3,000 gyms, more than 7,000 members per club, so its cheap memberships only work if most people stay home.\n#planetfitness #gym #money #shorts\n\nSources: Planet Fitness third quarter 2026 results via PR Newswire/Finviz (Nov 5, 2026); Sherwood News (May 2, 2024; Feb 25, 2026); Fortune (Nov 21, 2013); Wikipedia; Planet Fitness (company history and Pizza Monday story); CBS News (May 9, 2024); CNN via ABC7 (May 10, 2024); Business Insider (Dec 2015)\nPhotos: JeepersMedia (Mike Mozart), DieselDemon, apasciuto, blacklerphotos (CC BY 2.0, Flickr); rawpixel (CC0)",
+ "tags": [
+  "planet fitness",
+  "why is planet fitness so cheap",
+  "how does planet fitness make money",
+  "planet fitness business model",
+  "gym membership",
+  "lunk alarm",
+  "business explained"
+ ],
+ "highlight_words": [
+  "stay",
+  "home",
+  "gym",
+  "rats"
+ ],
+ "first_comment": "Be honest: do you actually go to your gym, or just keep paying for it? 🏋️",
+ "scenes": [
+  {
+   "say": "Planet Fitness makes money when you don't show up.",
+   "visual": {
+    "type": "photo_hook",
+    "file": "assets/photos/pf-hook.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ],
+    "pan": 0.0,
+    "lines": [
+     "YOU SKIP,",
+     "THEY PROFIT"
+    ],
+    "highlight": [
+     "PROFIT"
+    ],
+    "scale": 0.115,
+    "y": 0.13
+   },
+   "source": "Point of view supported by: Sherwood News May 2 2024 ('Planet Fitness' business only works out if its members don't'; model 'predicated on most of its members 1) not working out, while 2) continuing to pay'); The Bear Cave Jan 2023 ('Many never go to the gym'); numbers in scenes 2-3."
+  },
+  {
+   "say": "{21.5 million|Twenty one and a half million} members. Fewer than {3,000|three thousand} gyms.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/pf-store.jpg",
+    "focus": [
+     0.42,
+     0.45
+    ]
+   },
+   "cues": [
+    {
+     "at": "gyms",
+     "type": "emoji",
+     "text": "💪",
+     "x": 0.5,
+     "y": 0.62,
+     "w": 0.28,
+     "rot": -6
+    }
+   ],
+   "source": "Planet Fitness Q3 2026 results, Nov 5 2026 (PR Newswire via Finviz): 'As of September 30, 2026, Planet Fitness had approximately 21.5 million members and 2,962 clubs in all 50 states'; 'system-wide total clubs to 2,962'. Sherwood News Feb 25 2026: 20.8 million members (earlier count)."
+  },
+  {
+   "say": "That's over {7,000|seven thousand} members per gym. No gym floor fits that.",
+   "visual": {
+    "type": "ticker",
+    "from": 0,
+    "to": 7259,
+    "plain": false,
+    "count_at": 0.05,
+    "count_dur": 1.4,
+    "color": "good",
+    "label_top": "members per gym",
+    "lines": [
+     "21.5 million members",
+     "2,962 gyms"
+    ]
+   },
+   "source": "21.5M / 2,962 = 7,259 (Q3 2026 release). Sherwood News May 2 2024: 'the company averages 7,262 members for each location'; Feb 25 2026: '7,262 members at its peak two years ago'. Club capacities ~200-350 (Sherwood 2024, local reps), but the line only states the obvious (no floor holds 7,000), so no capacity figure is shown."
+  },
+  {
+   "say": "It only works because most of them stay home.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/pf-empty-gym.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "cues": [
+    {
+     "at": "stay",
+     "type": "emoji",
+     "text": "🏠",
+     "x": 0.5,
+     "y": 0.6,
+     "w": 0.28,
+     "rot": -6
+    }
+   ],
+   "source": "Sherwood News May 2 2024: business model 'predicated on most of its members 1) not working out, while 2) continuing to pay'; peak attendance '50-60 people working out at a time' per local reps. Fortune 2013: 'the average customer only comes in a couple of days a week.'"
+  },
+  {
+   "say": "In {1992|nineteen ninety two}, two brothers bought a failing gym.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/pf-golds.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ],
+    "archival": true
+   },
+   "cues": [
+    {
+     "at": "1992",
+     "type": "bigword",
+     "text": "1992",
+     "color": "text"
+    }
+   ],
+   "source": "Wikipedia: 'In 1992, Planet Fitness founders Michael and Marc Grondahl acquired a struggling Gold's Gym franchise in Dover, New Hampshire.' Fortune Nov 21 2013: 'Rondeau's partners purchased a failing Gold's Gym in Dover, N.H., renaming it Planet Fitness'. Planet Fitness about page: founded in 1992 in Dover, NH. Photo is a generic old Gold's Gym floor (archival look), not the Dover club."
+  },
+  {
+   "say": "By {1998|nineteen ninety eight}, it cost {$10|ten dollars} a month, and stayed there {26|twenty six} years.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/pf-yellow.jpg",
+    "focus": [
+     0.45,
+     0.5
+    ]
+   },
+   "cues": [
+    {
+     "at": "$10",
+     "type": "bigword",
+     "text": "$10",
+     "color": "good"
+    }
+   ],
+   "source": "CBS News May 9 2024: Classic membership 'up from the $10 it had been priced at since 1998', new price $15 for new members from summer 2024. CNN via ABC7 May 10 2024: 'raise the basic plan by 50% for the first time since 1998'; headline 'for 1st time in 26 years'."
+  },
+  {
+   "say": "But here's the interesting part: they don't want gym rats.",
+   "visual": {
+    "type": "statement",
+    "lines": [
+     "THEY DON'T",
+     "WANT GYM RATS"
+    ],
+    "highlight": [
+     "rats"
+    ],
+    "scale": 0.1
+   },
+   "source": "Business Insider Dec 2015, CEO Chris Rondeau: 'We're going after the first time exercises or casual user' and 'Gym intimidation is real.' Wikipedia: model 'focused on the needs of occasional or first-time health club members.' CNN via ABC7 2024 and Entrepreneur 2020: 40% of (new) members never belonged to a gym before."
+  },
+  {
+   "say": "A lunk alarm goes off if you grunt or drop weights.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/pf-dumbbells.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "cues": [
+    {
+     "at": "alarm",
+     "type": "emoji",
+     "text": "🚨",
+     "x": 0.5,
+     "y": 0.58,
+     "w": 0.3,
+     "rot": 6
+    }
+   ],
+   "source": "Wikipedia: Lunk Alarm, 'a loud siren and rotating light that may be used when a weightlifter grunts too loudly or drops weights.' Business Insider Dec 2015: 'A lunk alarm goes off if people exert themselves with too much machismo.'"
+  },
+  {
+   "say": "And for years, members got free pizza once a month.",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/pf-pizza.jpg",
+    "focus": [
+     0.55,
+     0.5
+    ]
+   },
+   "cues": [
+    {
+     "at": "free",
+     "type": "bigword",
+     "text": "FREE",
+     "color": "good"
+    }
+   ],
+   "source": "Planet Fitness 'real story behind Pizza Monday': free pizza 'on the first Monday night of each month', a tradition 'since 1999'. Business Insider Dec 2015: 'serves free pizza on the first Monday of the month', 'once-a-month pizza nights in all our locations'. Wikipedia: Pizza Monday launched 1999, 'this ended in 2020' (hence 'for years', past tense)."
+  },
+  {
+   "say": "The perfect member pays every month and stays home. Which is exactly why",
+   "visual": {
+    "type": "broll",
+    "file": "assets/photos/pf-treadmills.jpg",
+    "focus": [
+     0.5,
+     0.5
+    ]
+   },
+   "cues": [
+    {
+     "at": "exactly",
+     "type": "follow",
+     "x": 0.5,
+     "y": 0.6
+    }
+   ],
+   "source": "Point of view from scenes 2-9 (Sherwood News 2024: model relies on members 'continuing to pay' while not working out). Loop line into the hook ('Which is exactly why / Planet Fitness makes money when you don't show up')."
+  }
+ ]
+}
